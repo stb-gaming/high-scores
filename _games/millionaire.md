@@ -1,0 +1,19 @@
+---
+title: "Millionaire"
+description: "Everyone's favourite game show!"
+developer: "Denki"
+brand: "Celador"
+splash: "Celador/Who Wants To Be A Millionaire/Who Wants To Be A Millionaire/Splash.jpg"
+gameplay: "Celador/Who Wants To Be A Millionaire/Who Wants To Be A Millionaire/Screen02.jpg"
+date: "2006-03-??"
+archived: "2023-09-09"
+image: null
+menu: null
+category: "Quiz"
+scores:
+  collection: scores
+  filter: "item.game contains 'millionaire'"
+links:
+  - title: Play
+    url: "https://denki.co.uk/sky/millionaire/app.html"
+---

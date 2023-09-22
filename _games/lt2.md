@@ -2,7 +2,6 @@
 title: "Looney Tunes: Back in Action 2"
 description: "ACME strikes back!"
 developer: "Denki"
-url: 
 brand: "Warner Bros"
 splash: "Warner Bros/Looney Tunes Episode 2/Front End.jpg"
 gameplay: "Warner Bros/Looney Tunes Episode 2/Screen2.jpg"
@@ -16,7 +15,5 @@ scores:
   filter: "item.game contains 'lt2'"
 links:
   - title: Play
-    url: https://denki.co.uk/sky/lt2/app.html
-  - title: Wiki
-    url: https://sky-gamestar.fandom.com/wiki/Looney_Tunes:_Back_In_Action_(Game_Series)#Looney_Tunes:Back_in_Action:_Rabbit_Rampage
+    url: "https://denki.co.uk/sky/lt2/app.html"
 ---

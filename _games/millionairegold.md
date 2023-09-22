@@ -5,7 +5,7 @@ developer: "Denki"
 brand: "Celador"
 splash: "Celador/Who Wants To Be A Millionaire/Who Wants To Be A Millionaire Gold Edition/GoldSplash.jpg"
 gameplay: "Celador/Who Wants To Be A Millionaire/Who Wants To Be A Millionaire Gold Edition/GoldScreen01.jpg"
-date: "2006-04-??"
+date: "2006-04-01"
 archived: "2023-09-09"
 image: null
 menu: null

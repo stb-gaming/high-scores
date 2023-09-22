@@ -5,7 +5,7 @@ developer: "Denki"
 brand: "Marvel"
 splash: "Marvel/The Incredible Hulk/Menu.png"
 gameplay: "Marvel/The Incredible Hulk/Desert1.png"
-date: "2003-??-??"
+date: "2003-01-01"
 archived: "2023-09-09"
 image: null
 menu: null

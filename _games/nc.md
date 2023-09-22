@@ -11,7 +11,6 @@ image: null
 menu: null
 category: "Arithmetic"
 scores:
-  collection: scores
   filter: "item.game contains 'nc'"
 links:
   - title: Play

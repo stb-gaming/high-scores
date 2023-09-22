@@ -1,0 +1,44 @@
+---
+layout: null
+permalink: ./feed.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title type="text" xml:lang="en">{{ site.title }}</title>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<author>
+		<name>{{ site.author }}</name>
+		<email>{{ site.email }}</email>
+	</author>
+	<rights>GPLv3</rights>
+	{% for document in site.documents %}
+		{% if document.date %}
+			{% capture currentDate %}{{ 'now' | date: site.date-format }}{% endcapture %}
+			{% capture itemDate %}{{ document.date | date: site.date-format }}{% endcapture %}
+			{% if currentDate != itemDate %}
+				<entry>
+					{% if document.id %}<id>{{ document.id }}</id>{% endif %}
+					{% for property in document %}
+							{% assign propertyName = property[0] %}
+							{% assign propertyValue = property[1] %}
+							{% if propertyName and propertyValue %}
+								{% if propertyName == 'title' %}
+									<title type="text">{{ propertyValue | escape }}</title>
+								{% elsif propertyName == 'url' %}
+									<link href="{{ site.url }}{{ propertyValue }}"></link>
+								{% elsif propertyName == 'date' %}
+									<published>{{ propertyValue | date_to_xmlschema }}</published>
+								{% elsif propertyName == 'description' %}
+									<summary type="text">{{ propertyValue | escape }}</summary>
+								{% elsif propertyName == 'collection' %}
+									<category term="{{ propertyValue }}" label="{{ document.collection | capitalize | escape }}"></category>
+								{% else %}
+									<{{ propertyName }}>{{ propertyValue | escape }}</{{ propertyName }}>
+								{% endif %}
+							{% endif %}
+					{% endfor %}
+				</entry>
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+</feed>

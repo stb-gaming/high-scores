@@ -11,7 +11,6 @@ image: null
 menu: null
 category: "Word"
 scores:
-  collection: scores
   filter: "item.game contains 'boggle'"
 links:
   - title: Play

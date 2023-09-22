@@ -11,7 +11,6 @@ image: null
 menu: null
 category: "Adventure"
 scores:
-  collection: scores
   filter: "item.game contains 'shrek2'"
 links:
   - title: Play

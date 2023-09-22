@@ -1,7 +1,6 @@
 ---
 title: Channel4squares
 scores:
-  collection: scores
   filter: "item.game contains 'lt2'"
 links:
   - title: Wiki User

@@ -1,0 +1,1 @@
+{% assign include_url = include.url %}{% if include_url contains '://' %}{{ include_url }}{% else %}{% assign include_url_prefix = include_url | slice: 0, 1 %}{% if include_url_prefix == '/' %}{{ site.url | append: include_url }}{% else %}{{ site.sky-games-images | append: include_url }}{% endif %}{% endif %}

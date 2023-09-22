@@ -11,7 +11,6 @@ image: null
 menu: null
 category: "Quiz"
 scores:
-  collection: scores
   filter: "item.game contains 'millionaire'"
 links:
   - title: Play

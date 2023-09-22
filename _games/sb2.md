@@ -11,7 +11,6 @@ image: null
 menu: null
 category: "Adventure"
 scores:
-  collection: scores
   filter: "item.game contains 'sb2'"
 links:
   - title: Play

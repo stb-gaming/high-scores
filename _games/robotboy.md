@@ -11,7 +11,6 @@ image: null
 menu: null
 category: "Action"
 scores:
-  collection: scores
   filter: "item.game contains 'robotboy'"
 links:
   - title: Play

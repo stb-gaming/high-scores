@@ -5,7 +5,7 @@ game:
   title: test
   links:
     - title: hi
-scores:
+list:
   items:
     - player: tumble
       game: face

@@ -11,7 +11,6 @@ image: null
 menu: null
 category: "Maze"
 scores:
-  collection: scores
   filter: "item.game contains 'dynamice'"
 links:
   - title: Play

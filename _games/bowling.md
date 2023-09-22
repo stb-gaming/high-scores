@@ -11,7 +11,6 @@ image: null
 menu: null
 category: "Sports"
 scores:
-  collection: scores
   filter: "item.game contains 'bowling'"
 links:
   - title: Play

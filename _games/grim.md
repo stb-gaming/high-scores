@@ -11,7 +11,6 @@ image: null
 menu: null
 category: "Adventure"
 scores:
-  collection: scores
   filter: "item.game contains 'grim'"
 links:
   - title: Play

@@ -1,6 +1,9 @@
 repository: stb-gaming/high-scores
 url: https://stb-gaming.github.io/high-scores
 
+sky-games-images: https://sky-games-x.pages.dev/assets/img/games/
+#sky-games-images: https://stb-gaming.github.io/sky-games/assets/img/games/
+
 permalink: pretty
 date-format: "%e %b %Y"
 
@@ -11,12 +14,19 @@ collections:
     output: true
   games:
     output: true
+  lists:
+    output: true
 
 defaults:
   - scope:
       path: ""
     values:
       layout: default
+  - scope:
+      path: ""
+      type: lists
+    values:
+      permalink: /:title/
 
 
 exclude:

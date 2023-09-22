@@ -1,19 +1,13 @@
-{% assign item=include.item  %}
+{% assign item=include.item %}
+{% capture itemurl %}{% include url.html url=item.url %}{% endcapture %}
 
 {% if item.image or item.links %}
 <div id="infocard" class="panel">
 	<div class="panel-body">
 		
 		{% assign imageUrl = item.image|default:item.splash|default:item.menu|default:item.gameplay %}
-		{% if imageUrl %}
-		{% unless imageUrl contains 'http://' or imageUrl contains 'https://' %}
-		{% assign imageUrl = 'https://stb-gaming.github.io/sky-games/assets/img/games/' | append: imageUrl %}
-		{% endunless %}
-		{% assign itemUrl=item.url %}
-		{% if itemUrl | starts_with: '/' %}
-		{% assign itemUrl=site.url|append:itemUrl %}
-		{% endif %}
-		<a href="{{itemUrl}}"><img src="{{imageUrl}}"></a>
+		{% if imageUrl or imageUrl != 'null' %}
+		<a href="{{itemUrl}}"><img src="{% include url.html url=imageUrl %}"></a>
 		{% endif %}
 		<div id="page_info">
 			<h1 id="page_title">
@@ -28,11 +22,7 @@
 			{% if item.links %}
 			<div id="page_links">
 				{% for link in item.links %}
-				{% assign linkUrl=link.url %}
-				{% if linkUrl | starts_with: '/' %}
-				{% assign linkUrl=site.url|append:linkUrl %}
-				{% endif %}
-				<a href="{{linkUrl}}" {% if link.title=="Play" %}id="page_play" {% endif%}>{{link.title}}</a>
+				<a href="{% include url.html url=link.url %}" {% if link.title=="Play" %}id="page_play" {% endif%}>{{link.title}}</a>
 				{% endfor %}
 			</div>
 			{% endif %}

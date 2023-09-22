@@ -28,8 +28,9 @@ include.items
 {% assign items = items | where_exp:"item",include.filter %}
 {% endif %}
 
-{% assign items = items | sort: "score"|reverse %}
 
+{% if include.collection == "scores" %}
+{% assign items = items | sort: "score"|reverse %}
 <table>
 	<tr>
 		<th>#</th>
@@ -44,13 +45,10 @@ include.items
 		<th>Method</th>
 		<th>Date</th>
 	</tr>
-	{% for score in items %}
+	{% for score in items limit: include.limit %}
 
-	{% assign scoreUrl=item.url %}
-	{% if scoreUrl | starts_with: '/' %}
-	{% assign scoreUrl=site.url|append:scoreUrl %}
-	{% endif %}
-	<tr {% if score.url %}onclick="window.location.href='{{scoreUrl}}';" style="cursor: pointer;"{%endif %}>
+	{% capture scoreUrl%}{% include url.html url=score.url %}{% endcapture %}
+	<tr {% if score.url %}onclick="window.location.href='{{scoreUrl}}';" style="cursor: pointer;"{% endif %}>
 		
 			<td>
 				{% if score.url %}<a href="{{scoreUrl}}">{% endif %}
@@ -62,12 +60,8 @@ include.items
 		{% unless page.collection == "games" %}
 		{% assign game = site.games | where:"slug", score.game | first %}
 
-	{% assign gameUrl=game.url %}
-	{% if gameUrl | starts_with: '/' %}
-	{% assign scoreUrl=site.url|append:gameUrl %}
-	{% endif %}
 		<td>
-			<a {% if gameUrl %}href="{{gameUrl}}"{% endif %}>
+			<a {% if game.url %}href="{% include url.html url=game.url %}"{% endif %}>
 			{{ game.title | default:score.game}}
 			</a>
 		</td>
@@ -75,12 +69,8 @@ include.items
 		{% unless page.collection == "players" %}
 		{% assign player = site.players | where:"slug", score.author | first %}
 
-		{% assign playerUrl=player.url %}
-		{% if playerUrl | starts_with: '/' %}
-		{% assign playerUrl=site.url|append:playerUrl %}
-		{% endif %}
 		<td>
-			<a {% if player.url %}href="{{playerUrl}}"{% endif %}>
+			<a {% if player.url %}href="{% include url.html url=score.url %}"{% endif %}>
 			{{player.title | default:score.author}}
 		</a>
 		</td>
@@ -109,3 +99,16 @@ include.items
 	{% endfor %}
 
 </table>
+{% else %}
+
+<div id="game_list">
+	{% for item in items limit: include.limit %}
+	<a href="{% include url.html url=item.url %}" class="game">
+		{% assign imageUrl = item.image|default:item.splash|default:item.menu|default:item.gameplay %}
+		<img src="{% include url.html url=imageUrl %}" alt="">
+		<h4>{{item.title}}</h4>
+	</a>
+	{% endfor %}
+</div>
+
+{% endif %}

@@ -11,7 +11,6 @@ image: null
 menu: null
 category: "Puzzle"
 scores:
-  collection: scores
   filter: "item.game contains 'jq'"
 links:
   - title: Play

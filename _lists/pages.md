@@ -1,0 +1,4 @@
+---
+list:
+  collection: pages
+---

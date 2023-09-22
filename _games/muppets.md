@@ -11,7 +11,6 @@ image: null
 menu: null
 category: "Platformer"
 scores:
-  collection: scores
   filter: "item.game contains 'muppets'"
 links:
   - title: Play

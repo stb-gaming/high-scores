@@ -51,7 +51,17 @@
 					<h2>Scores</h2>
 				</div>
 				<div class="panel-body">
-					{% include scores.html collection=page.scores.collection filter=page.scores.filter items=page.scores.items %}
+					{% include list.html collection='scores' filter=page.scores.filter items=page.scores.items %}
+				</div>
+			</div>
+			{% endif %}
+			{% if page.list %}
+			<div id="list" class="panel">
+				<div class="panel-header">
+					<h2>{{page.list.collection|capitalize}} </h2>
+				</div>
+				<div class="panel-body">
+					{% include list.html collection=page.list.collection filter=page.list.filter items=page.list.items limit=page.list.limit %}
 				</div>
 			</div>
 			{% endif %}

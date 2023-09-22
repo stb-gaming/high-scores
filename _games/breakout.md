@@ -11,7 +11,6 @@ image: null
 menu: null
 category: "Arcade"
 scores:
-  collection: scores
   filter: "item.game contains 'breakout'"
 links:
   - title: Play

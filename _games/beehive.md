@@ -2,7 +2,7 @@
 title: "Beehive Bedlam"
 description: "Never released!"
 developer: "Denki"
-brand: "null"
+brand: null
 splash: "SKY Games/Beehive Bedlam/Beehive_Denki_Splash.jpg"
 gameplay: "SKY Games/Beehive Bedlam/Beehive_Denki_Gameplay.jpg"
 date: "2004-01-01"
@@ -11,7 +11,6 @@ image: null
 menu: null
 category: "Puzzle"
 scores:
-  collection: scores
   filter: "item.game contains 'beehive'"
 links:
   - title: Play

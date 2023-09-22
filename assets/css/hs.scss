@@ -1,0 +1,188 @@
+---
+---
+
+
+
+:root {
+    --sky-games-pink-hue: 344;
+    --sky-games-pink: hsl(var(--sky-games-pink-hue), 90%, 57%);
+
+    --background-color-light: hsl(var(--sky-games-pink-hue), 17%, 92%);
+    --panel-color-light: hsla(var(--sky-games-pink-hue), 20%, 82%, 0.85);
+    --panel-header-color-light: hsla(var(--sky-games-pink-hue), 0%, 12%, 0.1);
+    --text-color-light: #212427;
+
+
+    --background-color-dark: hsl(var(--sky-games-pink-hue), 17%, 8%);
+    --panel-color-dark: hsla(var(--sky-games-pink-hue), 20%, 18%, 0.85);
+    --panel-header-color-dark: hsla(var(--sky-games-pink-hue), 0%, 88%, 0.1);
+    --text-color-dark: #f9f9f9;
+
+}
+
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: var(--background-color-light);
+        --panel-color: var(--panel-color-light);
+        --panel-header-color: var(--panel-header-color-light);
+        --text-color: var(--text-color-light);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: var(--background-color-dark);
+        --panel-color: var(--panel-color-dark);
+        --panel-header-color: var(--panel-header-color-dark);
+        --text-color: var(--text-color-dark);
+    }
+}
+
+// Variables
+$skyGamesPink: var(--sky-games-pink);
+$backgroundColor: var(--background-color);
+$panelColor: var(--panel-color);
+$panelHeaderColor: var(--panel-header-color);
+$textColor: var(--text-color);
+
+$backgroundColorDark: var(--background-color-dark);
+$panelColorDark: var(--panel-color-dark);
+$panelHeaderColorDark: var(--panel-header-color-dark);
+$textColorDark: var(--text-color-dark);
+
+$backgroundColorLight: var(--background-color-light);
+$panelColorLight: var(--panel-color-light);
+$panelHeaderColorLight: var(--panel-header-color-light);
+$textColorLight: var(--text-color-light);
+
+header {
+    background-color: $skyGamesPink;
+
+    &,
+    h1 {
+        color: $textColorDark;
+    }
+}
+
+body {
+    background-color: $backgroundColor;
+    color: $textColor;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: $skyGamesPink;
+    margin: none;
+    padding: none;
+}
+
+
+.nolink, a:not([href]), a[href=""]{
+	&,&:visited,&:focus,a:hover{
+	color: red;
+	}
+}
+
+a,a:visited,a:focus,a:hover {
+    color: $skyGamesPink;
+	text-decoration: none;
+}
+
+main .container {
+    display: grid;
+    grid-template-areas: 
+        "info"
+        "main";
+        gap:1rem;
+}
+
+.panel {
+    background-color: $panelColor;
+    border-radius: 1rem;
+
+
+
+    .panel-header {
+        background-color: $panelHeaderColor;
+        border-radius: 1rem;
+        padding: .3rem 1rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .panel-body {
+        padding: 1rem;
+    }
+
+}
+
+#infocard .panel-body {
+
+    display: flex;
+    flex-flow: row;
+    gap: 1rem;
+    position: relative;
+
+    img {
+        height: 8rem;
+        width: auto;
+    }
+
+    #page_play, [id^=page_play] {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        font-size: 1.7em;
+        font-weight: bold;
+        padding: .3rem 1.5rem;
+    }
+}
+
+#page_title {
+	display: inline;
+}
+
+#page_links {
+    display: flex;
+    gap: 1em;
+    a {
+        background-color: $skyGamesPink;
+        color: $textColorDark;
+        padding: .2rem .5rem;
+        border-radius: .5rem;
+    }
+}
+
+
+table {
+
+	a,a:visited,a:focus,a:hover {
+		color: inherit;
+	}
+
+	border-collapse: collapse;
+	width: 100%;
+	td,th {
+		padding: 8px;
+		text-align: center;
+		&:nth-child(2) {
+			text-align: left;
+		}
+	}
+	tr {
+		//&:nth-child(even){background-color: $panelHeaderColor}
+		&:hover {background-color: $panelHeaderColor}
+	}
+
+	th {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		background-color: $panelHeaderColor;
+	  }
+
+
+}

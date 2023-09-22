@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="{{page.favicon|default:'favicon.ico'}}" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{page.title}} - {{site.title}}</title>
+	<link rel="stylesheet" href="{{site.url}}/assets/css/style.css">
+	<link rel="stylesheet" href="{{site.url}}/assets/css/hs.css">
+
+
+	{% capture seo %}{% seo %}{% endcapture %}
+	{% if page.image and page.image != site.logo %}
+	{{seo | replace: "summary", "summary_large_image"}}
+	{% else %}
+	{{seo}}
+	{% endif %}
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<h1>Sky Games High Scores</h1>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+
+			{% if page.game %}
+			{% assign game = site.games | where:"slug", page.game | first|default:page.game%}
+			{% include infocard.html item=game %}
+			{% else %}
+			{% include infocard.html item=page %}
+			{% endif %}
+
+			{% assign content_test = page.content | strip_newlines %}
+			{% if content_test != "" %}
+			<div class="panel">
+				<div class="panel-header">
+					<h2>About</h2>
+				</div>
+				<div class="panel-body">
+					{{content}}
+				</div>
+			</div>
+			{% endif %}
+			{% if page.scores %}
+			<div id="scores" class="panel">
+				<div class="panel-header">
+					<h2>Scores</h2>
+				</div>
+				<div class="panel-body">
+					{% include scores.html collection=page.scores.collection filter=page.scores.filter items=page.scores.items %}
+				</div>
+			</div>
+			{% endif %}
+		</div>
+	</main>
+	<footer></footer>
+</body>
+
+</html>

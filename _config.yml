@@ -1,0 +1,44 @@
+repository: stb-gaming/high-scores
+
+permalink: pretty
+date-format: "%e %b %Y"
+
+collections:
+  scores:
+    output: true
+  players:
+    output: true
+  games:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+
+exclude:
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - yarn.lock
+  - LICENSE
+  - plan.md
+  - README.md
+  - gulpfile.js
+  - gemfiles
+  - src
+  - package.json
+  - package-lock.json
+
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-redirect-to
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-avatar
+  - jemoji
+  - jekyll-mention

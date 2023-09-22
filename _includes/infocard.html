@@ -1,0 +1,34 @@
+{% assign item=include.item  %}
+
+{% if item.image or item.links %}
+<div id="infocard" class="panel">
+	<div class="panel-body">
+		
+		{% assign imageUrl = item.image|default:item.splash|default:item.menu|default:item.gameplay %}
+		{% if imageUrl %}
+		{% unless imageUrl contains 'http://' or imageUrl contains 'https://' %}
+		{% assign imageUrl = 'https://stb-gaming.github.io/sky-games/assets/img/games/' | append: imageUrl %}
+		{% endunless %}
+		<a href="{{item.url}}"><img src="{{imageUrl}}"></a>
+		{% endif %}
+		<div id="page_info">
+			<h1 id="page_title">
+				<a href="{{item.url}}">
+				{{item.title}}
+			</a>
+			</h1>
+			<span>{{item.date| date:site.date-format}}</span>
+			<div id="page_description">
+				<p>Under Constructuon</p>
+			</div>
+			{% if item.links %}
+			<div id="page_links">
+				{% for link in item.links %}
+				<a href="{{link.url}}" {% if link.title=="Play" %}id="page_play" {% endif%}>{{link.title}}</a>
+				{% endfor %}
+			</div>
+			{% endif %}
+		</div>
+	</div>
+</div>
+{% endif %}

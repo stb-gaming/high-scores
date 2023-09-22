@@ -1,0 +1,24 @@
+---
+permalink: /games.json
+layout: null
+---
+[
+	{% for game in site.games %}
+	{% assign urlLink = game.links | where:"title","Play" | first %}
+	{
+	"title": "{{game.title}}",
+		"description": "{{game.description}}",
+		"developer": "{{game.developer}}",
+		"url": "{{urlLink.url}}",
+		"brand": "{{game.brand}}",
+		"splash": "{{game.splash}}",
+		"gameplay": "{{game.gameplay}}",
+		"date": "{{game.date}}",
+		"archived": "{{game.archived}}",
+		"image": "{{game.image}}",
+		"menu": "{{game.menu}}",
+		"list": "{{game.list}}",
+		"category": "{{game.category}}"
+	}{%unless forloop.last %},{%endunless %}
+	{% endfor %}
+]

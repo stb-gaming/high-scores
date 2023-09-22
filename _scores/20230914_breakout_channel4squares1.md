@@ -2,7 +2,7 @@
 game: breakout
 author: channel4squares1
 date: 2023-09-14
-score: 19427
+score: 645260
 platform: PC
 method: Vanilla
 ---

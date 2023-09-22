@@ -6,4 +6,4 @@ score: 19427
 platform: Mobile
 method: US
 ---
-![]({{site.url}}/assets/img/20230916_lt2_channel4quares1.jpg)
+![]({{site.url}}/assets/img/20230916_lt2_channel4squares1.jpg)

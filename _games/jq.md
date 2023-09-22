@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Puzzle"
 scores:
-  filter: "item.game contains 'jq'"
+  filter: "item.game == 'jq'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/jq/app.html"

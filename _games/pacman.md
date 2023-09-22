@@ -11,7 +11,7 @@ image: Namco/Pac-Man/Splash.jpg
 menu: null
 category: "Arcade"
 scores:
-  filter: "item.game contains 'pacman'"
+  filter: "item.game == 'pacman'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/pacman/app.html"

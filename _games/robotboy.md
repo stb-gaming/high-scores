@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Action"
 scores:
-  filter: "item.game contains 'robotboy'"
+  filter: "item.game == 'robotboy'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/robotboy/app.html"

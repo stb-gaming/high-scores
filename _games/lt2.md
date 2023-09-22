@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Adventure"
 scores:
-  filter: "item.game contains 'lt2'"
+  filter: "item.game == 'lt2'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/lt2/app.html"

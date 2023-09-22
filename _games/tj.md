@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Action"
 scores:
-  filter: "item.game contains 'tj'"
+  filter: "item.game == 'tj'"
 links:
   - title: Play
     url: "http://denki.co.uk/sky/tj/app.html"

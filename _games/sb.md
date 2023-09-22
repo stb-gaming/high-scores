@@ -11,7 +11,7 @@ image: Nickelodeon/SpongeBob SquarePants/SpongeBob SquarePants/Poster.jpg
 menu: null
 category: "Adventure"
 scores:
-  filter: "item.game contains 'sb'"
+  filter: "item.game == 'sb'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/sb/app.html"

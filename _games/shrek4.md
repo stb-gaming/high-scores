@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Adventure"
 scores:
-  filter: "item.game contains 'shrek4'"
+  filter: "item.game == 'shrek4'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/shrek4/app.html"

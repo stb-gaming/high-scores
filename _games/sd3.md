@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Adventure"
 scores:
-  filter: "item.game contains 'sd3'"
+  filter: "item.game == 'sd3'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/sd3/app.html"

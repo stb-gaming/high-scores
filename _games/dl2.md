@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Action"
 scores:
-  filter: "item.game contains 'dl2'"
+  filter: "item.game == 'dl2'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/dl2/app.html"

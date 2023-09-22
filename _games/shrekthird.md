@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Adventure"
 scores:
-  filter: "item.game contains 'shrekthird'"
+  filter: "item.game == 'shrekthird'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/shrekthird/app.html"

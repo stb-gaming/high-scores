@@ -11,7 +11,7 @@ image: SKY Games/Bugz/icon.jpg
 menu: SKY Games/Bugz/ModeSelect.jpg
 category: "Maze"
 scores:
-  filter: "item.game contains 'bugz'"
+  filter: "item.game == 'bugz'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/bugz/app.html"

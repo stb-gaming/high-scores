@@ -11,7 +11,7 @@ image: null
 menu: SKY Games/Carol Vorderman's Mind Aerobics/Carol Vorderman's Mind Aerobics/Menu.jpg
 category: "Puzzle"
 scores:
-  filter: "item.game contains 'ma'"
+  filter: "item.game == 'ma'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/ma/app.html"

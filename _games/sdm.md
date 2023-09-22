@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Adventure"
 scores:
-  filter: "item.game contains 'sdm'"
+  filter: "item.game == 'sdm'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/sdm/app.html"

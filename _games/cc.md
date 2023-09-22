@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Puzzle"
 scores:
-  filter: "item.game contains 'cc'"
+  filter: "item.game == 'cc'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/cc/app.html"

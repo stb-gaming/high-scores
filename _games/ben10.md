@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Action"
 scores:
-  filter: "item.game contains 'ben10'"
+  filter: "item.game == 'ben10'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/ben10/app.html"

@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Platformer"
 scores:
-  filter: "item.game contains 'muppets'"
+  filter: "item.game == 'muppets'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/muppets/app.html"

@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Puzzle"
 scores:
-  filter: "item.game contains 'duo'"
+  filter: "item.game == 'duo'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/duo/app.html"

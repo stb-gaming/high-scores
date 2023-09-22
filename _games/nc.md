@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Arithmetic"
 scores:
-  filter: "item.game contains 'nc'"
+  filter: "item.game == 'nc'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/nc/app.html"

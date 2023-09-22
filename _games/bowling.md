@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Sports"
 scores:
-  filter: "item.game contains 'bowling'"
+  filter: "item.game == 'bowling'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/bowling/app.html"

@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Adventure"
 scores:
-  filter: "item.game contains 'wg'"
+  filter: "item.game == 'wg'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/wg/app.html"

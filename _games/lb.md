@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Word"
 scores:
-  filter: "item.game contains 'lb'"
+  filter: "item.game == 'lb'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/lb/app.html"

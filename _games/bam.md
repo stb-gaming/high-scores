@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Arcade"
 scores:
-  filter: "item.game contains 'bam'"
+  filter: "item.game == 'bam'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/bam/app.html"

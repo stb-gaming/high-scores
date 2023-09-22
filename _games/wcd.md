@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Word"
 scores:
-  filter: "item.game contains 'wcd'"
+  filter: "item.game == 'wcd'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/wcd/app.html"

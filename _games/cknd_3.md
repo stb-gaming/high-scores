@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Adventure"
 scores:
-  filter: "item.game contains 'cknd_3'"
+  filter: "item.game == 'cknd_3'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/cknd_3/app.html"

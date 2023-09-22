@@ -11,7 +11,7 @@ image: null
 menu: Denki/Denki Blocks!/Sticky Blocks!/ModeSelect copy.jpg
 category: "Puzzle"
 scores:
-  filter: "item.game contains 'stb'"
+  filter: "item.game == 'stb'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/stb/app.html"

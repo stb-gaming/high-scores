@@ -28,6 +28,10 @@ include.items
 {% assign items = items | where_exp:"item",include.filter %}
 {% endif %}
 
+{% if include.sort %}
+{% assign items = items | sort: include.sort %}
+{% endif %}
+
 
 {% if include.collection == "scores" %}
 {% assign items = items | sort: "score"|reverse %}
@@ -70,7 +74,7 @@ include.items
 		{% assign player = site.players | where:"slug", score.author | first %}
 
 		<td>
-			<a {% if player.url %}href="{% include url.html url=score.url %}"{% endif %}>
+			<a {% if player.url %}href="{% include url.html url=player.url %}"{% endif %}>
 			{{player.title | default:score.author}}
 		</a>
 		</td>
@@ -100,6 +104,7 @@ include.items
 
 </table>
 {% else %}
+
 
 <div id="game_list">
 	{% for item in items limit: include.limit %}

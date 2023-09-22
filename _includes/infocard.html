@@ -1,12 +1,13 @@
 {% assign item=include.item %}
-{% capture itemurl %}{% include url.html url=item.url %}{% endcapture %}
+{% capture itemUrl %}{% include url.html url=item.url %}{% endcapture %}
+
 
 {% if item.image or item.links %}
 <div id="infocard" class="panel">
 	<div class="panel-body">
 		
 		{% assign imageUrl = item.image|default:item.splash|default:item.menu|default:item.gameplay %}
-		{% if imageUrl or imageUrl != 'null' %}
+		{% if imageUrl%}
 		<a href="{{itemUrl}}"><img src="{% include url.html url=imageUrl %}"></a>
 		{% endif %}
 		<div id="page_info">

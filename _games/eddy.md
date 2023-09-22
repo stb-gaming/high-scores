@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Action"
 scores:
-  filter: "item.game contains 'eddy'"
+  filter: "item.game == 'eddy'"
 links:
   - title: Play
     url: "http://denki.co.uk/sky/eddy/app.html"

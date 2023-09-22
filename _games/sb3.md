@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Adventure"
 scores:
-  filter: "item.game contains 'sb3'"
+  filter: "item.game == 'sb3'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/sb3/app.html"

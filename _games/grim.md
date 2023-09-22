@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Adventure"
 scores:
-  filter: "item.game contains 'grim'"
+  filter: "item.game == 'grim'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/grim/app.html"

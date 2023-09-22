@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Action"
 scores:
-  filter: "item.game contains 'tbirds'"
+  filter: "item.game == 'tbirds'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/tbirds/app.html"

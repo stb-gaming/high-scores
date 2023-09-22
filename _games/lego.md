@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Adventure"
 scores:
-  filter: "item.game contains 'lego'"
+  filter: "item.game == 'lego'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/lego/app.html"

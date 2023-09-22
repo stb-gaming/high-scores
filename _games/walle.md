@@ -11,7 +11,7 @@ image: null
 menu: Disney/WALL.E/menu.png
 category: "Adventure"
 scores:
-  filter: "item.game contains 'walle'"
+  filter: "item.game == 'walle'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/walle/app.html"

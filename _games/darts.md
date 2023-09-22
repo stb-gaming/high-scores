@@ -11,7 +11,7 @@ image: SKY Sports/Darts/darts-icon.jpg
 menu: SKY Sports/Darts/ModeSelect.jpg
 category: "Sports"
 scores:
-  filter: "item.game contains 'darts'"
+  filter: "item.game == 'darts'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/darts/app.html"

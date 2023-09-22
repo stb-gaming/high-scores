@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Puzzle"
 scores:
-  filter: "item.game contains 'jf'"
+  filter: "item.game == 'jf'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/jf/app.html"

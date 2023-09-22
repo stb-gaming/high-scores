@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Platformer"
 scores:
-  filter: "item.game contains 'cknd2'"
+  filter: "item.game == 'cknd2'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/cknd2/app.html"

@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Adventure"
 scores:
-  filter: "item.game contains 'courage2'"
+  filter: "item.game == 'courage2'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/courage2/app.html"

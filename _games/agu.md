@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Adventure"
 scores:
-  filter: "item.game contains 'agu'"
+  filter: "item.game == 'agu'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/agu/app.html"

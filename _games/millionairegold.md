@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Quiz"
 scores:
-  filter: "item.game contains 'millionairegold'"
+  filter: "item.game == 'millionairegold'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/millionairegold/app.html"

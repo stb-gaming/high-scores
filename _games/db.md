@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Puzzle"
 scores:
-  filter: "item.game contains 'db'"
+  filter: "item.game == 'db'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/db/app.html"

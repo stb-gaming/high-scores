@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Word"
 scores:
-  filter: "item.game contains 'boggle'"
+  filter: "item.game == 'boggle'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/boggle/app.html"

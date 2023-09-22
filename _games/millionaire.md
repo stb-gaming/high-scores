@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Quiz"
 scores:
-  filter: "item.game contains 'millionaire'"
+  filter: "item.game == 'millionaire'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/millionaire/app.html"

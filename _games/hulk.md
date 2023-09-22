@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Action"
 scores:
-  filter: "item.game contains 'hulk'"
+  filter: "item.game == 'hulk'"
 links:
   - title: Play
     url: "http://denki.co.uk/sky/hulk/app.html"

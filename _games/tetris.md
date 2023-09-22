@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Puzzle"
 scores:
-  filter: "item.game contains 'tetris'"
+  filter: "item.game == 'tetris'"
 links:
   - title: Play
     url: "http://denki.co.uk/sky/tetris/app.html"

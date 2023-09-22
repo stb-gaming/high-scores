@@ -11,7 +11,7 @@ image: null
 menu: Endemol/Golden Balls/Menu.png
 category: "Gameshow"
 scores:
-  filter: "item.game contains 'gb'"
+  filter: "item.game == 'gb'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/gb/app.html"

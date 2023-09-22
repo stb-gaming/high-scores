@@ -11,7 +11,7 @@ image: null
 menu: null
 category: "Adventure"
 scores:
-  filter: "item.game contains 'fosters'"
+  filter: "item.game == 'fosters'"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/fosters/app.html"

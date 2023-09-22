@@ -9,11 +9,15 @@
 		{% unless imageUrl contains 'http://' or imageUrl contains 'https://' %}
 		{% assign imageUrl = 'https://stb-gaming.github.io/sky-games/assets/img/games/' | append: imageUrl %}
 		{% endunless %}
-		<a href="{{site.url}}{{item.url}}"><img src="{{imageUrl}}"></a>
+		{% assign itemUrl=item.url %}
+		{% if itemUrl | starts_with: '/' %}
+		{% assign itemUrl=site.url|append:itemUrl %}
+		{% endif %}
+		<a href="{{itemUrl}}"><img src="{{imageUrl}}"></a>
 		{% endif %}
 		<div id="page_info">
 			<h1 id="page_title">
-				<a href="{{site.url}}{{item.url}}">
+				<a href="{{itemUrl}}">
 				{{item.title}}
 			</a>
 			</h1>
@@ -24,7 +28,11 @@
 			{% if item.links %}
 			<div id="page_links">
 				{% for link in item.links %}
-				<a href="{{site.url}}{{link.url}}" {% if link.title=="Play" %}id="page_play" {% endif%}>{{link.title}}</a>
+				{% assign linkUrl=link.url %}
+				{% if linkUrl | starts_with: '/' %}
+				{% assign linkUrl=site.url|append:linkUrl %}
+				{% endif %}
+				<a href="{{linkUrl}}" {% if link.title=="Play" %}id="page_play" {% endif%}>{{link.title}}</a>
 				{% endfor %}
 			</div>
 			{% endif %}

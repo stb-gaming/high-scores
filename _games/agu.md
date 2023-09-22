@@ -15,4 +15,6 @@ scores:
 links:
   - title: Play
     url: "https://denki.co.uk/sky/agu/app.html"
+  - title: Wiki
+    url: https://sky-gamestar.fandom.com/wiki/All_Grown_Up:_Confiscated_Cards
 ---

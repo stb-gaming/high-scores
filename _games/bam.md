@@ -15,4 +15,6 @@ scores:
 links:
   - title: Play
     url: "https://denki.co.uk/sky/bam/app.html"
+  - title: Wiki
+    url: https://sky-gamestar.fandom.com/wiki/Bust-a-Move
 ---

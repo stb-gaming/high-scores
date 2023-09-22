@@ -65,6 +65,31 @@
 				</div>
 			</div>
 			{% endif %}
+			{% if page.comments %}
+			<div class="panel">
+				<div class="panel-header">
+					<h2>Comments</h2>
+				</div>
+				<div class="panel-body">
+					<script src="https://giscus.app/client.js"
+			data-repo="{{site.repository}}"
+			data-repo-id="R_kgDOKXC8bw"
+			data-category="Comments"
+			data-category-id="DIC_kwDOKXC8b84CZjyu"
+			data-mapping="pathname"
+			data-strict="1"
+			data-reactions-enabled="1"
+			data-emit-metadata="0"
+			data-input-position="top"
+			data-theme="preferred_color_scheme"
+			data-lang="en"
+			data-loading="lazy"
+			crossorigin="anonymous"
+			async>
+	</script>
+				</div>
+			</div>
+			{% endif %}
 		</div>
 	</main>
 	<footer></footer>

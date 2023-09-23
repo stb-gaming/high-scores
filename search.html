@@ -44,11 +44,31 @@ nopanels: true
 
 })
 
+const indexes = {
+	games:gameIndex
+}
+
 function search(text) {
-	let query = "*"+text.split(" ").join("*")+"*";
-	return {
-		games:gameIndex.search(query).map(({ref})=>games[ref]||ref)
+	let querys = [
+		text,
+	"*"+text.split(" ").join("*")+"*",
+	"*"+text.split("").join("*")+"*",
+	...text.split(" "),
+	...text.split(""),
+	];
+
+	let results = {}
+	for (const index in indexes) {
+		results[index] = []
+		for (const query of querys) {
+			let res = indexes[index].search(query).map(({ref})=>games[ref]||ref).filter(i=>{
+				if(results[index].map(r=>r.index).includes(i.index)) return false
+				return true
+			})
+			results[index].push(...res)
+		}
 	}
+	return results
   }
 
   function createSearchResult(data) {

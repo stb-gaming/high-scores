@@ -54,7 +54,8 @@ body:
     validations:
       required: true
   - type: textarea
-    label: Proof
-    description: Upload Images, Videos, or paste urls to youtube, twitch, etc
+    attributes:
+      label: Proof
+      description: Upload Images, Videos, or paste urls to youtube, twitch, etc
     validations:
       required: true

@@ -1,56 +1,34 @@
-name: Generate and Commit MD File
+name: Create Score
 
 on:
   workflow_dispatch:
     inputs:
-      gameid:
+      game:
         description: 'Game ID'
         required: true
-      title:
-        description: 'Title'
+      author:
+        description: 'Player name'
         required: true
-      description:
-        description: 'Description'
+      date:
+        description: 'Date (YYYY-MM-DD)'
         required: true
-      developer:
-        description: 'Developer'
+      score:
+        description: 'Score'
         required: true
-      brand:
-        description: 'Brand'
+      platform:
+        description: 'Platform'
         required: true
-      splash:
-        description: 'Splash'
+      method:
+        description: 'Method'
         required: true
-      gameplay:
-        description: 'Gameplay'
-        required: true
-      archived:
-        description: 'Archived Date (YYYY-MM-DD)'
-        required: true
+      youtube:
+        description: 'YouTube Video ID'
+        required: false
       image:
-        description: 'Image'
-        required: true
-      menu:
-        description: 'Menu Image URL'
-        required: true
-      category:
-        description: 'Category'
-        required: true
-      scores_filter:
-        description: 'Scores Filter'
-        required: true
-      play_link_title:
-        description: 'Play Link Title'
-        required: true
-      play_link_url:
-        description: 'Play Link URL'
-        required: true
-      wiki_link_url:
-        description: 'Wiki Link URL (Optional)'
+        description: 'Image URL'
         required: false
-      wiki_link_title:
-        description: 'Wiki Link Title'
-        required: false
+
+
 
 jobs:
   generate_md:
@@ -62,31 +40,22 @@ jobs:
 
     - name: Generate MD File
       run: |
-        mkdir -p _games
-        echo "---" > _games/${{ github.event.inputs.gameid }}.md
-        echo "title: ${{ github.event.inputs.title }}" >> _games/${{ github.event.inputs.gameid }}.md
-        echo "description: ${{ github.event.inputs.description }}" >> _games/${{ github.event.inputs.gameid }}.md
-        echo "developer: ${{ github.event.inputs.developer }}" >> _games/${{ github.event.inputs.gameid }}.md
-        echo "brand: ${{ github.event.inputs.brand }}" >> _games/${{ github.event.inputs.gameid }}.md
-        echo "splash: ${{ github.event.inputs.splash }}" >> _games/${{ github.event.inputs.gameid }}.md
-        echo "gameplay: ${{ github.event.inputs.gameplay }}" >> _games/${{ github.event.inputs.gameid }}.md
-        echo "archived: ${{ github.event.inputs.archived }}" >> _games/${{ github.event.inputs.gameid }}.md
-        echo "image: ${{ github.event.inputs.image }}" >> _games/${{ github.event.inputs.gameid }}.md
-        echo "menu: ${{ github.event.inputs.menu }}" >> _games/${{ github.event.inputs.gameid }}.md
-        echo "category: ${{ github.event.inputs.category }}" >> _games/${{ github.event.inputs.gameid }}.md
-        echo "scores:" >> _games/${{ github.event.inputs.gameid }}.md
-        echo "  filter: 'item.game == ${{ github.event.inputs.gameid }}'" >> _games/${{ github.event.inputs.gameid }}.md
-        if [[ -n "${{ github.event.inputs.wiki_link_url }}" ]]; then
-          echo "links:" >> _games/${{ github.event.inputs.gameid }}.md
-          echo "  - title: Wiki" >> _games/${{ github.event.inputs.gameid }}.md
-          echo "    url: ${{ github.event.inputs.wiki_link_url }}" >> _games/${{ github.event.inputs.gameid }}.md
-        fi
-        echo "---" >> _games/${{ github.event.inputs.gameid }}.md
+        mkdir -p _scores
+        echo "---" > _scores/${{ github.run_id }}.md
+        echo "game: ${{ github.event.inputs.game }}" >> _scores/${{ github.run_id }}.md
+        echo "author: ${{ github.event.inputs.author }}" >> _scores/${{ github.run_id }}.md
+        echo "date: ${{ github.event.inputs.date }}" >> _scores/${{ github.run_id }}.md
+        echo "score: ${{ github.event.inputs.score }}" >> _scores/${{ github.run_id }}.md
+        echo "platform: ${{ github.event.inputs.platform }}" >> _scores/${{ github.run_id }}.md
+        echo "method: ${{ github.event.inputs.method }}" >> _scores/${{ github.run_id }}.md
+        echo "youtube: ${{ github.event.inputs.youtube }}" >> _scores/${{ github.run_id }}.md
+        echo "image: ${{ github.event.inputs.image }}" >> _scores/${{ github.run_id }}.md
+        echo "---" >> _scores/${{ github.run_id }}.md
 
     - name: Commit MD File
       run: |
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
-        git add _games/${{ github.event.inputs.gameid }}.md
-        git commit -m "Add info for ${{ github.event.inputs.title }}"
+        git add _scores/${{ github.run_id }}.md
+        git commit -m "Add score for ${{ github.event.inputs.game }} by ${{ github.event.inputs.author }}"
         git push

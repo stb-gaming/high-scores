@@ -8,6 +8,11 @@ nopanels: true
 	<div class="panel-body search-results" id="search_games">
 	</div>
 </div>
+<div class="panel">
+	<div class="panel-header"><h3>Player</h3></div>
+	<div class="panel-body search-results" id="search_players">
+	</div>
+</div>
 
 
 <script src="https://unpkg.com/lunr/lunr.js"></script>
@@ -28,6 +33,16 @@ nopanels: true
 		},
 		{% endfor %}
 	];
+	const players = [
+		{% for player in site.players %}
+		{
+			"index":{{forloop.index}}-1,
+			"title":"{{player.title}}",
+			"image":"{% include url.html url=player.image %}",
+			"url":"{% include url.html url=player.url %}"
+		},
+		{% endfor %}
+	];
 
 	const gameIndex = lunr(function () {
   this.ref('index')
@@ -41,11 +56,28 @@ nopanels: true
   games.forEach(function (doc) {
     this.add(doc)
   }, this)
+})
+
+const playerIndex = lunr(function () {
+  this.ref('index')
+  this.field('title')
+  this.field('description')
+  this.field('collection')
+
+  players.forEach(function (doc) {
+    this.add(doc)
+  }, this)
 
 })
 
+const documentLists = {
+	games,
+	players
+}
+
 const indexes = {
-	games:gameIndex
+	games:gameIndex,
+	players:playerIndex
 }
 
 function search(text) {
@@ -58,14 +90,14 @@ function search(text) {
 	];
 
 	let results = {}
-	for (const index in indexes) {
-		results[index] = []
+	for (const collection in indexes) {
+		results[collection] = []
 		for (const query of querys) {
-			let res = indexes[index].search(query).map(({ref})=>games[ref]||ref).filter(i=>{
-				if(results[index].map(r=>r.index).includes(i.index)) return false
+			let res = indexes[collection].search(query).map(({ref})=>documentLists[collection][ref]||ref).filter(i=>{
+				if(results[collection].map(r=>r.index).includes(i.index)) return false
 				return true
 			})
-			results[index].push(...res)
+			results[collection].push(...res)
 		}
 	}
 	return results

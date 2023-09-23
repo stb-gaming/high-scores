@@ -24,7 +24,7 @@
 			<h1>Sky Games High Scores</h1>
 			<nav>
 				{% for item in site.data.nav %}
-				<a {% if page.url contains item.url %}class="active"{%endif%} href="{{item.url}}">{{item.title}}</a>
+				<a {% if page.url contains item.url %}class="active"{%endif%} href="{% include url.html url=item.url %}">{{item.title}}</a>
 				{% endfor %}
 			</nav>
 

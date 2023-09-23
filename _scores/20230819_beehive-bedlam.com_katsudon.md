@@ -5,5 +5,5 @@ date: 2023-08-19
 score: 19717
 platform: PC
 method: Vanilla
+image: /assets/img/20230819_beehive-bedlam.com_katsudon.png
 ---
-![]({{site.url}}/assets/img/20230819_beehive-bedlam.com_katsudon.png)

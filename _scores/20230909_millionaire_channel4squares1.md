@@ -5,5 +5,5 @@ date: 2023-09-09
 score: 2778904
 platform: PC
 method: Vanilla
+image: /assets/img/20230909_millionaire_channel4squares1.png
 ---
-![]({{site.url}}/assets/img/20230909_millionaire_channel4squares1.png)

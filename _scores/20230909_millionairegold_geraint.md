@@ -5,5 +5,5 @@ date: 2023-09-09
 score: 0
 platform: PC
 method: Vanilla
+image: /assets/img/20230909_millionairegold_geraint.png
 ---
-![]({{site.url}}/assets/img/20230909_millionairegold_geraint.png)

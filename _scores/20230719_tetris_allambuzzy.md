@@ -5,5 +5,5 @@ date: 2023-08-19
 score: 121562
 platform: PC
 method: Vanilla
+image: /assets/img/20230719_tetris_allambuzzy.png
 ---
-![]({{site.url}}/assets/img/20230719_tetris_allambuzzy.png)

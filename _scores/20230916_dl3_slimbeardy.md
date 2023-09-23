@@ -5,5 +5,5 @@ date: 2023-09-16
 score: 446860
 platform: PC
 method: Vanilla
+image: /assets/img/20230916_dl3_slimbeardy.png
 ---
-![]({{site.url}}/assets/img/20230916_dl3_slimbeardy.png)

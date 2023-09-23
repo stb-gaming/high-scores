@@ -1,0 +1,3 @@
+{% assign player = site.players | where:"slug", include.player | first  %}
+{% assign playerName = player.title| default: include.player %}
+{% include thing-link.html url=player.url image=player.image title=playerName %}

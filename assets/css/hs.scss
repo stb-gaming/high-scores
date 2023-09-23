@@ -111,7 +111,10 @@ main .container {
 	background-color: $panelColor;
 	border-radius: 1rem;
 
+.panel-header,.panel-body {
 
+	width: 100%;
+}
 
 	.panel-header {
 		background-color: $panelHeaderColor;
@@ -123,6 +126,8 @@ main .container {
 
 	.panel-body {
 		padding: 1rem;
+		overflow-x: scroll;
+	  max-width: 100vw;
 	}
 
 }
@@ -133,6 +138,7 @@ main .container {
 	flex-flow: row;
 	gap: 1rem;
 	position: relative;
+
 
 	img {
 		height: 8rem;
@@ -222,4 +228,55 @@ table {
 		height: 8rem;
 		width: auto;
 	}
+}
+
+img.inlinetext {
+	height: 1rem;
+	width: auto;
+	margin-right: .1rem;
+	vertical-align: middle;
+}
+
+#record_info {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	h3 {
+		
+	}
+	img {
+		// margin-left: auto;
+		// margin-right: auto;
+	}
+	#record_proof_mixed {
+		padding: 2rem;
+	}
+
+	.infotile-column {
+		display: flex;
+		flex-flow: column;
+		justify-content: stretch;
+		gap: 1rem;
+	}
+	.infotile-row {
+		display: flex;
+		flex-flow: row;
+		flex-wrap: wrap;
+		gap: 1rem;
+		&>* {
+			flex: 1;
+			flex-basis: 15rem;
+		}
+	}
+	.infotile {
+		background-color: $panelHeaderColor;
+		border-radius:  .5rem;
+		padding: .5rem .7rem;
+	}
+}
+
+.youtube {
+	width:100%;
+	aspect-ratio: 16/9;
+	border-width: 0;
 }

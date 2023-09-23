@@ -1,0 +1,4 @@
+<a {% if include.url %}href="{% include url.html url=include.url %}"{% endif %}>
+	<img class="inlinetext" src="{% include url.html url=include.image %}" >
+	{{include.title}}
+</a>

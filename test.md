@@ -1,38 +1,16 @@
 ---
 title: hello
 image: https://picsum.photos/200/300
+author: tumble
+platform: pc
+method: userscript
+date: 2003-06-26
 game:
   title: test
   links:
     - title: hi
-list:
-  items:
-    - player: tumble
-      game: face
-      score: 23543
-      platform: pc
-      method: vanilla
-      url: example.com
-    - player: tumble
-      score: 423
-      platform: pc
-      method: vanilla
-    - player: tumble
-      score: 3453
-      platform: pc
-      method: vanilla
-    - player: tumble
-      score: 3425
-      platform: pc
-      method: vanilla
-    - player: tumble
-      score: 3345
-      platform: pc
-      method: vanilla
-    - player: tumble
-      score: 43534
-      platform: pc
-      method: vanilla
+score: 30
+description: "hello world"
 links:
  - title: Denki
    url: https://denki.co.uk

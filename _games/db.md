@@ -11,6 +11,8 @@ image: null
 menu: null
 category: "Puzzle"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'db'"
 links:
   - title: Play

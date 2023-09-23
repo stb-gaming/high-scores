@@ -11,6 +11,8 @@ image: SKY Games/Bugz/icon.jpg
 menu: SKY Games/Bugz/ModeSelect.jpg
 category: "Maze"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'bugz'"
 links:
   - title: Play

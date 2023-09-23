@@ -11,6 +11,8 @@ image: null
 menu: null
 category: "Action"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'ben10'"
 links:
   - title: Play

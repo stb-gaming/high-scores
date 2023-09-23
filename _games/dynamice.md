@@ -11,6 +11,8 @@ image: null
 menu: null
 category: "Maze"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'dynamice'"
 links:
   - title: Play

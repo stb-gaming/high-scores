@@ -11,6 +11,8 @@ image: null
 menu: null
 category: "Word"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'lb'"
 links:
   - title: Play

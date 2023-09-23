@@ -11,6 +11,8 @@ image: null
 menu: SKY Games/Carol Vorderman's Mind Aerobics/Carol Vorderman's Mind Aerobics/Menu.jpg
 category: "Puzzle"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'ma'"
 links:
   - title: Play

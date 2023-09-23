@@ -11,6 +11,8 @@ image: null
 menu: null
 category: "Word"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'boggle'"
 links:
   - title: Play

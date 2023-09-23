@@ -11,6 +11,8 @@ image: null
 menu: null
 category: "Adventure"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'shrek4'"
 links:
   - title: Play

@@ -11,6 +11,8 @@ image: null
 menu: null
 category: "Platformer"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'cknd2'"
 links:
   - title: Play

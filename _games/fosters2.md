@@ -11,6 +11,8 @@ image: null
 menu: null
 category: "Adventure"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'fosters2'"
 links:
   - title: Play

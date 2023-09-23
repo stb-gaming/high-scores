@@ -11,6 +11,8 @@ image: Namco/Pac-Man/Splash.jpg
 menu: null
 category: "Arcade"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'pacman'"
 links:
   - title: Play

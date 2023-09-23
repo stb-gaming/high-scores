@@ -11,6 +11,8 @@ image: SKY Sports/Darts/darts-icon.jpg
 menu: SKY Sports/Darts/ModeSelect.jpg
 category: "Sports"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'darts'"
 links:
   - title: Play

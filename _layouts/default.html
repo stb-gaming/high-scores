@@ -74,6 +74,11 @@
 							</div>
 						</div>
 						<div class="infotile-column">
+							{% capture rank %}{% include scorerank.html score=page %}{% endcapture %}
+							<div class="infotile">
+								<h4>Rank</h4>
+								<p>{% include place.html number=rank %}</p>
+							</div>
 							<div class="infotile">
 								<h4>Date</h4>
 								<p>{{page.date|date:site.date-format}}</p>
@@ -115,7 +120,7 @@
 					<h2>Scores</h2>
 				</div>
 				<div class="panel-body">
-					{% include list.html collection='scores' filter=page.scores.filter items=page.scores.items limit=page.scores.limit  %}
+					{% include list.html collection='scores' filter=page.scores.filter items=page.scores.items limit=page.scores.limit sort=page.scores.sort reverse=page.scores.reverse  %}
 				</div>
 			</div>
 			{% endif %}
@@ -125,7 +130,7 @@
 					<h2>{{page.list.collection|capitalize}} </h2>
 				</div>
 				<div class="panel-body">
-					{% include list.html collection=page.list.collection filter=page.list.filter items=page.list.items limit=page.list.limit sort=page.list.sort %}
+					{% include list.html collection=page.list.collection filter=page.list.filter items=page.list.items limit=page.list.limit sort=page.list.sort reverse=page.list.reverse %}
 				</div>
 			</div>
 			{% endif %}

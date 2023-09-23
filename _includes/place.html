@@ -1,0 +1,11 @@
+{% assign lastDigit = include.number | modulo: 10 %}
+{% case lastDigit %}
+{% when 1 %}
+{{include.number}}st
+{% when 2 %}
+{{include.number}}nd
+{% when 3 %}
+{{include.number}}rd
+{% else %}
+{{include.number}}th
+{% endcase %}

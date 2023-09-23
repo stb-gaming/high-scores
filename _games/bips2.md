@@ -10,6 +10,8 @@ image: null
 menu: "Denki/Bips! 2.0/menu.png"
 category: Arcade
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'bips2'"
 links:
   - title: Play

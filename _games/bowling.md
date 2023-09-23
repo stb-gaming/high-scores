@@ -11,6 +11,8 @@ image: null
 menu: null
 category: "Sports"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'bowling'"
 links:
   - title: Play

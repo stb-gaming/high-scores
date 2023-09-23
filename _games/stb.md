@@ -11,6 +11,8 @@ image: null
 menu: Denki/Denki Blocks!/Sticky Blocks!/ModeSelect copy.jpg
 category: "Puzzle"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'stb'"
 links:
   - title: Play

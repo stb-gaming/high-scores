@@ -11,6 +11,8 @@ image: null
 menu: SKY Games/Beehive Bedlam/menu.png
 category: "Puzzle"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'beehive-bedlam.com'"
 links:
   - title: Play

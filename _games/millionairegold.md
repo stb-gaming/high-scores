@@ -11,6 +11,8 @@ image: null
 menu: null
 category: "Quiz"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'millionairegold'"
 links:
   - title: Play

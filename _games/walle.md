@@ -11,6 +11,8 @@ image: null
 menu: Disney/WALL.E/menu.png
 category: "Adventure"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'walle'"
 links:
   - title: Play

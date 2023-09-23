@@ -11,6 +11,8 @@ image: null
 menu: null
 category: "Word"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'wcd'"
 links:
   - title: Play

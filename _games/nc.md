@@ -11,6 +11,8 @@ image: null
 menu: null
 category: "Arithmetic"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'nc'"
 links:
   - title: Play

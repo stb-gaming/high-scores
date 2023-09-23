@@ -11,6 +11,8 @@ image: null
 menu: Endemol/Golden Balls/Menu.png
 category: "Gameshow"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'gb'"
 links:
   - title: Play

@@ -1,5 +1,6 @@
 ---
 title: Channel4squares1
+image: /assets/img/channel4squares1.jpg
 scores:
   filter: "item.author == 'channel4squares1'"
 links:

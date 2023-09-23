@@ -11,6 +11,8 @@ image: null
 menu: null
 category: "Arcade"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'bam'"
 links:
   - title: Play

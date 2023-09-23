@@ -31,13 +31,17 @@ include.items
 {% if include.sort %}
 {% assign items = items | sort: include.sort %}
 {% endif %}
+{% if include.reverse %}
+{% assign items = items | reverse %}
+{% endif %}
 
 
 {% if include.collection == "scores" %}
-{% assign items = items | sort: "score"|reverse %}
 <table>
 	<tr>
+		{% if include.sort == "score" and include.reverse %}
 		<th>#</th>
+		{% endif %}
 		{% unless page.collection == "games" %}
 		<th>Game</th>
 		{% endunless %}
@@ -54,11 +58,13 @@ include.items
 	{% capture scoreUrl%}{% include url.html url=score.url %}{% endcapture %}
 	<tr {% if score.url %}onclick="window.location.href='{{scoreUrl}}';" style="cursor: pointer;"{% endif %}>
 		
+		{% if include.sort == "score" and include.reverse %}
 			<td>
 				{% if score.url %}<a href="{{scoreUrl}}">{% endif %}
-				{{ forloop.index }}
+				{% include place.html number=forloop.index %}
 				{% if score.url %}</a>{% endif %}
 			</td>
+			{% endif %}
 			
 
 		{% unless page.collection == "games" %}

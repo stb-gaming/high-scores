@@ -11,6 +11,8 @@ image: Nickelodeon/SpongeBob SquarePants/SpongeBob SquarePants/Poster.jpg
 menu: null
 category: "Adventure"
 scores:
+  sort: score
+  reverse: true
   filter: "item.game == 'sb'"
 links:
   - title: Play

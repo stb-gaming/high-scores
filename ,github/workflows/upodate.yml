@@ -1,0 +1,24 @@
+name: Update Sky Games
+
+on:
+  deployment:
+    # You can specify branches or environments to narrow it down
+    # For example, to trigger on production deployments:
+    environments:
+      - github-pages
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    jobs:
+    - name: Trigger Sky Games Build
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        # Use your GitHub token to trigger the workflow in the other repo
+        # Example using curl:
+        curl -X POST \
+            -H "Accept: application/vnd.github.everest-preview+json" \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            https://api.github.com/stb-gaming/sky-games/repo/dispatches \
+            -d '{"event_type": "build-event"}'

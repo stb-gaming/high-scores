@@ -1,8 +1,9 @@
 repository: stb-gaming/high-scores
 url: https://stb-gaming.github.io/high-scores
 
-sky-games-images: https://sky-games-x.pages.dev/assets/img/games/
+#sky-games-images: https://sky-games-x.pages.dev/assets/img/games/
 #sky-games-images: https://stb-gaming.github.io/sky-games/assets/img/games/
+sky-games-images: https://stb-gaming.github.io/sky-games-images/
 
 permalink: pretty
 date-format: "%e %b %Y"

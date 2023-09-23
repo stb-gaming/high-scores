@@ -22,6 +22,15 @@
 	<header>
 		<div class="container width-fit">
 			<h1>Sky Games High Scores</h1>
+			<nav>
+				{% for item in site.data.nav %}
+				<a {% if page.url contains item.url %}class="active"{%endif%} href="{{item.url}}">{{item.title}}</a>
+				{% endfor %}
+			</nav>
+
+			<form method="get" action="{% include url.html url='/search' %}">
+				<input type="text" id="search_box" name="q" >
+			</form>
 		</div>
 	</header>
 	<main>
@@ -103,17 +112,29 @@
 			</div>
 			{% endif  %}
 
+			{% if page.nopanels %}
+			{{content}}
+			{% else %}
 			{% assign content_test = page.content | strip_newlines %}
-			{% if content_test != "" %}
+			{% if content_test != ""%}
 			<div class="panel">
 				<div class="panel-header">
-					<h2>About</h2>
+					<h2>
+					{% if item.image or item.links %}
+					About
+					{% else %}
+					{{page.title}}
+					{% endif %}
+				</h2>
 				</div>
 				<div class="panel-body  markdown-body">
 					{{content}}
 				</div>
 			</div>
 			{% endif %}
+			{% endif %}
+
+
 			{% if page.scores %}
 			<div id="scores" class="panel">
 				<div class="panel-header">

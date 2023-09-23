@@ -1,0 +1,120 @@
+---
+nopanels: true
+---
+
+
+<div class="panel">
+	<div class="panel-header"><h3>Games</h3></div>
+	<div class="panel-body search-results" id="search_games">
+	</div>
+</div>
+
+
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script>
+	const games = [
+		{% for game in site.games %}
+		{% assign image = game.image|default:game.splash|default:game.menu|default:game.gameplay %}
+		{
+			"index":{{forloop.index}}-1,
+			"title":"{{game.title}}",
+			"description":"{{game.description}}",
+			"developer":"{{game.developer}}",
+			"brand":"{{game.brand}}",
+			"category":"{{game.category}}",
+			"collection":"{{game.collection}}",
+			"image":"{% include url.html url=image %}",
+			"url":"{% include url.html url=game.url %}"
+		},
+		{% endfor %}
+	];
+
+	const gameIndex = lunr(function () {
+  this.ref('index')
+  this.field('title')
+  this.field('description')
+  this.field('developer')
+  this.field('brand')
+  this.field('category')
+  this.field('collection')
+
+  games.forEach(function (doc) {
+    this.add(doc)
+  }, this)
+
+})
+
+function search(text) {
+	let query = "*"+text.split(" ").join("*")+"*";
+	return {
+		games:gameIndex.search(query).map(({ref})=>games[ref]||ref)
+	}
+  }
+
+  function createSearchResult(data) {
+  const { image, title, description, ...miscProps } = data;
+
+  const result = document.createElement('a');
+  result.classList.add('search-result');
+  result.href = data.url;
+
+  const img = document.createElement('img');
+  img.src = image;
+  img.alt = '';
+
+  const resultMeta = document.createElement('div');
+  resultMeta.classList.add('result-meta');
+  
+
+  const h2 = document.createElement('h2');
+  h2.textContent = title;
+
+  const p = document.createElement('p');
+  p.textContent = description;
+
+  const resultOther = document.createElement('div');
+  resultOther.classList.add('result-other');
+
+  for (const prop in miscProps) {
+	if(["index","url","collection"].includes(prop)) continue
+    const span = document.createElement('span');
+    const strong = document.createElement('strong');
+    strong.textContent = prop;
+    span.appendChild(strong);
+    span.appendChild(document.createTextNode(' ' + miscProps[prop]));
+    resultOther.appendChild(span);
+  }
+
+  resultMeta.appendChild(h2);
+  resultMeta.appendChild(p);
+  resultMeta.appendChild(resultOther);
+
+  result.appendChild(img);
+  result.appendChild(resultMeta);
+
+  return result;
+}
+
+  function renderSearch(text) {
+	document.getElementById("search_box").value = text
+
+	const results = search(text)
+	console.log(text,results);
+
+	for (const collection in results) {
+		if(!collection) continue;
+		const container = document.getElementById("search_"+collection),
+		items= results[collection];
+
+		for( const item of items){
+			const el = createSearchResult(item)
+			container.appendChild(el)
+		}
+
+	}
+  }
+
+
+  renderSearch((new URLSearchParams(location.search)).get("q"))
+
+</script>

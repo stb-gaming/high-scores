@@ -53,12 +53,50 @@ $panelColorLight: var(--panel-color-light);
 $panelHeaderColorLight: var(--panel-header-color-light);
 $textColorLight: var(--text-color-light);
 
+%bigLink {
+position: relative;
+
+	font-size: 1.7em;
+	font-weight: bold;
+	padding: .3rem 1.5rem;
+	border-radius: .5rem;
+
+	&,&:hover,&:visited {
+		color: white;
+	}
+	&:hover,&.active{
+
+		background-color: rgba(.5,.5,.5,.2);
+		&::before {
+			content: '';
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
 header {
 	background-color: $skyGamesPink;
+
+	.container {
+
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	gap: 2rem;
+	}
 
 	&,
 	h1 {
 		color: $textColorDark;
+	}
+
+	a {
+		@extend %bigLink;
+		font-weight: normal;
 	}
 }
 
@@ -150,9 +188,7 @@ main .container {
 		position: absolute;
 		right: 1rem;
 		top: 1rem;
-		font-size: 1.7em;
-		font-weight: bold;
-		padding: .3rem 1.5rem;
+		@extend %bigLink;
 	}
 }
 
@@ -280,3 +316,42 @@ img.inlinetext {
 	aspect-ratio: 16/9;
 	border-width: 0;
 }
+
+
+
+.search-result {
+	display: flex;
+	flex-flow: row;
+	gap: 2rem;
+  }
+  
+  .search-result img {
+	height: 8rem;
+	width: auto;
+  }
+  
+  .search-results {
+	display: flex;
+	flex-flow: column;
+	gap: 3rem;
+  }
+  
+  .result-meta {
+	display: flex;
+	flex-flow: column;
+	flex: 1;
+  }
+  
+  .result-meta p {
+	flex: 1;
+	color: white;
+  }
+  
+  .result-other {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	width: 100%;
+	color: white;
+  }
+  

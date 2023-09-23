@@ -8,6 +8,7 @@ body:
     id: game
     attributes:
       label: Game
+      description: Example, if 'https://denki.co.uk/sky/**bips2**/app.html' enter '**bips2**'
     validations:
       required: true
   - type: input

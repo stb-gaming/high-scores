@@ -1,4 +1,5 @@
 ---
+title: Welcome
 scores:
   limit: 10
 list:

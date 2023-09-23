@@ -21,7 +21,11 @@
 <body>
 	<header>
 		<div class="container width-fit">
-			<h1>Sky Games High Scores</h1>
+				<a href="{{site.url}}">
+			<h1>
+				Sky Games High Scores
+			</h1>
+			</a>
 			<nav>
 				{% for item in site.data.nav %}
 				<a {% if page.url contains item.url %}class="active"{%endif%} href="{% include url.html url=item.url %}">{{item.title}}</a>

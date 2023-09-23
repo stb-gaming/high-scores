@@ -94,6 +94,9 @@ header {
 		color: $textColorDark;
 	}
 
+}
+nav {
+
 	a {
 		@extend %bigLink;
 		font-weight: normal;

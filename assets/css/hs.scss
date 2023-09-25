@@ -15,6 +15,8 @@
 	--panel-header-color-dark: hsla(var(--sky-games-pink-hue), 0%, 88%, 0.1);
 	--text-color-dark: #f9f9f9;
 
+	--darken: rgba(.5,.5,.5,.2);
+
 }
 
 
@@ -53,12 +55,14 @@ $panelColorLight: var(--panel-color-light);
 $panelHeaderColorLight: var(--panel-header-color-light);
 $textColorLight: var(--text-color-light);
 
+$darken: var(--darken);
+
 %bigLink {
 position: relative;
 
 	font-size: 1.7em;
 	font-weight: bold;
-	padding: .3rem 1.5rem;
+	padding: .3rem 1rem;
 	border-radius: .5rem;
 
 	&,&:hover,&:visited {
@@ -66,7 +70,7 @@ position: relative;
 	}
 	&:hover,&.active{
 
-		background-color: rgba(.5,.5,.5,.2);
+		background-color: $darken;
 		&::before {
 			content: '';
 			position: absolute;
@@ -79,33 +83,91 @@ position: relative;
 }
 
 header {
+	height: 5rem;
 	background-color: $skyGamesPink;
 
 	.container {
+		height: 100%;
 
 	display: flex;
 	flex-flow: row;
 	align-items: center;
 	gap: 2rem;
+	vertical-align: middle;
 	}
 
 	&,
-	h1 {
+	h1,h2,h3,h4,h5,h6 {
 		color: $textColorDark;
+	}
+
+
+	@media (max-width: 544px) {
+		position: fixed;
+		bottom: 0;
+		width: 100vw;
+	}
+}
+
+.search-form {
+
+	color:$textColorDark;
+	position: relative;
+
+	&::after {
+		content: "🔍︎";
+		position: absolute;
+		left: 1em;
+		top:50%;
+		translate: -50% -50%;
+	}
+
+	.panel-body>& {
+&,input {
+	width: 100%;
+}
+	}
+
+
+	input {
+		color:$textColorDark;
+		border: none;
+		background: $skyGamesPink;
+		padding: .5em 2em;
+		background-color: $darken;
+		border-radius: 1em;
+		outline: none;
+		&:empty {
+			background-color: none
+		}
+		
 	}
 
 }
 nav {
-
+flex: 1;
 	a {
 		@extend %bigLink;
 		font-weight: normal;
+	}
+	@media (max-width: 544px) {
+		display: flex;
+		flex-flow: row;
+		justify-content: space-around;
+		a {
+			height: 100%;
+		}
 	}
 }
 
 body {
 	background-color: $backgroundColor;
 	color: $textColor;
+}
+
+svg {
+	height: 1em;
+	vertical-align: text-top;
 }
 
 
@@ -190,7 +252,7 @@ main .container {
 	[id^=page_play] {
 		position: absolute;
 		right: 1rem;
-		top: 1rem;
+		button: 1rem;
 		@extend %bigLink;
 	}
 }

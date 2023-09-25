@@ -1,7 +1,13 @@
 ---
 nopanels: true
 ---
-
+<div class="panel hide-lg hide-xl ">
+	<div class="panel-body" id="">
+		<form method="get" action="{% include url.html url='/search' %}" class="search-form">
+			<input type="text" id="search_box_mobile" name="q" placeholder="Search..." >
+		</form>
+	</div>
+</div>
 
 <div class="panel">
 	<div class="panel-header"><h3>Games</h3></div>
@@ -148,7 +154,20 @@ function search(text) {
 }
 
   function renderSearch(text) {
-	document.getElementById("search_box").value = text
+	const searchBox = document.getElementById("search_box"),
+	searchBoxMobile = document.getElementById("search_box_mobile");
+	if(!text) {
+		 const style = window.getComputedStyle(searchBox),
+		 styleMobile = window.getComputedStyle(searchBoxMobile);
+		 if(style.getPropertyValue("display")!=='none'){
+			searchBox.focus();
+		 }
+		 if(styleMobile.getPropertyValue("display")!=='none'){
+			searchBoxMobile.focus();
+		 }
+
+	}
+	searchBox.value = searcBoxMobile.value = text
 
 	const results = search(text)
 	console.log(text,results);

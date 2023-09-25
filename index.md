@@ -2,6 +2,7 @@
 title: Welcome
 scores:
   limit: 10
+  sort: date
 list:
   collection: games
   sort: title

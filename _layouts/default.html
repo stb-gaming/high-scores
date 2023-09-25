@@ -21,19 +21,18 @@
 <body>
 	<header>
 		<div class="container width-fit">
-				<a href="{{site.url}}">
-			<h1>
-				Sky Games High Scores
-			</h1>
+				<a href="{{site.url}}"  class="hide-sm">
+			<h3>
+				{{site.title}}
+			</h3>
 			</a>
 			<nav>
 				{% for item in site.data.nav %}
-				<a {% if page.url contains item.url %}class="active"{%endif%} href="{% include url.html url=item.url %}">{{item.title}}</a>
+				<a {% if item.url == '/' %}{% if page.url == '/' %}class="active"{%endif%}{% else %}{% if page.url contains item.url %}class="active"{%endif%}{%endif%}  href="{% include url.html url=item.url %}" {% if item.id %}id="{{item.id}}"{%endif%} {% if item.class %}class="{{item.class}}"{%endif%}  >{{item.title}}</a>
 				{% endfor %}
 			</nav>
-
-			<form method="get" action="{% include url.html url='/search' %}">
-				<input type="text" id="search_box" name="q" >
+			<form method="get" action="{% include url.html url='/search' %}" class="hide-sm hide-md search-form">
+				<input type="text" id="search_box" name="q" placeholder="Search..." >
 			</form>
 		</div>
 	</header>

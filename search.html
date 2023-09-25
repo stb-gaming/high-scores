@@ -153,21 +153,32 @@ function search(text) {
   return result;
 }
 
+
   function renderSearch(text) {
 	const searchBox = document.getElementById("search_box"),
 	searchBoxMobile = document.getElementById("search_box_mobile");
 	if(!text) {
 		 const style = window.getComputedStyle(searchBox),
 		 styleMobile = window.getComputedStyle(searchBoxMobile);
-		 if(style.getPropertyValue("display")!=='none'){
-			searchBox.focus();
-		 }
-		 if(styleMobile.getPropertyValue("display")!=='none'){
-			searchBoxMobile.focus();
-		 }
 
+		 function clickEvent(e) {
+		 console.log("ok")
+			if(style.getPropertyValue("display")!=='none'){
+				searchBox.focus();
+			}
+			if(styleMobile.getPropertyValue("display")!=='none'){
+				searchBoxMobile.focus();
+			}
+			window.removeEventListener(e.type,clickEvent)
+		}
+		window.addEventListener("click",clickEvent)
+		window.dispatchEvent(new MouseEvent("click",{bubbles: true,
+			cancelable: true,
+			composed: true}))
+		return
 	}
-	searchBox.value = searcBoxMobile.value = text
+	searchBox.value = searchBoxMobile.value = text
+
 
 	const results = search(text)
 	console.log(text,results);

@@ -82,9 +82,41 @@ position: relative;
 	}
 }
 
+
+
+body {
+	background-color: $backgroundColor;
+	color: $textColor;
+}
+
+svg {
+	height: 1em;
+	vertical-align: text-top;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: none;
+	padding: none;
+}
+
+
+a{
+	&:visited,
+	&:focus,
+	&:hover {
+		text-decoration: none;
+}
+}
+
 header {
 	height: 5rem;
 	background-color: $skyGamesPink;
+
 
 	.container {
 		height: 100%;
@@ -94,19 +126,22 @@ header {
 	align-items: center;
 	gap: 2rem;
 	vertical-align: middle;
-	}
 
-	&,
-	h1,h2,h3,h4,h5,h6 {
+
+	&,* ,h1,h2,h3,h4,h5,h6 {
 		color: $textColorDark;
 	}
 
+	}
+
+	
 
 	@media (max-width: 544px) {
 		position: fixed;
 		bottom: 0;
 		width: 100vw;
 	}
+
 }
 
 .search-form {
@@ -160,46 +195,28 @@ flex: 1;
 	}
 }
 
-body {
-	background-color: $backgroundColor;
-	color: $textColor;
-}
+main {
 
-svg {
-	height: 1em;
-	vertical-align: text-top;
-}
-
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-	color: $skyGamesPink;
-	margin: none;
-	padding: none;
-}
-
-
-.nolink,
-a:not([href]),
-a[href=""] {
-
-	&,
-	&:visited,
-	&:focus,
-	a:hover {
-		color: red;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		color: $skyGamesPink;
 	}
-}
 
-a,
-a:visited,
-a:focus,
-a:hover {
-	color: $skyGamesPink;
-	text-decoration: none;
+
+	a{
+		&,
+		&:visited,
+		&:focus,
+		&:hover {
+				&[href]:not([href=""]) {
+					color: $skyGamesPink;
+					font-weight:bold;
+				}
+	}
+	}
 }
 
 main .container {
@@ -280,7 +297,9 @@ table {
 	a:visited,
 	a:focus,
 	a:hover {
+		&:not(.entitylink) {
 		color: inherit;
+		}
 	}
 
 	border-collapse: collapse;
@@ -334,6 +353,7 @@ table {
 img.inlinetext {
 	height: 1rem;
 	width: auto;
+	font-size:1em;
 	margin-right: .1rem;
 	vertical-align: middle;
 }

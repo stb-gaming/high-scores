@@ -1,0 +1,28 @@
+{% comment %}
+include.url
+{% endcomment %}
+
+{% assign img_formats = ['APNG', 'AVIF', 'GIF', 'JPEG', 'PNG', 'SVG', 'WebP'] %}
+
+{% assign is_image = false %}
+{% for format in img_formats %}
+  {% if include.url contains format %}
+    {% assign is_image = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+
+
+{% if include.url contains 'youtube.com' %}
+{% assign video_id = include.url | split: '?v=' | last | split: '&' | first %}
+{% if include.url contains 't=' %}
+  {% assign start_time = include.url | split: '&t=' | last %}
+{% endif %}
+<iframe class="youtube" src="https://www.youtube-nocookie.com/embed/{{video_id}}{% if start_time %}?start={{start_time}}{% endif %}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% elsif is_image %}
+<img src="{{page.image}}" alt="">
+{% else %}
+<p>{{include.url}}</p>
+{% endif %}
+

@@ -3,8 +3,13 @@ include.url
 {% endcomment %}
 
 {% assign img_formats = ".apng,.avif,.gif,.jpg,.jpeg,.png,.svg,.webp"|split:"," %}
+{% assign vid_formats = ".mp4,.webm"|split:"," %}
+{% assign embed_formats = "youtube.com,twitch.tv,vimeo.com,odysee.com,/w/"|split:"," %}
 
 {% assign is_image = false %}
+{% assign is_video = false %}
+{% assign is_embed = false %}
+
 {% for format in img_formats %}
   {% if include.url contains format %}
     {% assign is_image = true %}
@@ -12,17 +17,55 @@ include.url
   {% endif %}
 {% endfor %}
 
+{% for format in vid_formats %}
+  {% if include.url contains format %}
+    {% assign is_video = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
 
+{% for format in embed_formats %}
+  {% if include.url contains format %}
+    {% assign is_embed = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
 
-{% if include.url contains 'youtube.com' %}
-{% assign video_id = include.url | split: '?v=' | last | split: '&' | first %}
-{% if include.url contains 't=' %}
-  {% assign start_time = include.url | split: '&t=' | last %}
-{% endif %}
-<iframe class="youtube" src="https://www.youtube-nocookie.com/embed/{{video_id}}{% if start_time %}?start={{start_time}}{% endif %}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-{% elsif is_image %}
-<img src="{% include url.html url=include.url %}" alt="">
+{% if is_image %}
+  <img src="{% include url.html url=include.url %}" alt="">
+{% elsif is_video %}
+  <video src="{{ include.url }}" controls></video>
+{% elsif is_embed %}
+	{% assign embed_url = include.url %}
+	{% if include.url contains 'youtube.com' %}
+		{% assign video_id = include.url | split: '?v=' | last | split: '&' | first %}
+		{% assign start_time = include.url | split: '&t=' | last %}
+		{% assign embed_url = 'https://www.youtube-nocookie.com/embed/' | append: video_id %}
+		{% if start_time %}
+			{% assign embed_url = embed_url | append: '?start=' | append: start_time %}
+		{% endif %}
+	{% elsif include.url contains 'twitch.tv' %}
+		{% if include.url contains '/clip/' %}
+		{% assign embed_url = 'https://clips.twitch.tv/embed?clip=' %}
+		{% elsif include.url contains '/videos/' %}
+		{% assign embed_url = 'https://player.twitch.tv/?video=' %}
+		{% else %}
+		{% assign embed_url = 'https://player.twitch.tv/?channel=' %}
+		{% endif %}
+		{% assign video_id = include.url | split: '/' | last %}
+		{% assign embed_url = embed_url | append: video_id  %}
+	{% elsif include.url contains 'vimeo.com' %}
+		{% assign video_id = include.url | split: '/' | last %}
+		{% assign embed_url = 'https://player.vimeo.com/video/' | append: video_id %}
+	{% elsif include.url contains 'odysee.com' %}
+		{% assign video_id = include.url | split: '/' | last %}
+		{% assign embed_url = 'https://odysee.com/$/embed/' | append: video_id %}
+	{% elsif include.url contains '/w/' %}
+		{% assign peertube = include.url | split: '/' | slice: 2 | first %}
+		{% assign video_id = include.url | split: '/' | last %}
+		{% assign embed_url = 'https://' | append: peertube | append: '/videos/embed/' | append: video_id %}
+	{% endif %}
+	<iframe src="{{ embed_url }}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {% else %}
-<p>{{include.url}}</p>
+  <p>{{ include.url }}</p>
 {% endif %}
-

@@ -370,8 +370,17 @@ img.inlinetext {
 		// margin-left: auto;
 		// margin-right: auto;
 	}
-	#record_proof_mixed {
+	#record_media {
+		width: 100%;
+		p,a {
 		padding: 2rem;
+
+		}
+		iframe {
+			width:100%;
+			aspect-ratio: 16/9;
+			border-width: 0;
+		}
 	}
 
 	.infotile-column {
@@ -396,13 +405,6 @@ img.inlinetext {
 		padding: .5rem .7rem;
 	}
 }
-
-.youtube {
-	width:100%;
-	aspect-ratio: 16/9;
-	border-width: 0;
-}
-
 
 
 .search-result {

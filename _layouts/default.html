@@ -57,7 +57,9 @@
 				<div class="panel-header">
 				<h3>{% include player-link.html player=page.author %} got {{page.score}}</h3>
 				</div>
-				{% include media.html url=page.media %}
+				<div id="record_media">
+					{% include media.html url=page.media %}
+				</div>
 				<div class="panel-body infotile-column">
 					{% if page.description %}
 					<div class="infotile">

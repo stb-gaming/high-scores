@@ -211,6 +211,7 @@ main {
 		&:visited,
 		&:focus,
 		&:hover {
+			color: white;
 				&[href]:not([href=""]) {
 					color: $skyGamesPink;
 					font-weight:bold;

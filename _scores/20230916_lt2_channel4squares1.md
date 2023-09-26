@@ -5,5 +5,5 @@ date: 2023-09-16
 score: 19427
 platform: Mobile
 method: US
-image: /assets/img/20230916_lt2_channel4squares1.jpg
+media: /assets/img/20230916_lt2_channel4squares1.jpg
 ---

@@ -5,5 +5,5 @@ date: 2023-06-29
 score: 182400
 platform: PC
 method: Vanilla
-image: /assets/img/20230629_pacman_yoyospeedster91.png
+media: /assets/img/20230629_pacman_yoyospeedster91.png
 ---

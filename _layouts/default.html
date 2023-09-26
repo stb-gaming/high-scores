@@ -55,7 +55,7 @@
 			{% assign player = site.players | where:"slug", page.author | first %}
 			<div id="record_info" class="panel">
 				<div class="panel-header">
-				<h3><a {% if player.url %}href="{% include url.html url=player.url %}"{% endif %}><img class="inlinetext" src="{% include url.html url=player.image %}" >{{player.title|default:page.author}}</a> got {{page.score}}</h3>
+				<h3>{% include player-link.html player=page.author %} got {{page.score}}</h3>
 				</div>
 				{% include media.html url=page.media %}
 				<div class="panel-body infotile-column">
@@ -73,7 +73,7 @@
 							</div>
 							<div class="infotile">
 								<h4>Game</h4>
-								<p>{% include game-link.html player=page.game %}</p>
+								<p>{% include game-link.html game=page.game %}</p>
 							</div>
 						</div>
 						<div class="infotile-column">

@@ -5,7 +5,5 @@ date: 7 Jul 2023
 score: 12000
 platform: PC
 method: Vanilla
-youtube:
-  id: wNFEkJMpVpo
-  start: 651
+media: https://www.youtube.com/watch?v=wNFEkJMpVpo&t=651
 ---

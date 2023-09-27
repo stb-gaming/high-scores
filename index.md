@@ -8,4 +8,4 @@ list:
   collection: games
   sort: title
 ---
-This is a tempory home page
+This is a temporary home page

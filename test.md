@@ -17,7 +17,7 @@ links:
    url: https://example.com
  - title: Play
    url: https://example.com
-media: https://www.twitch.tv/videos/1933253412
+media: https://www.twitch.tv/videos/1816688726
 ---
 Hello World
 

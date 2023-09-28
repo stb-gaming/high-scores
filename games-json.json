@@ -10,6 +10,8 @@ layout: null
 		"description": "{{game.description}}",
 		"developer": "{{game.developer}}",
 		"url": "{{urlLink.url}}",
+		"portal": "{{urlLink.url|replace:"denki.co.uk","stb-gaming.github.io"}}",
+		"highscores":"{% include url.html url=game.url %}",
 		"brand": "{{game.brand}}",
 		"splash": "{{game.splash}}",
 		"gameplay": "{{game.gameplay}}",

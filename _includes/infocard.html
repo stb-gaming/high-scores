@@ -12,7 +12,7 @@
 		{% endif %}
 		<div id="page_info">
 			<h1 id="page_title">
-				<a href="{{itemUrl}}">
+<!-- 				<a href="{{itemUrl}}"> -->
 				{{item.title}}
 			</a>
 			</h1>
@@ -23,7 +23,12 @@
 			{% if item.links %}
 			<div id="page_links">
 				{% for link in item.links %}
-				<a href="{% include url.html url=link.url %}" {% if link.title=="Play" %}id="page_play" {% endif%}>{{link.title}}</a>
+				{% if link.title=="Play" %}
+				{% assign url=link.url|replace:"denki.co.uk","stb-gaming.github.io" %}
+				<a href="{% include url.html url=url %}" id="page_play">{{link.title}}</a>
+				{% else %}
+				<a href="{% include url.html url=link.url %}">{{link.title}}</a>
+				{% endif %}
 				{% endfor %}
 			</div>
 			{% endif %}

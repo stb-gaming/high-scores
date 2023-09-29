@@ -1,0 +1,6 @@
+scores:
+  allowedFields: [game,author,date,score,platform,method,media]
+  branch: main
+  filename: "{@id}"
+  format: "frontmatter"
+  path: "_scores/{@id}"

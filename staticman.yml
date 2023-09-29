@@ -1,6 +1,8 @@
 scores:
-  allowedFields: [game,author,date,score,platform,method,media]
+  allowedFields: [game,author,date,score,platform,method,media,content]
   branch: main
   filename: "{@id}"
   format: "frontmatter"
   path: "_scores/{@id}"
+  transforms:
+    content: frontmatterContent

@@ -1,6 +1,1 @@
-{% assign list = site.scores | where_exp:"score","score.game == include.score.game" | sort: "score" | reverse %}
-{% for item in list %}
-{% if item.id == include.score.id %}
-{{forloop.index}}
-{%endif%}
-{% endfor %}
+{% assign list = site.scores | where_exp:"score","score.game == include.score.game" | sort: "score" | reverse %}{% for item in list %}{% if item.id == include.score.id %}{{forloop.index}}{%endif%}{% endfor %}

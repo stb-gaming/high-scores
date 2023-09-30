@@ -1,5 +1,5 @@
 ---
-title: "Beehive Bedlam"
+title: "Beehive Bedlam (Denki)"
 description: "Never released!"
 developer: "Denki"
 brand: null

@@ -232,6 +232,23 @@
 					infobox.style.display = infobox.id==`infocard_${e.srcElement.value}`?null:"none"
 				}
 			})
+			document.addEventListener('input', function(event) {
+  const inputElement = event.target;
+
+  // Check if it's a cozy input field with a name
+  if (inputElement.tagName === 'INPUT' && inputElement.hasAttribute('name')) {
+    // Grab the name and value
+    const fieldName = inputElement.getAttribute('name');
+    const fieldValue = inputElement.value;
+
+    // Update the URL with our cozy details
+    const currentUrl = new URL(window.location.href);
+    currentUrl.searchParams.set(fieldName, fieldValue);
+
+    // It's like adding a cute patch to our pajama party! 🎉
+    window.history.replaceState({}, document.title, currentUrl);
+  }
+});
 	</script>
 </body>
 

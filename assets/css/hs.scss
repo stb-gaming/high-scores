@@ -404,8 +404,11 @@ img.inlinetext {
 		padding: 2rem;
 
 		}
-		iframe {
+		&> * {
 			width:100%;
+			height: auto;
+		}
+		iframe {
 			aspect-ratio: 16/9;
 			border-width: 0;
 		}

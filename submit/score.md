@@ -1,5 +1,5 @@
 ---
-title: testform
+title: Submit High Score
 game: all-games
 form:
   collection: scores

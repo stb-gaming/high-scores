@@ -1,0 +1,30 @@
+scores:
+  game:
+    # drop down of value item.slug and name item.title
+    collection: games
+  author:
+    label: Player
+    type: text
+  score:
+    type: number
+  date:
+    type: date
+  platform:
+    label: Platform
+    options:
+      - PC
+      - Mobile
+      - TV
+      - Games Console
+      - Other
+  method:
+    label: Method
+    options:
+      - Vanilla
+      - Userscript
+      - Portal
+      - Client
+  media:
+    label: Media
+    description: "Url to image,video,youtube,twitch,vimeo,odessee,peertube"
+    type: url

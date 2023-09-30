@@ -3,6 +3,6 @@ scores:
   branch: main
   filename: "{@id}"
   format: "frontmatter"
-  path: "_scores/{@id}"
+  path: "_scores"
   transforms:
     content: frontmatterContent

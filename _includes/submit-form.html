@@ -1,0 +1,29 @@
+{% assign form=include.form %}
+
+<form action="{{site.staticman.host}}/v2/entry/{{site.staticman.user}}/{{site.staticman.repo}}/{{site.staticman.branch}}/{{include.collection}}" method="post">
+	<input name="options[redirect]" type="hidden" value="{% include url.html url=page.url %}?status=success">
+	<input name="options[slug]" type="hidden" value="{{ page.slug }}">
+	<input name="fields[content]" type="hidden" value="">
+	{% for kv in form %}
+	{% assign key=kv[0] %}
+	{% assign value=kv[1] %}
+	{% capture name %}fields[{{key}}]{% endcapture %}
+	<label for="{{name}}">{{value.label|default:key|capitalize}}:</label>
+	{% if value.type %}
+ 	 <input type="{{value.type}}" name="{{name}}" />
+	 {% endif %}
+	{% assign options=value.options %}
+	{% if value.collection %}
+	{% assign options=site[value.collection] %}
+	{% endif %}
+	 {% if options %}
+	 <select name="{{name}}">
+		{% for option in options %}
+		<option value="{{ option.slug | default: option.value | default: option }}">{{ option.title | default: option.value | default: option }}</option>
+		{% endfor %}
+	</select>
+	 {% endif %}
+	 {% endfor %}
+	
+	<button type="submit">Submit</button>
+</form>

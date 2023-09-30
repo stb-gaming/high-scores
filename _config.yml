@@ -67,3 +67,10 @@ plugins:
   - jekyll-avatar
   - jemoji
   - jekyll-mention
+
+staticman:
+  host: https://staticman.tumble.beanofficial.co
+  git: github
+  user: stb-gaming
+  repo: high-scores
+  branch: main

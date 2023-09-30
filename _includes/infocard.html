@@ -3,7 +3,7 @@
 
 
 {% if item.image or item.links %}
-<div id="infocard" class="panel">
+<div id="infocard_{{item.slug}}" class="panel infocard" {% if include.hide %}style="display:none;"{% endif %}>
 	<div class="panel-body">
 		
 		{% assign imageUrl = item.image|default:item.splash|default:item.menu|default:item.gameplay %}
@@ -12,7 +12,7 @@
 		{% endif %}
 		<div id="page_info">
 			<h1 id="page_title">
-<!-- 				<a href="{{itemUrl}}"> -->
+				<a href="{{itemUrl}}">
 				{{item.title}}
 			</a>
 			</h1>
@@ -30,6 +30,8 @@
 				<a href="{% include url.html url=link.url %}">{{link.title}}</a>
 				{% endif %}
 				{% endfor %}
+				{% capture submitUrl %}/submit/score?{% if item.collection == "games" %}game{% elsif item.collection == "players" %}author{% endif %}={{item.slug}}{% endcapture %}
+				<a href="{% include url.html url=submitUrl %}">Submit Score</a>
 			</div>
 			{% endif %}
 		</div>

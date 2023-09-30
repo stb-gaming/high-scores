@@ -42,6 +42,11 @@
 			{% if page.game %}
 			{% assign game = site.games | where:"slug", page.game | first|default:page.game%}
 			{% include infocard.html item=game %}
+			{% if page.game=="all-games" %}
+			{% for game in site.games %}
+			{% include infocard.html item=game hide=true %}
+			{% endfor %}
+			{% endif %}
 			{% else %}
 			{% include infocard.html item=page %}
 			{% endif %}
@@ -130,6 +135,23 @@
 			{% endif %}
 			{% endif %}
 
+			{% if page.form %}
+			<div class="panel">
+				<div class="panel-header">
+					<h2>
+					{% if item.image or item.links %}
+					Form
+					{% else %}
+					{{page.title}}
+					{% endif %}
+				</h2>
+				</div>
+				<div class="panel-body  markdown-body">
+					{% include submit-form.html form=page.form.fields collection=page.form.collection %}
+				</div>
+			</div>
+			{% endif %}
+
 
 			{% if page.scores %}
 			<div id="scores" class="panel">
@@ -179,6 +201,38 @@
 		</div>
 	</main>
 	<footer></footer>
+
+	<script>
+
+		function getField(name) {
+			let elements = document.querySelectorAll(`[name="${name}"]`)
+
+			if(!elements.length)elements= document.querySelectorAll(`[name="fields[${name}]"]`) 
+
+			return elements;
+
+		}
+		let params = (new URLSearchParams(location.search)).entries()
+		for (const param of params) {
+			const elements = getField(param[0]);
+			for (const element of elements) {
+				element.value = param[1]
+				element.checked = !!param[1]
+				
+			}
+			if(param[0]=="game") {
+				let infocard = document.getElementById(`infocard_${param[1]}`).style.display = null;
+			}
+		}
+
+
+
+		document.querySelector(`[name="fields[game]"]`).addEventListener("input",(e)=>{
+				for (const infobox of document.querySelectorAll(".infocard")) {
+					infobox.style.display = infobox.id==`infocard_${e.srcElement.value}`?null:"none"
+				}
+			})
+	</script>
 </body>
 
 </html>

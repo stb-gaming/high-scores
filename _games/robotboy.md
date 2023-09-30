@@ -1,5 +1,5 @@
 ---
-title: "Robotboy: Tag Team Trouble"
+title: "Robotboy Episode 4"
 description: "Double trouble for Robotboy and friends!"
 developer: "Denki"
 brand: "Cartoon Network"

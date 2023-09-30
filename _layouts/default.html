@@ -21,18 +21,20 @@
 <body>
 	<header>
 		<div class="container width-fit">
-				<a href="{{site.url}}"  class="hide-sm">
-			<h3>
-				{{site.title}}
-			</h3>
+			<a href="{{site.url}}" class="hide-sm">
+				<h3>
+					{{site.title}}
+				</h3>
 			</a>
 			<nav>
 				{% for item in site.data.nav %}
-				<a class="{% if item.url == '/' %}{% if page.url == '/' %}active {%endif%}{% else %}{% if page.url contains item.url %}active {%endif%}{%endif%}{{item.class}}"  href="{% include url.html url=item.url %}" {% if item.id %}id="{{item.id}}"{%endif%}  >{{item.title}}</a>
+				<a class="{% if item.url == '/' %}{% if page.url == '/' %}active {%endif%}{% else %}{% if page.url contains item.url %}active {%endif%}{%endif%}{{item.class}}"
+					href="{% include url.html url=item.url %}" {% if item.id %}id="{{item.id}}"
+					{%endif%}>{{item.title}}</a>
 				{% endfor %}
 			</nav>
 			<form method="get" action="{% include url.html url='/search' %}" class="hide-sm hide-md search-form">
-				<input type="text" id="search_box" name="q" placeholder="Search..." >
+				<input type="text" id="search_box" name="q" placeholder="Search...">
 			</form>
 		</div>
 	</header>
@@ -56,11 +58,11 @@
 			{% endif %}
 
 			{% if page.score %}
-			
+
 			{% assign player = site.players | where:"slug", page.author | first %}
 			<div id="record_info" class="panel">
 				<div class="panel-header">
-				<h3>{% include player-link.html player=page.author %} got {{page.score}}</h3>
+					<h3>{% include player-link.html player=page.author %} got {{page.score}}</h3>
 				</div>
 				<div id="record_media">
 					{% include media.html url=page.media %}
@@ -111,7 +113,7 @@
 					</div>
 				</div>
 			</div>
-			{% endif  %}
+			{% endif %}
 
 			{% if page.nopanels %}
 			{{content}}
@@ -121,12 +123,12 @@
 			<div class="panel">
 				<div class="panel-header">
 					<h2>
-					{% if item.image or item.links %}
-					About
-					{% else %}
-					{{page.title}}
-					{% endif %}
-				</h2>
+						{% if item.image or item.links %}
+						About
+						{% else %}
+						{{page.title}}
+						{% endif %}
+					</h2>
 				</div>
 				<div class="panel-body  markdown-body">
 					{{content}}
@@ -139,12 +141,12 @@
 			<div class="panel">
 				<div class="panel-header">
 					<h2>
-					{% if item.image or item.links %}
-					Form
-					{% else %}
-					{{page.title}}
-					{% endif %}
-				</h2>
+						{% if item.image or item.links %}
+						Form
+						{% else %}
+						{{page.title}}
+						{% endif %}
+					</h2>
 				</div>
 				<div class="panel-body  markdown-body">
 					{% include submit-form.html form=page.form.fields collection=page.form.collection %}
@@ -159,7 +161,8 @@
 					<h2>Scores</h2>
 				</div>
 				<div class="panel-body">
-					{% include list.html collection='scores' filter=page.scores.filter items=page.scores.items limit=page.scores.limit sort=page.scores.sort reverse=page.scores.reverse  %}
+					{% include list.html collection='scores' filter=page.scores.filter items=page.scores.items
+					limit=page.scores.limit sort=page.scores.sort reverse=page.scores.reverse %}
 				</div>
 			</div>
 			{% endif %}
@@ -169,7 +172,8 @@
 					<h2>{{page.list.collection|capitalize}} </h2>
 				</div>
 				<div class="panel-body">
-					{% include list.html collection=page.list.collection filter=page.list.filter items=page.list.items limit=page.list.limit sort=page.list.sort reverse=page.list.reverse %}
+					{% include list.html collection=page.list.collection filter=page.list.filter items=page.list.items
+					limit=page.list.limit sort=page.list.sort reverse=page.list.reverse %}
 				</div>
 			</div>
 			{% endif %}
@@ -179,22 +183,12 @@
 					<h2>Comments</h2>
 				</div>
 				<div class="panel-body">
-					<script src="https://giscus.app/client.js"
-			data-repo="{{site.repository}}"
-			data-repo-id="R_kgDOKXC8bw"
-			data-category="Comments"
-			data-category-id="DIC_kwDOKXC8b84CZjyu"
-			data-mapping="pathname"
-			data-strict="1"
-			data-reactions-enabled="1"
-			data-emit-metadata="0"
-			data-input-position="top"
-			data-theme="preferred_color_scheme"
-			data-lang="en"
-			data-loading="lazy"
-			crossorigin="anonymous"
-			async>
-	</script>
+					<script src="https://giscus.app/client.js" data-repo="{{site.repository}}"
+						data-repo-id="R_kgDOKXC8bw" data-category="Comments" data-category-id="DIC_kwDOKXC8b84CZjyu"
+						data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0"
+						data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" data-loading="lazy"
+						crossorigin="anonymous" async>
+						</script>
 				</div>
 			</div>
 			{% endif %}
@@ -207,7 +201,7 @@
 		function getField(name) {
 			let elements = document.querySelectorAll(`[name="${name}"]`)
 
-			if(!elements.length)elements= document.querySelectorAll(`[name="fields[${name}]"]`) 
+			if (!elements.length) elements = document.querySelectorAll(`[name="fields[${name}]"]`)
 
 			return elements;
 
@@ -218,37 +212,32 @@
 			for (const element of elements) {
 				element.value = param[1]
 				element.checked = !!param[1]
-				
+
 			}
-			if(param[0]=="game") {
+			if (param[0] == "game") {
 				let infocard = document.getElementById(`infocard_${param[1]}`).style.display = null;
 			}
 		}
 
 
 
-		document.querySelector(`[name="fields[game]"]`).addEventListener("input",(e)=>{
-				for (const infobox of document.querySelectorAll(".infocard")) {
-					infobox.style.display = infobox.id==`infocard_${e.srcElement.value}`?null:"none"
-				}
-			})
-			document.addEventListener('input', function(event) {
-  const inputElement = event.target;
+		document.querySelector(`[name="fields[game]"]`).addEventListener("input", (e) => {
+			for (const infobox of document.querySelectorAll(".infocard")) {
+				infobox.style.display = infobox.id == `infocard_${e.srcElement.value}` ? null : "none"
+			}
+		})
+		document.addEventListener('input', function (event) {
+			const inputElement = event.target;
 
-  // Check if it's a cozy input field with a name
-  if (inputElement.tagName === 'INPUT' && inputElement.hasAttribute('name')) {
-    // Grab the name and value
-    const fieldName = inputElement.getAttribute('name');
-    const fieldValue = inputElement.value;
+			if (inputElement.hasAttribute('name')) {
+				const fieldName = inputElement.getAttribute('name');
+				const fieldValue = inputElement.value;
 
-    // Update the URL with our cozy details
-    const currentUrl = new URL(window.location.href);
-    currentUrl.searchParams.set(fieldName, fieldValue);
-
-    // It's like adding a cute patch to our pajama party! 🎉
-    window.history.replaceState({}, document.title, currentUrl);
-  }
-});
+				const currentUrl = new URL(window.location.href);
+				currentUrl.searchParams.set(fieldName, fieldValue);
+				window.history.replaceState({}, document.title, currentUrl);
+			}
+		});
 	</script>
 </body>
 

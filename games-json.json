@@ -5,6 +5,8 @@ layout: null
 [
 	{% for game in site.games %}
 	{% assign urlLink = game.links | where:"title","Play" | first %}
+	{% capture submitUrl %}/submit/score?game={{game.slug}}{% endcapture %}
+	
 	{
 	"title": "{{game.title}}",
 		"description": "{{game.description}}",
@@ -12,6 +14,7 @@ layout: null
 		"url": "{{urlLink.url}}",
 		"portal": "{{urlLink.url|replace:"denki.co.uk","stb-gaming.github.io"}}",
 		"highscores":"{% include url.html url=game.url %}",
+		"submit":"{% include url.html url=submitUrl %}",
 		"brand": "{{game.brand}}",
 		"splash": "{{game.splash}}",
 		"gameplay": "{{game.gameplay}}",

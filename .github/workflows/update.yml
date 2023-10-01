@@ -45,3 +45,4 @@ jobs:
           github_token: ${{ secrets.GH_TOKEN }}
           # The reference point. For example, you could use main.yml.
           workflow_file_name:  jekyll-gh-pages.yml
+          ref: master

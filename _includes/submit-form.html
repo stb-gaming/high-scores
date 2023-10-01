@@ -9,7 +9,7 @@
 	{% assign value=kv[1] %}
 	{% capture name %}fields[{{key}}]{% endcapture %}
 	<label for="{{name}}"><strong>{{value.label|default:key|capitalize}}</strong></label>
-	{% if value.description %}<span>{{value.description}}:</span>{% endif %}
+	{% if value.description %}<span>{{value.description}}</span>{% endif %}
 	{% if value.type %}
  	 <input {% if value.id %}id="{{value.id}}"{% endif %}   type="{{value.type}}" name="{{name}}" />
 	 {% endif %}

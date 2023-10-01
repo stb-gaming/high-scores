@@ -28,10 +28,10 @@ form:
       - Userscript
       - Portal
       - Client
-    upload:
-      label: Media Upload
-      type: file
-      id: media_upload
+    # upload:
+    #   label: Media Upload
+    #   type: file
+    #   id: media_upload
     media:
       label: Media
       description: "Url to image,video,youtube,twitch,vimeo,odessee,peertube"

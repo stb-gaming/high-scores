@@ -11,6 +11,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Generate a token
+          id: generate_token
+          uses: actions/create-github-app-token@v1
+          with:
+            app_id: ${{ secrets.BOT_ID }}
+            private_key: ${{ secrets.BOT_PRIVATE }}
       - name: Trigger Sky Games Build
         # You may pin to the exact commit or the version.
         # uses: convictional/trigger-workflow-and-wait@f69fa9eedd3c62a599220f4d5745230e237904be
@@ -21,7 +27,7 @@ jobs:
           # The repository where the workflow is contained.
           repo: sky-games
           # The Github access token with access to the repository. It is recommended you put this token under secrets.
-          github_token:  ${{ secrets.GH_TOKEN }}
+          github_token: ${{ steps.generate_token.outputs.token }}
           # The reference point. For example, you could use main.yml.
           workflow_file_name:  jekyll-gh-pages.yml
           ref: master

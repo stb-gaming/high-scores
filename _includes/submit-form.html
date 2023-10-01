@@ -8,9 +8,10 @@
 	{% assign key=kv[0] %}
 	{% assign value=kv[1] %}
 	{% capture name %}fields[{{key}}]{% endcapture %}
-	<label for="{{name}}">{{value.label|default:key|capitalize}}:</label>
+	<label for="{{name}}"><strong>{{value.label|default:key|capitalize}}</strong></label>
+	{% if value.description %}<span>{{value.description}}:</span>{% endif %}
 	{% if value.type %}
- 	 <input type="{{value.type}}" name="{{name}}" />
+ 	 <input {% if value.id %}id="{{value.id}}"{% endif %}   type="{{value.type}}" name="{{name}}" />
 	 {% endif %}
 	{% assign options=value.options %}
 	{% if value.collection %}

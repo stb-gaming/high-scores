@@ -219,10 +219,7 @@
 			}
 		}
 
-		document.addEventListener('input', function (event) {
-			console.log("hi");
-			const inputElement = event.target;
-
+		function updateUrlFromField(inputElement) {
 			if (inputElement.hasAttribute('name')) {
 				const fieldName = inputElement.getAttribute('name');
 				const fieldValue = inputElement.value;
@@ -231,6 +228,11 @@
 				currentUrl.searchParams.set(fieldName, fieldValue);
 				window.history.replaceState({}, document.title, currentUrl);
 			}
+		}
+
+		document.addEventListener('input', function (event) {
+
+			updateUrlFromField(event.target)
 		});
 
 

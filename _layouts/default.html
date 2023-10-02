@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<link rel="shortcut icon" href="{{page.favicon|default:'favicon.ico'}}" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{{page.title|capitalize}} - {{site.title|capitalize}}</title>
+	<title>{{page.title| capitalize}} - {{site.title| capitalize}}</title>
 	<link rel="stylesheet" href="{{site.url}}/assets/css/style.css">
 	<link rel="stylesheet" href="{{site.url}}/assets/css/hs.css">
 
@@ -23,7 +23,7 @@
 		<div class="container width-fit">
 			<a href="{{site.url}}" class="hide-sm">
 				<h3>
-					{{site.title|capitalize}}
+					{{site.title| capitalize}}
 				</h3>
 			</a>
 			<nav>
@@ -144,7 +144,7 @@
 						{% if item.image or item.links %}
 						Form
 						{% else %}
-						{{page.title|capitalize}}
+						{{page.title| capitalize}}
 						{% endif %}
 					</h2>
 				</div>
@@ -169,7 +169,7 @@
 			{% if page.list %}
 			<div id="list" class="panel">
 				<div class="panel-header">
-					<h2>{{page.list.collection|capitalize}} </h2>
+					<h2>{{page.list.collection| capitalize}} </h2>
 				</div>
 				<div class="panel-body">
 					{% include list.html collection=page.list.collection filter=page.list.filter items=page.list.items

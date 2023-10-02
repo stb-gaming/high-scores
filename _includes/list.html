@@ -112,7 +112,7 @@ include.items
 	<a href="{% include url.html url=item.url %}" class="game">
 		{% assign imageUrl = item.image|default:item.splash|default:item.menu|default:item.gameplay %}
 		<img src="{% include url.html url=imageUrl %}" alt="">
-		<h4>{{item.title|capitalize}}</h4>
+		<h4>{{item.title| capitalize}}</h4>
 	</a>
 	{% endfor %}
 </div>

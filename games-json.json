@@ -8,7 +8,7 @@ layout: null
 	{% capture submitUrl %}/submit/score?game={{game.slug}}{% endcapture %}
 	
 	{
-	"title": "{{game.title|capitalize}}",
+	"title": "{{game.title| capitalize}}",
 		"description": "{{game.description}}",
 		"developer": "{{game.developer}}",
 		"url": "{{urlLink.url}}",

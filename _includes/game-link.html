@@ -1,4 +1,4 @@
 {% assign game = site.games | where:"slug", include.game | first | default: include.game   %}
-{% assign gameName = game.title | default: include.game|capitalize %}
+{% assign gameName = game.title | default: include.game| capitalize %}
 {% assign gameImage = game.image|default:game.splash|default:game.menu|default:game.gameplay %}
 {% include thing-link.html url=game.url image=gameImage title=gameName %}

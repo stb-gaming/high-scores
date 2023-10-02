@@ -8,7 +8,7 @@
 	{% assign key=kv[0] %}
 	{% assign value=kv[1] %}
 	{% capture name %}fields[{{key}}]{% endcapture %}
-	<label for="{{name}}"><strong>{{value.label|default:key|capitalize}}</strong></label>
+	<label for="{{name}}"><strong>{{value.label|default:key| capitalize}}</strong></label>
 	{% if value.description %}<span>{{value.description}}</span>{% endif %}
 	{% if value.type %}
  	 <input {% if value.id %}id="{{value.id}}"{% endif %}   type="{{value.type}}" name="{{name}}" />
@@ -20,7 +20,7 @@
 	 {% if options %}
 	 <select name="{{name}}">
 		{% for option in options %}
-		<option value="{{ option.slug | default: option.value | default: option }}">{{ option.title | default: option.value | default: option|capitalize }}</option>
+		<option value="{{ option.slug | default: option.value | default: option }}">{{ option.title | default: option.value | default: option| capitalize }}</option>
 		{% endfor %}
 	</select>
 	 {% endif %}

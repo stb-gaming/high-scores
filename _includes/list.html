@@ -97,7 +97,7 @@ include.items
 		</td>
 		<td>
 			{% if score.url %}<a href="{{scoreUrl }}">{% endif %}
-			{{score.date| date:site.date-format}}
+			{{score.date | date:site.date-format}}
 			{% if score.url %}</a">{% endif %}
 		</td>
 	</tr>
@@ -110,9 +110,9 @@ include.items
 <div id="game_list">
 	{% for item in items limit: include.limit %}
 	<a href="{% include url.html url=item.url %}" class="game">
-		{% assign imageUrl = item.image|default:item.splash|default:item.menu|default:item.gameplay %}
+		{% assign imageUrl = item.image |default:item.splash |default:item.menu |default:item.gameplay %}
 		<img src="{% include url.html url=imageUrl %}" alt="">
-		<h4>{{item.title| capitalize}}</h4>
+		<h4>{{item.title | titlecase}}</h4>
 	</a>
 	{% endfor %}
 </div>

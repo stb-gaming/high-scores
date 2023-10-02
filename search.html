@@ -25,10 +25,10 @@ nopanels: true
 <script>
 	const games = [
 		{% for game in site.games %}
-		{% assign image = game.image|default:game.splash|default:game.menu|default:game.gameplay %}
+		{% assign image = game.image |default:game.splash |default:game.menu |default:game.gameplay %}
 		{
 			"index":{{forloop.index}}-1,
-			"title":"{{game.title| capitalize}}",
+			"title":"{{game.title | titlecase}}",
 			"description":"{{game.description}}",
 			"developer":"{{game.developer}}",
 			"brand":"{{game.brand}}",
@@ -43,7 +43,7 @@ nopanels: true
 		{% for player in site.players %}
 		{
 			"index":{{forloop.index}}-1,
-			"title":"{{player.title| capitalize}}",
+			"title":"{{player.title | titlecase}}",
 			"image":"{% include url.html url=player.image %}",
 			"url":"{% include url.html url=player.url %}"
 		},
@@ -99,7 +99,7 @@ function search(text) {
 	for (const collection in indexes) {
 		results[collection] = []
 		for (const query of querys) {
-			let res = indexes[collection].search(query).map(({ref})=>documentLists[collection][ref]||ref).filter(i=>{
+			let res = indexes[collection].search(query).map(({ref})=>documentLists[collection][ref] ||ref).filter(i=>{
 				if(results[collection].map(r=>r.index).includes(i.index)) return false
 				return true
 			})

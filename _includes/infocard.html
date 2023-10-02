@@ -6,17 +6,17 @@
 <div id="infocard_{{item.slug}}" class="panel infocard" {% if include.hide %}style="display:none;"{% endif %}>
 	<div class="panel-body">
 		
-		{% assign imageUrl = item.image|default:item.splash|default:item.menu|default:item.gameplay %}
+		{% assign imageUrl = item.image |default:item.splash |default:item.menu |default:item.gameplay %}
 		{% if imageUrl%}
 		<a href="{{itemUrl}}"><img src="{% include url.html url=imageUrl %}"></a>
 		{% endif %}
 		<div id="page_info">
 			<h1 id="page_title">
 				<a href="{{itemUrl}}">
-				{{item.title| capitalize}}
+				{{item.title | titlecase}}
 			</a>
 			</h1>
-			<span>{{item.date| date:site.date-format}}</span>
+			<span>{{item.date | date:site.date-format}}</span>
 			<div id="page_description">
 				<p>Under Constructuon</p>
 			</div>
@@ -24,7 +24,7 @@
 			<div id="page_links">
 				{% for link in item.links %}
 				{% if link.title=="Play" %}
-				{% assign url=link.url|replace:"denki.co.uk","stb-gaming.github.io" %}
+				{% assign url=link.url |replace:"denki.co.uk","stb-gaming.github.io" %}
 				<a href="{% include url.html url=url %}" id="page_play">{{link.title}}</a>
 				{% else %}
 				<a href="{% include url.html url=link.url %}">{{link.title}}</a>

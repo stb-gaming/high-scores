@@ -13,7 +13,7 @@ category: "Word"
 scores:
   sort: score
   reverse: true
-  filter: "item.game == 'lb'"
+  filter: "item.game == page.slug"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/lb/app.html"

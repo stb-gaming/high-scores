@@ -13,7 +13,7 @@ category: "Sports"
 scores:
   sort: score
   reverse: true
-  filter: "item.game == 'bowling'"
+  filter: "item.game == page.slug"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/bowling/app.html"

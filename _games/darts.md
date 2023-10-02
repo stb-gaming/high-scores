@@ -13,7 +13,7 @@ category: "Sports"
 scores:
   sort: score
   reverse: true
-  filter: "item.game == 'darts'"
+  filter: "item.game == page.slug"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/darts/app.html"

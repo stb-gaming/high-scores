@@ -2,7 +2,7 @@
 title: Slim Beardy
 image: /assets/img/slimbeardy.webp
 scores:
-  filter: "item.author == 'slimbeardy'"
+  filter: "item.author == page.slug"
   sort: date
   reverse: true
 links:

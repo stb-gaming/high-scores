@@ -13,7 +13,7 @@ category: "Action"
 scores:
   sort: score
   reverse: true
-  filter: "item.game == 'eddy'"
+  filter: "item.game == page.slug"
 links:
   - title: Play
     url: "http://denki.co.uk/sky/eddy/app.html"

@@ -28,7 +28,7 @@ nopanels: true
 		{% assign image = game.image|default:game.splash|default:game.menu|default:game.gameplay %}
 		{
 			"index":{{forloop.index}}-1,
-			"title":"{{game.title}}",
+			"title":"{{game.title|capitalize}}",
 			"description":"{{game.description}}",
 			"developer":"{{game.developer}}",
 			"brand":"{{game.brand}}",
@@ -43,7 +43,7 @@ nopanels: true
 		{% for player in site.players %}
 		{
 			"index":{{forloop.index}}-1,
-			"title":"{{player.title}}",
+			"title":"{{player.title|capitalize}}",
 			"image":"{% include url.html url=player.image %}",
 			"url":"{% include url.html url=player.url %}"
 		},

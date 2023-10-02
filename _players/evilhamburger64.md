@@ -2,7 +2,7 @@
 title: Evil Hamburger 64
 image: /assets/img/evilhamburger64.jpg
 scores:
-  filter: "item.author == 'evilhamburger64'"
+  filter: "item.author == page.slug"
   sort: date
   reverse: true
 links:

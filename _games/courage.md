@@ -13,7 +13,7 @@ category: "Adventure"
 scores:
   sort: score
   reverse: true
-  filter: "item.game == 'courage'"
+  filter: "item.game == page.slug"
 links:
   - title: Play
     url: "http://www.denki.co.uk/sky/courage/app.html"

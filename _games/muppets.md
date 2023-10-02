@@ -13,7 +13,7 @@ category: "Platformer"
 scores:
   sort: score
   reverse: true
-  filter: "item.game == 'muppets'"
+  filter: "item.game == page.slug"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/muppets/app.html"

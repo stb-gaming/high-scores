@@ -13,7 +13,7 @@ category: "Quiz"
 scores:
   sort: score
   reverse: true
-  filter: "item.game == 'millionaire'"
+  filter: "item.game == page.slug"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/millionaire/app.html"

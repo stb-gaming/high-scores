@@ -20,7 +20,7 @@
 	 {% if options %}
 	 <select name="{{name}}">
 		{% for option in options %}
-		<option value="{{ option.slug | default: option.value | default: option }}">{{ option.title | default: option.value | default: option }}</option>
+		<option value="{{ option.slug | default: option.value | default: option }}">{{ option.title | default: option.value | default: option|capitalize }}</option>
 		{% endfor %}
 	</select>
 	 {% endif %}

@@ -13,7 +13,7 @@ category: "Maze"
 scores:
   sort: score
   reverse: true
-  filter: "item.game == 'dynamice'"
+  filter: "item.game == page.slug"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/dynamice/app.html"

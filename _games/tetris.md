@@ -13,7 +13,7 @@ category: "Puzzle"
 scores:
   sort: score
   reverse: true
-  filter: "item.game == 'tetris'"
+  filter: "item.game == page.slug"
 links:
   - title: Play
     url: "http://denki.co.uk/sky/tetris/app.html"

@@ -14,11 +14,15 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Fix Frontmatter Types
+      id: fix-frontmatter
       run: |
         sed -i -E 's/score: '\''([0-9]+)'\''/score: \1/g' _scores/*.md
         sed -i -E 's/date: '\''([0-9]{4}-[0-9]{2}-[0-9]{2})'\''/date: \1/g' _scores/*.md
+        echo "::set-output name=changed::$(git status --porcelain)"
+
 
     - name: Commit Changes
+      if: steps.fix-frontmatter.outputs.changed == 'M'
       run: |
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"

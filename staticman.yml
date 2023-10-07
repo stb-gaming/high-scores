@@ -1,5 +1,5 @@
 scores:
-  allowedFields: [game,author,date,score,platform,method,media,content]
+  allowedFields: [game,author,date,score,platform,method,media,mode,level,content]
   branch: main
   filename: "{@id}"
   format: "frontmatter"

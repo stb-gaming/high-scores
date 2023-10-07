@@ -1,0 +1,3 @@
+{% assign level = site.levels | where:"slug", include.level | first | default: include.level %}
+{% assign levelName = level.title | default: include.level | titlecase %}
+{% include thing-link.html url=level.url image=level.image title=levelName %}

@@ -11,6 +11,12 @@ form:
       type: text
     score:
       type: number
+    mode:
+      label: Mode
+      type: text
+    level:
+      label: Level
+      type: text
     date:
       type: date
     platform:

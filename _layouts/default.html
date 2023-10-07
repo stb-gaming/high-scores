@@ -77,13 +77,21 @@
 					<div class="infotile-row">
 						<div class="infotile-column">
 							<div class="infotile">
-								<h4>Player</h4>
-								<p>{% include player-link.html player=page.author %}</p>
-							</div>
-							<div class="infotile">
 								<h4>Game</h4>
 								<p>{% include game-link.html game=page.game %}</p>
 							</div>
+							{% if page.mode %}
+							<div class="infotile">
+								<h4>Mode</h4>
+								<p>{% include mode-link.html mode=page.mode %}</p>
+							</div>
+							{% endif %}
+							{% if page.level %}
+							<div class="infotile">
+								<h4>Level</h4>
+								<p>{% include level-link.html level=page.level %}</p>
+							</div>
+							{% endif %}
 						</div>
 						<div class="infotile-column">
 							{% capture rank %}{% include scorerank.html score=page %}{% endcapture %}
@@ -92,23 +100,32 @@
 								<p>{% include place.html number=rank %}</p>
 							</div>
 							<div class="infotile">
-								<h4>Date</h4>
-								<p>{{page.date |date:site.date-format}}</p>
-							</div>
-							<div class="infotile">
 								<h4>Score</h4>
 								<p>{{page.score}}</p>
 							</div>
+							<div class="infotile">
+								<h4>Date</h4>
+								<p>{{page.date |date:site.date-format}}</p>
+							</div>
 						</div>
 						<div class="infotile-column">
+
+							<div class="infotile">
+								<h4>Player</h4>
+								<p>{% include player-link.html player=page.author %}</p>
+							</div>
+							{% if page.platform %}
 							<div class="infotile">
 								<h4>Platform</h4>
 								<p>{{page.platform}}</p>
 							</div>
+							{% endif %}
+							{% if page.method %}
 							<div class="infotile">
 								<h4>Method</h4>
 								<p>{{page.method}}</p>
 							</div>
+							{% endif %}
 						</div>
 					</div>
 				</div>

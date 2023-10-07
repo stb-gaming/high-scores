@@ -13,7 +13,7 @@ category: "Adventure"
 scores:
   sort: score
   reverse: true
-  filter: "item.game == 'lt2'"
+  filter: "item.game == page.slug"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/lt2/app.html"

@@ -6,7 +6,7 @@ archived: "2023-09-30"
 scores:
   sort: score
   reverse: true
-  filter: "item.game == 'tj3'"
+  filter: "item.game == page.slug"
 links:
   - title: Play
     url: "http://denki.co.uk/sky/tj3/app.html"

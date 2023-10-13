@@ -13,7 +13,7 @@ category: "Action"
 scores:
   sort: score
   reverse: true
-  filter: "item.game == 'robotboy1'"
+  filter: "item.game == page.slug"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/robotboy1/app.html"

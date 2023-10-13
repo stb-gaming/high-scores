@@ -1,0 +1,3 @@
+{% assign mode = site.modes | where:"slug", include.mode | first | default: include.mode %}
+{% assign modeName = mode.title | default: include.mode | titlecase %}
+{% include thing-link.html url=mode.url image=mode.image title=modeName %}

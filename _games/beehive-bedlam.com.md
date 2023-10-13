@@ -13,7 +13,7 @@ category: "Puzzle"
 scores:
   sort: score
   reverse: true
-  filter: "item.game == 'beehive-bedlam.com'"
+  filter: "item.game == page.slug"
 links:
   - title: Play
     url: "https://beehive-bedlam.com/"

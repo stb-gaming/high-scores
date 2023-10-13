@@ -13,7 +13,7 @@ category: "Adventure"
 scores:
   sort: score
   reverse: true
-  filter: "item.game == 'shrek2'"
+  filter: "item.game == page.slug"
 links:
   - title: Play
     url: "https://denki.co.uk/sky/shrek2/app.html"

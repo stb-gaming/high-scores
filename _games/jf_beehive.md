@@ -4,6 +4,9 @@ description: "Fruity addicting fun!"
 developer: "Denki"
 brand: "SKY Games"
 archived: "2023-10-14"
+date: "2007-03-22"
+splash: "SKY Games/Jumble Fever/Jumble Fever Beehive Bedlam/Splash.jpg"
+gameplay: "SKY Games/Jumble Fever/Jumble Fever Beehive Bedlam/PlaySet.jpg"
 image: null
 menu: null
 category: "Puzzle"

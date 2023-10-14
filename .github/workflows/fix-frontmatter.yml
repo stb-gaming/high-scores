@@ -4,6 +4,9 @@ on:
   pull_request:
     paths:
       - '_scores/*'
+  push:
+    paths:
+      - '_scores/*'
 
 jobs:
   fix-frontmatter-types:

@@ -16,5 +16,5 @@ scores:
   filter: "item.game == page.slug"
 links:
   - title: Play
-    url: "https://denki.co.uk/sky/robotboy/app.html"
+    url: "https://denki.co.uk/sky/robotboy4/app.html"
 ---

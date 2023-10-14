@@ -5,7 +5,6 @@ scores:
   filter: "item.author == page.slug"
   sort: date
   reverse: true
-categories: ["hello","world"]
 links:
   - title: Main Channel
     url: https://www.youtube.com/channel/UCoAxETt1jhia-nKPYG0_OJQ

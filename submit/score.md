@@ -6,23 +6,32 @@ form:
   fields:
     game:
       collection: games
+      required: true
     author:
       label: Player
+      required: true
       type: text
       optionstype: datalist
       collection: players
     score:
       type: number
+      required: true
     mode:
       label: Mode
       type: text
+      optionstype: datalist
     level:
+      description: If you are playing tetris, pick the level you started on
       label: Level
       type: text
+      optionstype: datalist
     date:
       type: date
+      required: true
     platform:
-      label: Platform
+      required: true
+      type: text
+      optionstype: datalist
       options:
       - PC
       - Mobile
@@ -31,6 +40,8 @@ form:
       - Other
     method:
       label: Method
+      required: true
+      description: if you are not sure, pick "Vanilla"
       options:
       - Vanilla
       - Userscript
@@ -42,18 +53,20 @@ form:
     #   id: media_upload
     media:
       label: Media
+      required: true
       description: "Url to image,video,youtube,twitch,vimeo,odessee,peertube"
       type: url
       id: media_url
 ---
 <p>welcome</p>
+
 <script>
 
   document.addEventListener("DOMContentLoaded", () => {
     const mediaUpload = document.getElementById("media_upload")
       const mediaUrlInput = document.getElementById('media_url');
-    console.log(mediaUpload);
-    mediaUpload.addEventListener("input", () => {
+    // console.log(mediaUpload);
+    mediaUpload?.addEventListener("input", () => {
 
       const file = mediaUpload.files[0];
       const reader = new FileReader();

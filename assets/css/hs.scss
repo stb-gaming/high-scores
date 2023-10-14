@@ -158,6 +158,8 @@ button {
 	border-radius: .5rem;
 }
 
+
+
 input,select {
 	color: $textColorDark;
 	background: $skyGamesPink;
@@ -168,6 +170,61 @@ input,select {
 
 	&:empty {
 		background-color: none
+	}
+
+
+	&[type=radio] {
+		display: none;
+		// &:has(+label) {
+		// 	display: none;
+		// }
+
+		&+label {
+			height: 100%;
+			width: 100%;
+			background-color: $darken;
+			padding: .5rem .7rem;
+		}
+		&:checked+label {
+			background-color: $skyGamesPink;
+			color: $textColorDark;
+		}
+	}
+
+
+}
+
+
+
+.filter {
+	display: flex;
+	flex-flow: column;
+	gap: 1rem;
+	padding: 1rem 0;
+
+	label+select {
+		display: inline;
+	}
+	>* {
+
+		display: flex;
+		align-items: center;
+	}
+	.game-levels {
+		gap: 1em;
+		select {
+			flex: 1;
+		}
+	}
+	.game-modes {
+		:first-child label {
+			border-top-left-radius: .5rem;
+			border-bottom-left-radius: .5rem;
+		}
+		:last-child label {
+			border-top-right-radius: .5rem;
+			border-bottom-right-radius: .5rem;
+		}
 	}
 
 }

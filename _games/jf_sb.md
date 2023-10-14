@@ -10,6 +10,11 @@ gameplay: "SKY Games/Jumble Fever/Jumble Fever SpongeBob SquarePants/Play1.jpg"
 image: null
 menu: null
 category: "Puzzle"
+modes:
+ - Classic
+levels:
+ - null 
+ - "8"
 scores:
   sort: score
   reverse: true

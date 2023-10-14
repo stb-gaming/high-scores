@@ -8,6 +8,7 @@ sky-games-images: https://stb-gaming.github.io/sky-games-images/
 
 permalink: pretty
 date-format: "%e %b %Y"
+emptyarr: []
 
 collections:
   scores:

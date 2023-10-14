@@ -9,12 +9,12 @@ include.items
 {% assign collectionItems = site[include.collection] %}
 {% endif %}
 
-{% assign items = "" | split: "" %}
+{% assign items = site.emptyarr %}
 
 {% if include.items %}
 {% for item in include.items %}
 {% assign siteItem = collectionItems | where:"url", item.url | first %}
-{% if siteItem and siteItem.url %}
+{% if item.url and siteItem and siteItem.url %}
 {% assign items = items | push: siteItem %}
 {% else %}
 {% assign items = items | push: item %}
@@ -28,6 +28,11 @@ include.items
 {% assign items = items | where_exp:"item",include.filter %}
 {% endif %}
 
+
+{% unless include.showhidden %}
+{% assign items = items | where_exp:"item","item.hidden != true" %}
+{% endunless %}
+
 {% if include.sort %}
 {% assign items = items | sort: include.sort %}
 {% endif %}
@@ -37,8 +42,7 @@ include.items
 
 
 {% if include.collection == "scores" %}
-<table>
-	<tr>
+<table><thead>
 		{% if include.sort == "score" and include.reverse %}
 		<th>#</th>
 		{% endif %}
@@ -52,11 +56,15 @@ include.items
 		<th>Platform</th>
 		<th>Method</th>
 		<th>Date</th>
-	</tr>
+</thead>
+<tbody>
 	{% for score in items limit: include.limit %}
 
 	{% capture scoreUrl%}{% include url.html url=score.url %}{% endcapture %}
-	<tr {% if score.url %}onclick="window.location.href='{{scoreUrl}}';" style="cursor: pointer;"{% endif %}>
+	<tr {% if score.url %}onclick="window.location.href='{{scoreUrl}}';" style="cursor: pointer;"{% endif %}
+	data-mode="{{score.mode}}"
+	data-level="{{score.level}}"
+	>
 		
 		{% if include.sort == "score" and include.reverse %}
 			<td>
@@ -102,7 +110,7 @@ include.items
 		</td>
 	</tr>
 	{% endfor %}
-
+</tbody>
 </table>
 {% else %}
 

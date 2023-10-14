@@ -10,6 +10,11 @@ archived: "2023-05-04"
 image: null
 menu: null
 category: "Arcade"
+modes:
+ - One Player
+levels:
+ - null 
+ - Level Set 1
 scores:
   sort: score
   reverse: true

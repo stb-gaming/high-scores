@@ -178,6 +178,29 @@
 					<h2>Scores</h2>
 				</div>
 				<div class="panel-body">
+					<div class="filter">
+						{% if game.levels %}
+						
+						<div class="game-levels">
+							<label for="level">Level</label>
+							<select name="level" id="level">
+								{% for level in game.levels %}
+								<option value="{{level}}">{{level}}</option>
+								{% endfor %}
+							</select>
+						</div>
+						{% endif %}
+						{% if game.modes %}
+						<div class="game-modes">
+							{% for mode in game.modes %}
+								<div>
+									<input type="radio" id="{{mode|slugify}}" name="mode" value="{{mode}}" {% if forloop.first%}checked{%endif%}/>
+									<label for="{{mode|slugify}}">{{mode}}</label>
+								</div>
+							{% endfor %}
+						</div>
+					{% endif %}
+					</div>
 					{% include list.html collection='scores' filter=page.scores.filter items=page.scores.items
 					limit=page.scores.limit sort=page.scores.sort reverse=page.scores.reverse %}
 				</div>
@@ -214,6 +237,15 @@
 	<footer></footer>
 
 	<script>
+		const params = (new URLSearchParams(location.search)).entries(),
+		games = {
+			{% for game in site.games %}
+			"{{game.slug}}":{
+				"levels":{{game.levels|jsonify}}||[],
+				"modes":{{game.modes|jsonify}}||[]
+			},
+			{% endfor %}
+		}
 
 		function getField(name) {
 			let elements = document.querySelectorAll(`[name="${name}"]`)
@@ -223,20 +255,25 @@
 			return elements;
 
 		}
-		let params = (new URLSearchParams(location.search)).entries()
 		for (const param of params) {
 			const elements = getField(param[0]);
 			for (const element of elements) {
-				element.value = param[1]
-				element.checked = !!param[1]
-
+				if(element.type=="radio") {
+					element.checked = element.value === param[1];
+				} else {
+					element.value = param[1]
+					element.checked = !!param[1]
+				}
 			}
-			if (param[0] == "game") {
-				let infocard = document.getElementById(`infocard_${param[1]}`).style.display = null;
+			if (param[0] == "game"||param[0] == "fields[game]") {
+				let infocard = document.getElementById(`infocard_${param[1]}`)
+				if(infocard)infocard.style.display = null;
+				updateLevelsAndModes(param[1])
 			}
 		}
 
 		function updateUrlFromField(inputElement) {
+			//if(inputElement.type=="radio") return;
 			if (inputElement.hasAttribute('name')) {
 				const fieldName = inputElement.getAttribute('name');
 				const fieldValue = inputElement.value;
@@ -252,13 +289,48 @@
 			updateUrlFromField(event.target)
 		});
 
+		function updateLevelsAndModes(gameid) {
+			const modesList = document.querySelector(`datalist[name="fields[mode]"]`),
+			levelsList = document.querySelector(`datalist[name="fields[level]"]`),
+			game = games[gameid];
+			if(!game) return
 
-		document.querySelector(`[name="fields[game]"]`).addEventListener("input", (e) => {
-			for (const infobox of document.querySelectorAll(".infocard")) {
-				infobox.style.display = infobox.id == `infocard_${e.srcElement.value}` ? null : "none"
+
+			if(modesList) {
+				const input = document.querySelector(`[name="fields[mode]"]`)
+				input.value = null;
+
+				input.required = !!games[gameid].modes.length
+
+				modesList.append(...games[gameid].modes.map(mode=>{
+					let el = document.createElement("option")
+					el.value = el.innerText = mode
+					return el;
+				}))
 			}
+			if(levelsList) {
+				const input = document.querySelector(`[name="fields[level]"]`)
+				input.value = null;
+				input.required = !!games[gameid].levels.length
+
+				levelsList.append(...games[gameid].levels.map(level=>{
+					let el = document.createElement("option")
+					el.value = el.innerText = level
+					return el;
+				}))
+			}
+		}
+
+		document.querySelector(`[name="fields[game]"]`)?.addEventListener("input", (e) => {
+			const gameid = e.srcElement.value;
+			for (const infobox of document.querySelectorAll(".infocard")) {
+				infobox.style.display = infobox.id == `infocard_${gameid}` ? null : "none"
+			}
+			updateLevelsAndModes(gameid)
+			
 		})
 	</script>
+	<script src="{{site.url}}/assets/js/scores.js"></script>
 </body>
 
 </html>

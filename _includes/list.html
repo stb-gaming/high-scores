@@ -69,7 +69,8 @@ include.items
 		{% if include.sort == "score" and include.reverse %}
 			<td>
 				{% if score.url %}<a href="{{scoreUrl}}">{% endif %}
-				{% include place.html number=forloop.index %}
+					{% capture rank %}{% include scorerank.html score=score %}{% endcapture %}
+				{% include place.html number=rank %}
 				{% if score.url %}</a>{% endif %}
 			</td>
 			{% endif %}

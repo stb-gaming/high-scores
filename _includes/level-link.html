@@ -1,3 +1,6 @@
-{% assign level = site.levels | where:"slug", include.level | first | default: include.level %}
-{% assign levelName = level.title | default: include.level | titlecase %}
-{% include thing-link.html url=level.url image=level.image title=levelName %}
+{% assign game = site.games | where:"slug", include.game | first | default: include.game   %}
+{% assign gameName = game.title | default: include.game | titlecase %}
+{% assign gameImage = game.gameplay %}
+{% assign levelUrl = game.url | append: "?level=" | append: include.level %}
+{% assign levelName =  include.level | titlecase %}
+{% include thing-link.html url=levelUrl image=gameImage title=levelName %}

@@ -83,13 +83,13 @@
 							{% if page.mode %}
 							<div class="infotile">
 								<h4>Mode</h4>
-								<p>{% include mode-link.html mode=page.mode %}</p>
+								<p>{% include mode-link.html game=page.game mode=page.mode %}</p>
 							</div>
 							{% endif %}
 							{% if page.level %}
 							<div class="infotile">
 								<h4>Level</h4>
-								<p>{% include level-link.html level=page.level %}</p>
+								<p>{% include level-link.html game=page.game level=page.level %}</p>
 							</div>
 							{% endif %}
 						</div>

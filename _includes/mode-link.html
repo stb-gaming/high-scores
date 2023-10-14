@@ -1,3 +1,6 @@
-{% assign mode = site.modes | where:"slug", include.mode | first | default: include.mode %}
-{% assign modeName = mode.title | default: include.mode | titlecase %}
-{% include thing-link.html url=mode.url image=mode.image title=modeName %}
+{% assign game = site.games | where:"slug", include.game | first | default: include.game   %}
+{% assign gameName = game.title | default: include.game | titlecase %}
+{% assign gameImage = default:game.menu |default:game.gameplay %}
+{% assign modeUrl = game.url | append: "?mode=" | append: include.mode %}
+{% assign modeName =  include.mode | titlecase %}
+{% include thing-link.html url=modeUrl image=gameImage title=modeName %}

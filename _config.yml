@@ -17,10 +17,6 @@ collections:
     output: true
   games:
     output: true
-  modes:
-    output: true
-  levels:
-    output: true
   lists:
     output: true
 

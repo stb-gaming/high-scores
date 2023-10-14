@@ -12,7 +12,7 @@ function tableToArray(table) {
 
 		columns.forEach((column, index) => {
 			const header = table.querySelector('thead th:nth-child(' + (index + 1) + ')').innerText;
-			rowData[header] = column.innerText;
+			rowData[header] = column.innerHTML;
 		});
 
 		const dataAttrs = row.dataset;
@@ -46,7 +46,7 @@ function updateTable(table, newData) {
 			  row.dataset[key] = value;
 			} else {
 			  const cell = row.insertCell();
-			  cell.textContent = value;
+			  cell.innerHTML = value;
 			}
 		  });
 	});
@@ -71,23 +71,19 @@ window.addEventListener("DOMContentLoaded",()=> {
 	}
 
 	if(levelInput) {
-		console.log("l");
 		filterLevel(levelInput.value)
 
 		levelInput.addEventListener("input",e=>{
-			console.log(e.target.value);
 			filterLevel(e.target.value)
 		})
 	}
 
 	if(modeInputs) {
-		console.log("m");
 		const activeMode = modeInputs.querySelector("input:checked");
 		filterMode(activeMode.value)
 		
 		modeInputs.querySelectorAll("input").forEach(input=>{
 			input.addEventListener("input",e=>{
-				console.log(e.target.value);
 				filterMode(e.target.value)
 			})
 		})

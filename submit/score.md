@@ -9,6 +9,8 @@ form:
     author:
       label: Player
       type: text
+      optionstype: datalist
+      collection: players
     score:
       type: number
     mode:

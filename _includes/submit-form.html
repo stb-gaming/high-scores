@@ -11,18 +11,18 @@
 	<label for="{{name}}"><strong>{{value.label |default:key | titlecase}}</strong></label>
 	{% if value.description %}<span>{{value.description}}</span>{% endif %}
 	{% if value.type %}
- 	 <input {% if value.id %}id="{{value.id}}"{% endif %}   type="{{value.type}}" name="{{name}}" />
+ 	 <input {% if value.id %}id="{{value.id}}"{% endif %} {% if value.options or value.collection %}list="list-{{name}}"{% endif %}  type="{{value.type}}" name="{{name}}" />
 	 {% endif %}
 	{% assign options=value.options %}
 	{% if value.collection %}
 	{% assign options=site[value.collection] %}
 	{% endif %}
 	 {% if options %}
-	 <select name="{{name}}">
+	 <{{value.optionstype|default:"select"}} name="{{name}}" id="list-{{name}}">
 		{% for option in options %}
 		<option value="{{ option.slug | default: option.value | default: option }}">{{ option.title | default: option.value | default: option | titlecase }}</option>
 		{% endfor %}
-	</select>
+	</{{value.optionstype|default:"select"}}>
 	 {% endif %}
 	 {% endfor %}
 	

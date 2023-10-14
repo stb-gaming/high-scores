@@ -4,8 +4,11 @@ description: "Fruity addicting fun!"
 developer: "Denki"
 brand: "SKY Games"
 archived: "2023-10-14"
+date: "2007-04-05"
+splash: null
+gameplay: "SKY Games/Jumble Fever/Jumble Fever Shrek/Play1.jpg"
 image: null
-menu: null
+menu: "SKY Games/Jumble Fever/Jumble Fever Shrek/ModeSelect.jpg"
 category: "Puzzle"
 scores:
   sort: score

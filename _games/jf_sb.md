@@ -4,6 +4,9 @@ description: "Fruity addicting fun!"
 developer: "Denki"
 brand: "SKY Games"
 archived: "2023-10-14"
+date: "2007-07-12"
+splash: "SKY Games/Jumble Fever/Jumble Fever SpongeBob SquarePants/Splash.bmp"
+gameplay: "SKY Games/Jumble Fever/Jumble Fever SpongeBob SquarePants/Play1.jpg"
 image: null
 menu: null
 category: "Puzzle"

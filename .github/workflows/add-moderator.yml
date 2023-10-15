@@ -1,0 +1,32 @@
+name: Add Moderator
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  edit-front-matter:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Edit Front Matter
+        run: |
+          AUTHOR=$(gh pr view ${{ github.event.number }} --json user.login --template '{{ json . }}')
+          NEW_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '_scores/.*\.md')
+
+          for FILE in $NEW_FILES; do
+            sed -i "/---/!b;n;i mod: $AUTHOR" $FILE
+          done
+
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Add moderator"
+          git push
+
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -12,9 +12,6 @@ menu: "SKY Games/Jumble Fever/Jumble Fever Shrek/ModeSelect.jpg"
 category: "Puzzle"
 modes:
  - Classic
-levels:
- - null 
- - "14"
 scores:
   sort: score
   reverse: true

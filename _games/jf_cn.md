@@ -9,8 +9,6 @@ menu: null
 category: "Puzzle"
 modes:
  - Normal
-levels:
- - "15"
 scores:
   sort: score
   reverse: true

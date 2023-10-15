@@ -12,18 +12,6 @@ menu: null
 category: "Puzzle"
 modes:
  - High Score
-levels:
- - null
- - 1
- - 2
- - 3
- - 4
- - 5
- - 6
- - 7
- - 8
- - 9
- - 10
 scores:
   sort: score
   reverse: true

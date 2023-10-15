@@ -12,10 +12,6 @@ menu: null
 category: "Puzzle"
 modes:
  - Classic
-levels:
- - '8'
- - '11'
- - '17'
 scores:
   sort: score
   reverse: true

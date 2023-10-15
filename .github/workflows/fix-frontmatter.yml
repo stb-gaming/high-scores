@@ -5,6 +5,9 @@ on:
     paths:
       - '_scores/*'
   push:
+    branches:
+      - '*'
+      - '!staticman_*'
     paths:
       - '_scores/*'
 

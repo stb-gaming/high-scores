@@ -10,6 +10,7 @@ archived: "2023-04-16"
 image: Nickelodeon/SpongeBob SquarePants/SpongeBob SquarePants/Poster.jpg
 menu: null
 category: "Adventure"
+levels: "none"
 modes:
  - High Score Play
 scores:

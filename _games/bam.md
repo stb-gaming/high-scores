@@ -10,6 +10,7 @@ archived: "2023-05-05"
 image: null
 menu: null
 category: "Arcade"
+levels: "none"
 scores:
   sort: score
   reverse: true

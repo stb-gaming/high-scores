@@ -10,6 +10,7 @@ archived: "2023-08-05"
 image: null
 menu: Endemol/Golden Balls/Menu.png
 category: "Gameshow"
+levels: "none"
 scores:
   sort: score
   reverse: true

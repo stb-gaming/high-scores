@@ -10,6 +10,7 @@ archived: "2023-08-05"
 image: null
 menu: Denki/Denki Blocks!/Sticky Blocks!/ModeSelect copy.jpg
 category: "Puzzle"
+levels: "none"
 scores:
   sort: score
   reverse: true

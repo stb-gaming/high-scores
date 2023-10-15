@@ -9,6 +9,7 @@ date: "2007-09-13"
 archived: "2023-04-20"
 image: null
 menu: null
+levels: "none"
 category: "Maze"
 scores:
   sort: score

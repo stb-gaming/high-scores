@@ -10,6 +10,7 @@ archived: "2023-05-05"
 image: SKY Games/Bugz/icon.jpg
 menu: SKY Games/Bugz/ModeSelect.jpg
 category: "Maze"
+levels: "none"
 scores:
   sort: score
   reverse: true

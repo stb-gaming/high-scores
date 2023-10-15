@@ -10,6 +10,7 @@ archived: "2023-04-29"
 image: null
 menu: null
 category: "Word"
+levels: "none"
 scores:
   sort: score
   reverse: true

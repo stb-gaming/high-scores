@@ -10,6 +10,7 @@ archived: "2023-04-28"
 image: null
 menu: "Denki/Denki Blocks!/Denki Blocks!/menu.png"
 category: "Puzzle"
+levels: "none"
 scores:
   sort: score
   reverse: true

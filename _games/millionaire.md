@@ -10,6 +10,7 @@ archived: "2023-09-09"
 image: null
 menu: null
 category: "Quiz"
+levels: "none"
 scores:
   sort: score
   reverse: true

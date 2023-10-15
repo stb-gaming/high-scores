@@ -8,6 +8,7 @@ gameplay: "Cartoon Network/Dexter's Laboratory/Dexter's Laboratory/DextersLabPla
 date: "2005-03-24"
 archived: "2023-04-20"
 image: null
+levels: "none"
 menu: null
 category: "Action"
 scores:

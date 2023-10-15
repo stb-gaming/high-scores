@@ -10,6 +10,7 @@ archived: "2023-05-13"
 image: null
 menu: null
 category: "Adventure"
+levels: "none"
 scores:
   sort: score
   reverse: true

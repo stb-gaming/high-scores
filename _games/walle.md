@@ -10,6 +10,7 @@ archived: "2023-06-24"
 image: null
 menu: Disney/WALL.E/menu.png
 category: "Adventure"
+levels: "none"
 scores:
   sort: score
   reverse: true

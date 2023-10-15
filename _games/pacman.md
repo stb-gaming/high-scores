@@ -9,6 +9,7 @@ archived: "2023-05-01"
 splash: Namco/Pac-Man/Splash.jpg
 menu: "Namco/Pac-Man/menu.png"
 category: "Arcade"
+levels: "none"
 scores:
   sort: score
   reverse: true

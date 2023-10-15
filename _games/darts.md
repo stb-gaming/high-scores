@@ -10,6 +10,7 @@ archived: "2023-05-04"
 image: SKY Sports/Darts/darts-icon.jpg
 menu: SKY Sports/Darts/ModeSelect.jpg
 category: "Sports"
+levels: "none"
 scores:
   sort: score
   reverse: true

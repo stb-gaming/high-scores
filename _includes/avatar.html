@@ -3,7 +3,7 @@
 {% assign imageUrl = item.image |default:item.splash |default:item.menu |default:item.gameplay %}
 
 
-{% capture identicon %}<svg width="800" height="800" data-jdenticon-value="{{item.slug}}"></svg>{% endcapture %}
+{% capture identicon %}<svg  data-jdenticon-value="{{item.slug}}"></svg>{% endcapture %}
 {% if item.links %}
 {% assign ghUrl = item.links|where_exp:"item","item.url contains 'github.com'"|first %}
 {% if ghUrl %}

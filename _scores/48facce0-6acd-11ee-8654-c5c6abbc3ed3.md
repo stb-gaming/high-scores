@@ -2,10 +2,10 @@
 _id: 48facce0-6acd-11ee-8654-c5c6abbc3ed3
 game: jf_cn
 author: king midas
-score: '83410'
+score: 83410
 mode: Normal
 level: '15'
-date: '2023-10-14'
+date: 2023-10-14
 platform: PC
 method: Portal
 media: >-

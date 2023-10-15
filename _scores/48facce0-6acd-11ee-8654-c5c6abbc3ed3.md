@@ -1,7 +1,7 @@
 ---
 _id: 48facce0-6acd-11ee-8654-c5c6abbc3ed3
 game: jf_cn
-author: king midas
+author: kingmidas
 score: 83410
 mode: Normal
 level: '15'

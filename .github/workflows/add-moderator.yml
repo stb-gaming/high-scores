@@ -16,8 +16,9 @@ jobs:
       - name: Edit Front Matter
         run: |
           AUTHOR=$(gh pr view ${{ github.event.number }} --json mergedBy | jq .mergedBy.login)
-          echo $AUTHOR
-          NEW_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '_scores/.*\.md')
+          PR_START=$(gh pr view ${{ github.event.number }} --json commits | jq .commits[0].oid)
+          PR_BEFORE=$(git log --pretty=format:'%h' -n 2 $PR_START | tail -n  1)
+          NEW_FILES=$(git diff --name-only $PR_BEFORE ${{ github.sha }} | grep '_scores/.*\.md')
           echo $NEW_FILES
 
           for FILE in $NEW_FILES; do

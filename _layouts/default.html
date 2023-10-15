@@ -80,6 +80,12 @@
 								<h4>Game</h4>
 								<p>{% include game-link.html game=page.game %}</p>
 							</div>
+							{% if page.method %}
+							<div class="infotile">
+								<h4>Method</h4>
+								<p>{{page.method}}</p>
+							</div>
+							{% endif %}
 							{% if page.mode %}
 							<div class="infotile">
 								<h4>Mode</h4>
@@ -107,6 +113,12 @@
 								<h4>Date</h4>
 								<p>{{page.date |date:site.date-format}}</p>
 							</div>
+							{% if page.platform %}
+							<div class="infotile">
+								<h4>Platform</h4>
+								<p>{{page.platform}}</p>
+							</div>
+							{% endif %}
 						</div>
 						<div class="infotile-column">
 
@@ -114,16 +126,10 @@
 								<h4>Player</h4>
 								<p>{% include player-link.html player=page.author %}</p>
 							</div>
-							{% if page.platform %}
+							{% if page.mod %}
 							<div class="infotile">
-								<h4>Platform</h4>
-								<p>{{page.platform}}</p>
-							</div>
-							{% endif %}
-							{% if page.method %}
-							<div class="infotile">
-								<h4>Method</h4>
-								<p>{{page.method}}</p>
+								<h4>Moderator</h4>
+								<p>{% include player-link.html player=page.mod %}</p>
 							</div>
 							{% endif %}
 						</div>

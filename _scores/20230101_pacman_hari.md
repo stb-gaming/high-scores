@@ -6,4 +6,5 @@ score: 269980
 platform: PC
 method: Vanilla
 media: /assets/img/20230101_pacman_hari.jpg
+mod: tumble
 ---

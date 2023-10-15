@@ -7,4 +7,5 @@ platform: PC
 mode: High Score
 method: Vanilla
 media: /assets/img/20230719_tetris_allambuzzy.png
+mod: tumble
 ---

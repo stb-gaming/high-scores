@@ -7,4 +7,5 @@ mode: High Score
 platform: PC
 method: Vanilla
 media: /assets/img/20230426_tetris_vadymstasivukr.png
+mod: tumble
 ---

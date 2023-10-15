@@ -1,0 +1,13 @@
+{% assign user=include.user %}
+{% if user.links %}
+{% assign ghUrl = item.links|where_exp:"item","item.url contains 'github.com'"|first %}
+{% if ghUrl && site.github %}
+{% assign userMod = site.github.contributors | where_exp: "item","item.html_url == ghUrl.url"|first  %}
+{% assign userAdmin = site.github.organization_members | where_exp: "item","item.html_url == ghUrl.url"|first %}
+{% if userAdmin %}
+<span class="rank-admin" data-balloon="Admin">🔧</span>
+{% elsif userMod %}
+<span class="rank-mod" data-balloon="Mod">🛡️</span>
+{% endif %}
+{% endif %}
+{% endif %}

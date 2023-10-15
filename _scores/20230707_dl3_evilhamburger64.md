@@ -6,4 +6,5 @@ score: 12200
 platform: PC
 method: Vanilla
 media: https://www.youtube.com/watch?v=wNFEkJMpVpo&t=183
+mod: tumble
 ---

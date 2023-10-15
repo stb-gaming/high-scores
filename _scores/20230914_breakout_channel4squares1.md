@@ -7,4 +7,5 @@ platform: PC
 method: Vanilla
 mode: One Player
 media: /assets/img/20230914_breakout_channel4squares1.png
+mod: tumble
 ---

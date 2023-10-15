@@ -47,6 +47,7 @@ function updateTable(table, newData) {
 			} else {
 			  const cell = row.insertCell();
 			  cell.innerHTML = value;
+			  cell.classList = thead.children[headerIndex].classList
 			}
 		  });
 	});

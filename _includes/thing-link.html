@@ -1,4 +1,8 @@
 <a {% if include.url %}href="{% include url.html url=include.url %}" class="entitylink"{% endif %} >
-	{% if include.image %}<img class="inlinetext" src="{% include url.html url=include.image %}" >{% else %}<span class="inlinetext">❌</span>{% endif %}
-	{{include.title | titlecase}}
+	{% if include.image %}
+	<img class="inlinetext" src="{% include url.html url=include.image %}" >
+	{% elsif include.item %}
+	{% include avatar.html item=include.item %}
+	{% else %}<span class="inlinetext">❌</span>{% endif %}
+	{% include rank.html user=include.item  %}{{include.title | titlecase}}
 </a>

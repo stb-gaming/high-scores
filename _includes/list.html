@@ -53,9 +53,9 @@ include.items
 		<th>Player</th>
 		{% endunless %}
 		<th>Score</th>
-		<th>Platform</th>
-		<th>Method</th>
-		<th>Date</th>
+		<th class="hide-sm">Platform</th>
+		<th class="hide-sm">Method</th>
+		<th class="hide-sm">Date</th>
 </thead>
 <tbody>
 	{% for score in items limit: include.limit %}
@@ -94,17 +94,17 @@ include.items
 			{{score.score}}
 			{% if score.url %}</a">{% endif %}
 		</td>
-		<td>
+		<td class="hide-sm">
 			{% if score.url %}<a href="{{scoreUrl }}">{% endif %}
 			{{score.platform}}
 			{% if score.url %}</a">{% endif %}
 		</td>
-		<td>
+		<td class="hide-sm">
 			{% if score.url %}<a href="{{scoreUrl }}">{% endif %}
 			{{score.method}}
 			{% if score.url %}</a">{% endif %}
 		</td>
-		<td>
+		<td class="hide-sm">
 			{% if score.url %}<a href="{{scoreUrl }}">{% endif %}
 			{{score.date | date:site.date-format}}
 			{% if score.url %}</a">{% endif %}

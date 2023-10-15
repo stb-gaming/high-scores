@@ -10,6 +10,7 @@
 		<div id="page_info">
 			<h1 id="page_title">
 				<a href="{{itemUrl}}">
+					{% include rank.html user=item %}
 				{{item.title | titlecase}}
 			</a>
 			</h1>

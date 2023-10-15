@@ -13,12 +13,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
         with:
-          ref: ${{ github.ref }}
+          fetch-depth: 0
       - name: Get changed files
         id: changed-files
-        uses: tj-actions/changed-files@v14.4
+        uses: tj-actions/changed-files@v39
         with:
-          since_last_remote_commit: 'true'
           files: _scores/*.md
 
       - name: Edit Front Matter

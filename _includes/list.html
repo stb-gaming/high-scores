@@ -33,7 +33,7 @@ include.items
 {% assign items = items | where_exp:"item","item.hidden != true" %}
 {% endunless %}
 
-{% if include.sort %}
+{% if items and include.sort %}
 {% assign items = items | sort: include.sort %}
 {% endif %}
 {% if include.reverse %}

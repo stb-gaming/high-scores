@@ -6,5 +6,5 @@ score: 2778904
 platform: PC
 method: Vanilla
 media: /assets/img/20230909_millionaire_channel4squares1.png
-mod: tumble
+mod: tumble1999
 ---

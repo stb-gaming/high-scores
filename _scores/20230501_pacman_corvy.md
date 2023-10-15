@@ -6,5 +6,5 @@ score: 157790
 platform: PC
 method: Vanilla
 media: /assets/img/20230501_pacman_corvy.png
-mod: tumble
+mod: tumble1999
 ---

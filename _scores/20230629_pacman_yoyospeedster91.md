@@ -6,5 +6,5 @@ score: 182400
 platform: PC
 method: Vanilla
 media: /assets/img/20230629_pacman_yoyospeedster91.png
-mod: tumble
+mod: tumble1999
 ---

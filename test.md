@@ -1,6 +1,6 @@
 ---
 title: hello
-author: tumble
+author: tumble1999
 platform: pc
 method: userscript
 date: 2003-06-26

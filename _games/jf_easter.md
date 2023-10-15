@@ -10,6 +10,7 @@ gameplay: "SKY Games/Jumble Fever/Jumble Fever Easter/EasterPlayset.jpg"
 image: null
 gameplay: "SKY Games/Jumble Fever/Jumble Fever Easter/EasterMenu.png"
 menu: null
+levels: "none"
 category: "Puzzle"
 scores:
   sort: score

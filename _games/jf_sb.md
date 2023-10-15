@@ -9,6 +9,7 @@ splash: "SKY Games/Jumble Fever/Jumble Fever SpongeBob SquarePants/Splash.bmp"
 gameplay: "SKY Games/Jumble Fever/Jumble Fever SpongeBob SquarePants/Play1.jpg"
 image: null
 menu: null
+levels: "none"
 category: "Puzzle"
 modes:
  - Classic

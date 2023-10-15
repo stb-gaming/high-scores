@@ -10,6 +10,7 @@ archived: "2023-05-06"
 image: null
 menu: null
 category: "Puzzle"
+levels: "none"
 scores:
   sort: score
   reverse: true

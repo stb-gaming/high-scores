@@ -7,6 +7,8 @@
 	{% for kv in form %}
 	{% assign key=kv[0] %}
 	{% assign value=kv[1] %}
+
+	<div>
 	{% capture name %}fields[{{key}}]{% endcapture %}
 	<label for="{{name}}"><strong>{{value.label |default:key | titlecase}}</strong></label>
 	{% if value.description %}<span>{{value.description}}</span>{% endif %}
@@ -24,6 +26,7 @@
 		{% endfor %}
 	</{{value.optionstype|default:"select"}}>
 	 {% endif %}
+	</div>
 	 {% endfor %}
 	
 	<button type="submit">Submit</button>

@@ -9,6 +9,7 @@ splash: "SKY Games/Jumble Fever/Jumble Football Fever/FootballSplash.jpg"
 gameplay: "SKY Games/Jumble Fever/Jumble Football Fever/FootballPlaySet.jpg"
 image: null
 menu: null
+levels: "none"
 category: "Puzzle"
 scores:
   sort: score

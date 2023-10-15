@@ -185,7 +185,7 @@
 				</div>
 				<div class="panel-body">
 					<div class="filter">
-						{% if game.levels %}
+						{% if game.levels and game.levels != "none" %}
 						
 						<div class="game-levels">
 							<label for="level">Level</label>
@@ -196,7 +196,7 @@
 							</select>
 						</div>
 						{% endif %}
-						{% if game.modes %}
+						{% if game.modes and game.modes != "none" %}
 						<div class="game-modes">
 							{% for mode in game.modes %}
 								<div>
@@ -308,6 +308,14 @@
 			if(modesList) {
 				const input = document.querySelector(`[name="fields[mode]"]`)
 				input.value = null;
+				if(games[gameid].modes=="none") {
+					input.parentElement.style.visibility = "hidden";
+					input.disabled = true;
+					input.required = false;
+					return
+				}
+				input.parentElement.style.visibility = null;
+				input.disabled = false;
 
 				input.required = !!games[gameid].modes.length
 
@@ -318,8 +326,16 @@
 				}))
 			}
 			if(levelsList) {
+
 				const input = document.querySelector(`[name="fields[level]"]`)
 				input.value = null;
+				if(games[gameid].levels=="none") {
+					input.parentElement.style.visibility = "hidden";
+					input.disabled = true;
+					return
+				}
+				input.parentElement.style.visibility = null;
+				input.disabled = false;
 				input.required = !!games[gameid].levels.length
 
 				levelsList.append(...games[gameid].levels.map(level=>{

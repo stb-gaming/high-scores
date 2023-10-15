@@ -10,6 +10,7 @@ gameplay: "SKY Games/Jumble Fever/Jumble Fever Beehive Bedlam/PlaySet.jpg"
 image: null
 menu: null
 category: "Puzzle"
+levels: "none"
 modes:
  - Classic
 scores:

@@ -7,6 +7,7 @@ archived: "2023-10-14"
 image: null
 menu: null
 category: "Puzzle"
+levels: "none"
 modes:
  - Normal
 scores:

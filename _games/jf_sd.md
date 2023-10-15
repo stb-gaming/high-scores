@@ -9,6 +9,7 @@ splash: "SKY Games/Jumble Fever/Jumble Fever Scooby-Doo/ScoobySplash.jpg"
 gameplay: "SKY Games/Jumble Fever/Jumble Fever Scooby-Doo/ScoobyPlaySet.jpg"
 image: null
 menu: null
+levels: "none"
 category: "Puzzle"
 scores:
   sort: score

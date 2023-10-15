@@ -10,6 +10,7 @@ gameplay: "SKY Games/Jumble Fever/Avatar Jumble Fever/Play01.bmp"
 image: null
 menu: null
 category: "Puzzle"
+levels: "none"
 scores:
   sort: score
   reverse: true

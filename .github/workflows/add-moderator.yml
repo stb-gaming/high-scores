@@ -13,17 +13,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Get Changed Files
-        id: changed_files
-        run: |
-          FILES=$(gh pr view ${{ github.event.number }} --json files | jq -r '.files[].path')
-          echo "Changed Files: $FILES"
-          echo "::set-output name=files::$FILES"
 
       - name: Edit Front Matter
         run: |
           AUTHOR=$(gh pr view ${{ github.event.number }} --json mergedBy | jq .mergedBy.login)
-          NEW_FILES=$(echo "$FILES" | grep '_scores/.*\.md')
+          NEW_FILES=$(gh pr view ${{ github.event.number }} --json files | jq -r '.files[].path'| grep '_scores/.*\.md')
 
           for FILE in $NEW_FILES; do
             sed -i "/---/!b;n;i mod: $AUTHOR" $FILE

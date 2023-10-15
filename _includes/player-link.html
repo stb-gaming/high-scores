@@ -1,4 +1,4 @@
 {% assign player = site.players | where:"slug", include.player | first | default: include.player %}
 {%capture playerRank %}{% include rank.html user=player %}{% endcapture %}
 {% assign playerName = player.title | default: include.player | titlecase %}
-{% include thing-link.html item=player url=player.url title=playerName %}
+{% include thing-link.html item=player url=player.url image=playerImage title=playerName %}

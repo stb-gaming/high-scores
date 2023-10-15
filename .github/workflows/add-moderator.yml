@@ -29,7 +29,8 @@ jobs:
           git config user.email "actions@github.com"
           git add .
           git commit -m "Add moderator"
-          git push -f
+          git push -f  -u origin main
+
 
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

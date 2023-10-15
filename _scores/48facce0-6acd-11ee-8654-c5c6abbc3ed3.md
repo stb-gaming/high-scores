@@ -4,7 +4,6 @@ game: jf_cn
 author: kingmidas
 score: 83410
 mode: Normal
-level: '15'
 date: 2023-10-14
 platform: PC
 method: Portal

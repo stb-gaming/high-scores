@@ -1,0 +1,20 @@
+{% assign item = include.item %}
+
+{% assign imageUrl = item.image |default:item.splash |default:item.menu |default:item.gameplay %}
+
+
+{% capture identicon %}<svg width="800" height="800" data-jdenticon-value="{{item.slug}}"></svg>{% endcapture %}
+{% if item.links %}
+{% assign ghUrl = item.links|where_exp:"item","item.url contains 'github.com'"|first %}
+{% if ghUrl %}
+{% assign ghUser = ghUrl.url|split:"/"|last%}
+{% capture identicon %}{% avatar user=ghUser size=800 %}{% endcapture %}
+{% endif %}
+{% endif%}
+
+{% if imageUrl%}
+	<img src="{% include url.html url=imageUrl %}"/>
+{% else %}
+{%comment%}{% avatar user=item.slug size=800 %}{%endcomment%}
+{{identicon}}
+{% endif %}

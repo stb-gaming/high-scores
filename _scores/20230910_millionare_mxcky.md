@@ -6,4 +6,5 @@ score: 2893067
 platform: PC
 method: Vanilla
 media: /assets/img/20230910_millionare_mxcky.png
+mod: tumble
 ---

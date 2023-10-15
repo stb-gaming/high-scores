@@ -6,4 +6,5 @@ score: 19717
 platform: PC
 method: Vanilla
 media: /assets/img/20230819_beehive-bedlam.com_katsudon.png
+mod: tumble
 ---

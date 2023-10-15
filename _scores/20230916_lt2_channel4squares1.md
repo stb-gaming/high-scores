@@ -6,4 +6,5 @@ score: 19427
 platform: Mobile
 method: US
 media: /assets/img/20230916_lt2_channel4squares1.jpg
+mod: tumble
 ---

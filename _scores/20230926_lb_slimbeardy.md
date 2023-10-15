@@ -6,4 +6,5 @@ score: 212700
 platform: PC
 method: Vanilla
 media: /assets/img/20230926_lb_slimbeardy.png
+mod: tumble
 ---

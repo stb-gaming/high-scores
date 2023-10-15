@@ -6,19 +6,17 @@
 <div id="infocard_{{item.slug}}" class="panel infocard" {% if include.hide %}style="display:none;"{% endif %}>
 	<div class="panel-body">
 		
-		{% assign imageUrl = item.image |default:item.splash |default:item.menu |default:item.gameplay %}
-		{% if imageUrl%}
-		<a href="{{itemUrl}}"><img src="{% include url.html url=imageUrl %}"></a>
-		{% endif %}
+		<a href="{{itemUrl}}">{% include avatar.html item=item %}</a>
 		<div id="page_info">
 			<h1 id="page_title">
 				<a href="{{itemUrl}}">
+					{% include rank.html user=item %}
 				{{item.title | titlecase}}
 			</a>
 			</h1>
 			<span>{{item.date | date:site.date-format}}</span>
 			<div id="page_description">
-				<p>Under Constructuon</p>
+				<p>{{item.description}}</p>
 			</div>
 			{% if item.links  or item.collection == "games" or item.collection == "players"  %}
 			<div id="page_links">

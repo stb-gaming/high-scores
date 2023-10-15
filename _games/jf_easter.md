@@ -8,6 +8,7 @@ date: "2006-04-06"
 splash: "SKY Games/Jumble Fever/Jumble Fever Easter/EasterSplash.jpg"
 gameplay: "SKY Games/Jumble Fever/Jumble Fever Easter/EasterPlayset.jpg"
 image: null
+gameplay: "SKY Games/Jumble Fever/Jumble Fever Easter/EasterMenu.png"
 menu: null
 category: "Puzzle"
 scores:

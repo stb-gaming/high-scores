@@ -8,7 +8,7 @@ gameplay: "Denki/Duopolis/Playset1P.jpg"
 date: "2003-12-04"
 archived: "2023-04-22"
 image: null
-menu: null
+menu: "Denki/Duopolis/menu.png"
 category: "Puzzle"
 scores:
   sort: score

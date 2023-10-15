@@ -7,8 +7,7 @@ splash: "Cartoon Network/Courage The Cowardly Dog/Courage The Cowardly Dog/Splas
 gameplay: "Cartoon Network/Courage The Cowardly Dog/Courage The Cowardly Dog/FirstFloor.jpg"
 date: "2003-10-23"
 archived: "2023-04-12"
-image: null
-menu: null
+menu: "Cartoon Network/Courage The Cowardly Dog/Courage The Cowardly Dog/menu.png"
 category: "Adventure"
 scores:
   sort: score

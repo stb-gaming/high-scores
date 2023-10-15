@@ -8,7 +8,7 @@ gameplay: "Universal Studios/HULK/Forest.jpg"
 date: "2003-08-14"
 archived: "2023-04-12"
 image: null
-menu: null
+menu: "Universal Studios/HULK/menu.png"
 category: "Action"
 scores:
   sort: score

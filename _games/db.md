@@ -8,7 +8,7 @@ gameplay: "Denki/Denki Blocks!/Denki Blocks!/DB! Sky Active 001.jpg"
 date: "2001-08-31"
 archived: "2023-04-28"
 image: null
-menu: null
+menu: "Denki/Denki Blocks!/Denki Blocks!/menu.png"
 category: "Puzzle"
 scores:
   sort: score

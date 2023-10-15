@@ -8,7 +8,7 @@ gameplay: "Cartoon Network/Courage The Cowardly Dog/Courage The Cowardly Dog Epi
 date: "2004-09-09"
 archived: "2023-07-14"
 image: null
-menu: null
+menu: "Cartoon Network/Courage The Cowardly Dog/Courage The Cowardly Dog Episode 3/menu.png"
 category: "Adventure"
 scores:
   sort: score

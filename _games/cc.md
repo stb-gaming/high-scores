@@ -8,7 +8,7 @@ gameplay: "Denki/Caterpillar Crunch/Play003.jpg"
 date: "2003-08-14"
 archived: "2023-04-23"
 image: null
-menu: null
+menu: "Denki/Caterpillar Crunch/menu.png""
 category: "Puzzle"
 scores:
   sort: score

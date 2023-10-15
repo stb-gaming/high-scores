@@ -8,7 +8,7 @@ gameplay: "Atari/Super Breakout/Play - Combo.jpg"
 date: "2002-05-17"
 archived: "2023-05-04"
 image: null
-menu: null
+menu: "Atari/Super Breakout/menu.png"
 category: "Arcade"
 modes:
  - One Player

@@ -20,7 +20,7 @@ jobs:
           NEW_FILES=$(gh pr view ${{ github.event.number }} --json files | jq -r '.files[].path'| grep '_scores/.*\.md')
 
           for FILE in $NEW_FILES; do
-            sed -i "/---/!b;n;i mod: $AUTHOR" $FILE
+            awk -v author="$AUTHOR" '/^---/ && !found {print; print "mod: " author; found=1; next} 1' $FILE > temp && mv temp $FILE
           done
 
       - name: Push Changes

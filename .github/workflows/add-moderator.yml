@@ -15,18 +15,22 @@ jobs:
 
       - name: Edit Front Matter
         run: |
-          AUTHOR=$(gh pr view 52 --json mergedBy | jq .mergedBy.login)
+          AUTHOR=$(gh pr view ${{ github.event.number }} --json mergedBy | jq .mergedBy.login)
+          echo $AUTHOR
           NEW_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '_scores/.*\.md')
+          echo $NEW_FILES
 
           for FILE in $NEW_FILES; do
             sed -i "/---/!b;n;i mod: $AUTHOR" $FILE
           done
 
+      - name: Push Changes
+        run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add .
           git commit -m "Add moderator"
-          git push
+          git push -f
 
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

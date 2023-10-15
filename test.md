@@ -23,4 +23,3 @@ links:
 Hello World
 
 {{site.github|jsonify}}
-{% endfor %}

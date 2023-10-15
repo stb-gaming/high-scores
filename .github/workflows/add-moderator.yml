@@ -22,7 +22,7 @@ jobs:
           files: _scores/*.md
 
       - name: Edit Front Matter
-          if: steps.changed-files.any_changed == 'true'
+        if: steps.changed-files.any_changed == 'true'
         run: |
           AUTHOR=$(gh pr view ${{ github.event.number }} --json mergedBy | jq .mergedBy.login)
 

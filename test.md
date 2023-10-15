@@ -21,3 +21,6 @@ links:
    url: https://example.com
 ---
 Hello World
+
+
+	{{site.github.contributers}}

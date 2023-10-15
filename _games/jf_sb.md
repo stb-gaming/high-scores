@@ -15,6 +15,7 @@ modes:
 levels:
  - null 
  - "8"
+ - 11
 scores:
   sort: score
   reverse: true

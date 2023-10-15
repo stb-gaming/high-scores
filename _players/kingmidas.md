@@ -1,8 +1,5 @@
 ---
-title: Tumble
-links:
-  - title: GitHub
-    url: https://github.com/tumble1999
+title: King Midas
 scores:
   filter: "item.author == page.slug"
   sort: date

@@ -7,6 +7,10 @@ archived: "2023-10-14"
 image: null
 menu: null
 category: "Puzzle"
+modes:
+ - Normal
+levels:
+ - 15
 scores:
   sort: score
   reverse: true

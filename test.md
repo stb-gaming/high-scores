@@ -22,9 +22,5 @@ links:
 ---
 Hello World
 
-{% for user in site.github.contributers %}
-  * [{{ user.name }}]({{ user.html_url }})
-```json
-{{user|jsonify}}
-```
+{{site.github|jsonify}}
 {% endfor %}

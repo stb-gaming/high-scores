@@ -119,8 +119,7 @@ include.items
 <div id="game_list">
 	{% for item in items limit: include.limit %}
 	<a href="{% include url.html url=item.url %}" class="game">
-		{% assign imageUrl = item.image |default:item.splash |default:item.menu |default:item.gameplay %}
-		<img src="{% include url.html url=imageUrl %}" alt="">
+		{% include avatar.html item=item %}
 		<h4>{{item.title | titlecase}}</h4>
 	</a>
 	{% endfor %}

@@ -346,9 +346,13 @@ main .container {
 	position: relative;
 
 
-	img {
+	img,svg {
 		height: 8rem;
 		width: auto;
+	}
+
+	svg {
+		background-color: $backgroundColorLight
 	}
 
 	#page_play,
@@ -430,20 +434,23 @@ table {
 	padding: 1em;
 	text-align: center;
 	border-radius: 1rem;
-	img {
+	svg {
+		background-color: $backgroundColorLight;
+	}
+	img,svg {
 		height: 8rem;
 		width: auto;
 	}
 }
-
-img.inlinetext {
+img,svg{
+&.inlinetext {
 	height: 1rem;
 	width: auto;
 	font-size:1em;
 	margin-right: .1rem;
 	vertical-align: middle;
 }
-
+}
 #record_info {
 	display: flex;
 	flex-flow: column;

@@ -67,3 +67,12 @@ title: Missing Things
 {% for level in missing_levels %}
 - {{level}}
 {% endfor %}
+
+# Game Data
+{% assign important_keys = "title,developer,url,brand,splash,gameplay,date,archived,image,menu" | split :"," %}
+{% for key in important_keys %}
+{% for game in site.games %}
+{% unless game[key] %}* Missing "{{key}}" in "{{game.slug }}"
+{% endunless %}
+{% endfor %}
+{% endfor %}

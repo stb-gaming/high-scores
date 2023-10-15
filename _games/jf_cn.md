@@ -10,7 +10,7 @@ category: "Puzzle"
 modes:
  - Normal
 levels:
- - 15
+ - "15"
 scores:
   sort: score
   reverse: true

@@ -1,7 +1,8 @@
-const SCORE_TABLE = document.querySelector("#scores").querySelector("table"),
+const SCORE_TABLE = document.querySelector("#scores table"),
 SCORE_DATA = tableToArray(SCORE_TABLE);
 
 function tableToArray(table) {
+	if(!table) return
 	const rows = table.querySelectorAll('tbody tr');
 
 	const data = [];
@@ -29,6 +30,7 @@ function tableToArray(table) {
 
 
 function updateTable(table, newData) {
+	if(!table) return
 	const tbody = table.querySelector('tbody'),
 	thead = table.querySelector('thead tr');
 

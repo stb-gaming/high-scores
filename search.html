@@ -23,7 +23,10 @@ nopanels: true
 
 <script src="https://unpkg.com/lunr/lunr.js"></script>
 <script>
-	const games = [
+
+
+const documentLists = {
+	games: [
 		{% for game in site.games %}
 		{% assign image = game.image |default:game.splash |default:game.menu |default:game.gameplay %}
 		{
@@ -38,8 +41,8 @@ nopanels: true
 			"url":"{% include url.html url=game.url %}"
 		},
 		{% endfor %}
-	];
-	const players = [
+	],
+	players: [
 		{% for player in site.players %}
 		{
 			"index":{{forloop.index}}-1,
@@ -48,9 +51,11 @@ nopanels: true
 			"url":"{% include url.html url=player.url %}"
 		},
 		{% endfor %}
-	];
+	]
+}
 
-	const gameIndex = lunr(function () {
+
+const gameIndex = lunr(function () {
   this.ref('index')
   this.field('title')
   this.field('description')
@@ -59,7 +64,7 @@ nopanels: true
   this.field('category')
   this.field('collection')
 
-  games.forEach(function (doc) {
+  documentLists.games.forEach(function (doc) {
     this.add(doc)
   }, this)
 })
@@ -70,16 +75,11 @@ const playerIndex = lunr(function () {
   this.field('description')
   this.field('collection')
 
-  players.forEach(function (doc) {
+  documentLists.players.forEach(function (doc) {
     this.add(doc)
   }, this)
 
 })
-
-const documentLists = {
-	games,
-	players
-}
 
 const indexes = {
 	games:gameIndex,

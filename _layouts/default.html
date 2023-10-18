@@ -28,7 +28,7 @@
 			</a>
 			<nav>
 				{% for item in site.data.nav %}
-				<a class="{% if item.url == '/' %}{% if page.url == '/' %}active {%endif%}{% else %}{% if page.url contains item.url %}active {%endif%}{%endif%}{{item.class}}"
+				<a class="{% if item.url == '/' %}{% if page.url == '/' %}active {%endif%}{% else %}{% if page.url contains item.url %}active {%endif%}{%endif%}{{item.class}} btn big trans"
 					href="{% include url.html url=item.url %}" {% if item.id %}id="{{item.id}}"
 					{%endif%}>{{item.title}}</a>
 				{% endfor %}

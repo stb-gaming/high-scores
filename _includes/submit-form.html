@@ -8,24 +8,36 @@
 	{% assign key=kv[0] %}
 	{% assign value=kv[1] %}
 
-	<div>
+	<div class="input-container">
 	{% capture name %}fields[{{key}}]{% endcapture %}
-	<label for="{{name}}"><strong>{{value.label |default:key | titlecase}}</strong></label>
-	{% if value.description %}<span>{{value.description}}</span>{% endif %}
+	<label for="{{name}}" ><strong>{{value.label |default:key | titlecase}}</strong></label>
+	
 	{% assign options=value.options %}
 	{% if value.collection %}
 	{% assign options=site[value.collection] %}
 	{% endif %}
 	{% if value.type %}
- 	 <input {% if value.id %}id="{{value.id}}"{% endif %} {% if options or value.optionstype %}list="list-{{name}}"{% endif %}  type="{{value.type}}" {% if value.required %}required{%endif%} name="{{name}}" />
+ 	 <input
+	 {% if value.id %}id="{{value.id}}"{% endif %}
+	 {% if options or value.optionstype %}list="list-{{name}}"{% endif %}
+	 type="{{value.type}}"
+	 {% if value.required %}required{%endif%}
+	 name="{{name}}"
+	 
+	 />
 	 {% endif %}
 	 {% if options or value.optionstype %}
-	 <{{value.optionstype|default:"select"}} name="{{name}}" id="list-{{name}}" {% if value.required %}required{%endif%}>
+	 <{{value.optionstype|default:"select"}}
+	 name="{{name}}"
+	 id="list-{{name}}"
+	 {% if value.required %}required{%endif%}
+	 >
 		{% for option in options %}
 		<option value="{{ option.slug | default: option.value | default: option }}">{{ option.title | default: option.value | default: option | titlecase }}</option>
 		{% endfor %}
 	</{{value.optionstype|default:"select"}}>
 	 {% endif %}
+	 {% if value.description %}<span>{{value.description}}</span>{% endif %}
 	</div>
 	 {% endfor %}
 	

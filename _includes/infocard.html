@@ -15,6 +15,7 @@
 			</a>
 			</h1>
 			<span>{{item.date | date:site.date-format}}</span>
+			
 			<div id="page_description">
 				<p>{{item.description}}</p>
 			</div>
@@ -22,15 +23,18 @@
 			<div id="page_links">
 				{% for link in item.links %}
 				{% if link.title=="Play" %}
-				{% assign url=link.url |replace:"denki.co.uk","stb-gaming.github.io" %}
-				<a href="{% include url.html url=url %}" id="page_play">{{link.title}}</a>
 				{% else %}
-				<a href="{% include url.html url=link.url %}">{{link.title}}</a>
+				<a href="{% include url.html url=link.url %}" class="btn">{{link.title}}</a>
 				{% endif %}
 				{% endfor %}
 				{% capture submitUrl %}/submit/score?{% if item.collection == "games" %}game{% elsif item.collection == "players" %}author{% endif %}={{item.slug}}{% endcapture %}
-				<a href="{% include url.html url=submitUrl %}">Submit Score</a>
+				<a class="btn" href="{% include url.html url=submitUrl %}">Submit Score</a>
 			</div>
+			{% endif %}
+			{% assign play_link=item.links|where:"title","Play"|first  %}
+			{% if play_link %}
+			{% assign url = play_link.url |replace:"denki.co.uk","stb-gaming.github.io" %}
+			<a href="{% include url.html url=url %}" class="btn big" id="page_play">{{play_link.title}}</a>
 			{% endif %}
 		</div>
 	</div>

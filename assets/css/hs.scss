@@ -3,6 +3,7 @@
 :root {
 	--sky-games-pink-hue: 344;
 	--sky-games-pink: hsl(var(--sky-games-pink-hue), 90%, 57%);
+	--sky-games-pink-dark: hsl(var(--sky-games-pink-hue), 67%, 46%);
 
 	--background-color-light: hsl(var(--sky-games-pink-hue), 17%, 92%);
 	--panel-color-light: hsla(var(--sky-games-pink-hue), 20%, 82%, 0.85);
@@ -16,6 +17,7 @@
 	--text-color-dark: #f9f9f9;
 
 	--darken: rgba(.5,.5,.5,.2);
+	--trans: rgba(0, 0, 0, 0);
 
 }
 
@@ -40,6 +42,7 @@
 
 // Variables
 $skyGamesPink: var(--sky-games-pink);
+$skyGamesPinkDark: var(--sky-games-pink-dark);
 $backgroundColor: var(--background-color);
 $panelColor: var(--panel-color);
 $panelHeaderColor: var(--panel-header-color);
@@ -56,31 +59,9 @@ $panelHeaderColorLight: var(--panel-header-color-light);
 $textColorLight: var(--text-color-light);
 
 $darken: var(--darken);
+$trans: var(--trans);
 
-%bigLink {
-position: relative;
 
-	font-size: 1.7em;
-	font-weight: bold;
-	padding: .3rem 1rem;
-	border-radius: .5rem;
-
-	&,&:hover,&:visited {
-		color: white;
-	}
-	&:hover,&.active{
-
-		background-color: $darken;
-		&::before {
-			content: '';
-			position: absolute;
-			top:0;
-			left:0;
-			width: 100%;
-			height: 100%;
-		}
-	}
-}
 
 
 
@@ -105,13 +86,8 @@ h5 {
 }
 
 
-a{
-	&:visited,
-	&:focus,
-	&:hover {
-		text-decoration: none;
-}
-}
+
+
 
 header {
 	height: 5rem;
@@ -150,18 +126,9 @@ input,select,button {
 
 }
 
-button {
-	@extend %bigLink;
-	background-color: $skyGamesPink;
-	color: $textColorDark;
-	padding: .2rem .5rem;
-	border-radius: .5rem;
-}
 
-[data-balloon] {
-	position: relative;
-	&:before {
-		position: absolute;
+%balloon {
+	position: absolute;
 		content: attr(data-balloon);
 		bottom: 100%;
 		background-color: black;
@@ -172,23 +139,26 @@ button {
 		margin-bottom: .5rem;
 		z-index: 10;
 		visibility: hidden
-	  }
-	  &:hover::before {
-		visibility: visible;
-	  }
-	  
 }
 
-input,select {
+[data-balloon] {
+	position: relative;
+	&:before {
+		@extend %balloon
+	  }
+	&:hover,&:focus{
+		&::before {
+			visibility: visible;
+		}
+	}
+}
+
+input:not([type=submit]):not([type=button]):not([type=reset]),select {
 	color: $textColorDark;
 	background: $skyGamesPink;
 	padding: .5em 2em;
 	background-color: $darken;
 	border-radius: 1em;
-	
-	label+& {
-		display: block;
-	}
 
 	&:empty {
 		background-color: none
@@ -197,9 +167,9 @@ input,select {
 
 	&[type=radio] {
 		display: none;
-		// &:has(+label) {
-		// 	display: none;
-		// }
+		&:has(+label) {
+			display: none;
+		}
 
 		&+label {
 			height: 100%;
@@ -215,6 +185,76 @@ input,select {
 
 
 }
+
+//Buttons and links
+%btnLinkBase {
+	/*%btnLinkBase*/
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+%link {
+	@extend %btnLinkBase;
+	/*%link*/
+	color: $skyGamesPink
+}
+%btn {
+	@extend %btnLinkBase;
+	display: inline-block;
+	/*%btn*/
+	color: $textColorDark;
+	border: none;
+	white-space: pre;
+	text-align: center;
+	user-select: none;
+	padding:.3rem .5rem;
+	border-radius: .5rem;
+	background-color: $trans;
+	&.big {
+		font-size: 1.7em;
+		padding: .3rem 1rem;
+		border-radius: .5rem;
+	}
+	&:not(.trans) {
+		background-color: $skyGamesPink;
+
+		&:hover,&.active{
+			background-color: $skyGamesPinkDark;
+		}
+	}
+
+	&:hover,&.active {
+		background-color: $darken;
+	}
+}
+
+//Links
+a:not([href]),a[href=""] {
+	color: inherit
+}
+
+a[href]:not([href=""]) {
+	&,&:visited,&:link {
+		&.btn {
+			@extend %btn;
+		}
+		&:not(.btn) {
+			@extend %link;
+		}
+	}
+}
+
+//Buttons
+button,
+input[type=submit],
+input[type=reset],
+input[type=button] {
+	@extend %btn;
+}
+
+
+// End of Buttons and links
 
 
 
@@ -288,10 +328,6 @@ input,select {
 }
 nav {
 flex: 1;
-	a {
-		@extend %bigLink;
-		font-weight: normal;
-	}
 	@media (max-width: 544px) {
 		display: flex;
 		flex-flow: row;
@@ -310,20 +346,6 @@ main {
 	h4,
 	h5 {
 		color: $skyGamesPink;
-	}
-
-
-	a{
-		&,
-		&:visited,
-		&:focus,
-		&:hover {
-			color: white;
-				&[href]:not([href=""]) {
-					color: $skyGamesPink;
-					font-weight:bold;
-				}
-	}
 	}
 }
 
@@ -366,6 +388,10 @@ main .container {
 	gap: 1rem;
 	position: relative;
 
+	#page_info {
+		width: 100%;
+	}
+
 
 	img,svg {
 		height: 8rem;
@@ -376,13 +402,10 @@ main .container {
 		background-color: $backgroundColorLight
 	}
 
-	#page_play,
-	[id^=page_play] {
-		position: absolute;
-		right: 1rem;
-		button: 1rem;
-		@extend %bigLink;
+	#page_play {
+		float: right;
 	}
+
 }
 
 #page_title {
@@ -390,15 +413,10 @@ main .container {
 }
 
 #page_links {
-	display: flex;
-	gap: 1em;
+	display: inline-flex;
+  gap: 1em;
+  padding-bottom: 1rem;
 
-	a {
-		background-color: $skyGamesPink;
-		color: $textColorDark;
-		padding: .2rem .5rem;
-		border-radius: .5rem;
-	}
 }
 
 
@@ -476,13 +494,7 @@ img,svg{
 	display: flex;
 	flex-flow: column;
 	align-items: center;
-	h3 {
-		
-	}
-	img {
-		// margin-left: auto;
-		// margin-right: auto;
-	}
+
 	#record_media {
 		height: auto;
 		max-height: 100%;
@@ -560,4 +572,3 @@ img,svg{
 	width: 100%;
 	color: white;
   }
-  

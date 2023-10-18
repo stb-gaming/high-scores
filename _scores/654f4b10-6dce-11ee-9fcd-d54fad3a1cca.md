@@ -2,9 +2,9 @@
 _id: 654f4b10-6dce-11ee-9fcd-d54fad3a1cca
 game: jf_sb
 author: archiver
-score: '75520'
+score: 75520
 mode: Classic
-date: '2023-10-18'
+date: 2023-10-18
 platform: PC
 method: Vanilla
 media: >-

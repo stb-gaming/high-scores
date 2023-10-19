@@ -211,6 +211,10 @@ input:not([type=submit]):not([type=button]):not([type=reset]),select {
 	padding:.3rem .5rem;
 	border-radius: .5rem;
 	background-color: $trans;
+	img,svg {
+		height:2rem;
+		width: auto;
+	}
 	&.big {
 		font-size: 1.7em;
 		padding: .3rem 1rem;

@@ -214,6 +214,7 @@ input:not([type=submit]):not([type=button]):not([type=reset]),select {
 	img,svg {
 		height:2rem;
 		width: auto;
+		vertical-align: text-bottom;
 	}
 	&.big {
 		font-size: 1.7em;

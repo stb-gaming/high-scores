@@ -2,10 +2,10 @@
 _id: da8803e0-6f5e-11ee-9fcd-d54fad3a1cca
 game: duo
 author: kingmidas
-score: '127900'
+score: 127900
 mode: normal (play)
 level: ''
-date: '2023-10-20'
+date: 2023-10-20
 platform: PC
 method: Portal
 media: >-

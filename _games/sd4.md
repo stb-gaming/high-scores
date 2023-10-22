@@ -1,5 +1,5 @@
 ---
-title: "Scooby: Ankhamon"
+title: "Scooby-Doo 4"
 description: "Solve the curse of Ankhanamon!"
 developer: "Denki"
 brand: "Cartoon Network"

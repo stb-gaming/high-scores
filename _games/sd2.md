@@ -1,5 +1,5 @@
 ---
-title: "Scooby: Mummy Madness"
+title: "Scooby-Doo 2"
 description: "Help Mystery Inc tackle a haunted museum!"
 developer: "Denki"
 brand: "Cartoon Network"

@@ -1,5 +1,5 @@
 ---
-title: "Scooby: Eerie Isle"
+title: "Scooby-Doo 1"
 description: "Help the Mystery gang track down the ghosts of Eerie Isle!"
 developer: "Denki"
 brand: "Cartoon Network"

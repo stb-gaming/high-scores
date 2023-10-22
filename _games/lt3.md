@@ -1,5 +1,5 @@
 ---
-title: "Looney Tunes: Back in Action 3"
+title: "Looney Tunes 3"
 description: "Oh no! Bugs has been kidnapped by ACME!"
 developer: "Denki"
 brand: "Warner Bros"

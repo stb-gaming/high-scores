@@ -1,5 +1,5 @@
 ---
-title: "Dexter: Mandark Strikes Back"
+title: "Dexter's Lab 2"
 description: "Dexter's feud with Mandark continues!"
 developer: "Denki"
 brand: "Cartoon Network"

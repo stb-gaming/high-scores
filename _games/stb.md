@@ -1,5 +1,5 @@
 ---
-title: "Denki's Sticky Blocks!"
+title: "Sticky Blocks"
 description: "Denki Blocks is back and stickier than ever!"
 developer: "Denki"
 brand: "Denki"

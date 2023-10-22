@@ -1,5 +1,5 @@
 ---
-title: "Codename Kids Next Door"
+title: "KND: BITTERSWEET"
 description: "Stop the evil Stickybeard in his tracks!"
 developer: "Denki"
 brand: "Cartoon Network"

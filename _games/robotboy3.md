@@ -1,5 +1,5 @@
 ---
-title: "Robotboy Episode 3"
+title: "Robotboy 3"
 description: "Help repair Robotboy's Superactivator!"
 developer: "Denki"
 brand: "Cartoon Network"

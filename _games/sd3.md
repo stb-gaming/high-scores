@@ -1,5 +1,5 @@
 ---
-title: "Scooby-Doo: Mystery Mine"
+title: "Scooby: Mystery Mine"
 description: "Scooby's gang is tasked with navigating the Mysterious Manor!"
 developer: "Denki"
 brand: "Cartoon Network"

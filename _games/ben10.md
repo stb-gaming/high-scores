@@ -1,5 +1,5 @@
 ---
-title: "Ben 10: Vilgax Venom"
+title: "Ben 10 1"
 description: "Fight off robots in an alien assault!"
 developer: "Denki"
 brand: "Cartoon Network"

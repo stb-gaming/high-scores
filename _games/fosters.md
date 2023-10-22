@@ -1,5 +1,5 @@
 ---
-title: "Foster's Home for Imaginary Friends"
+title: "Foster's 1"
 description: "Reset clocks to fix the timeline"
 developer: "Denki"
 brand: "Cartoon Network"

@@ -1,5 +1,6 @@
 ---
 title: "Jumble Fever: SpongeBob"
+full-title: "SpongeBob SquarePants Jumble Fever"
 description: "Fruity addicting fun!"
 developer: "Denki"
 brand: "SKY Games"

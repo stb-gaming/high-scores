@@ -1,5 +1,6 @@
 ---
 title: "Wallace and Gromit"
+full-title: "Wallace and Gromit: The Curse of the Were-Rabbit"
 description: "ANTI-PESTO's biggest job yet!"
 developer: "Denki"
 brand: "Aardman"

@@ -1,5 +1,6 @@
 ---
 title: "Shrek Episode 2"
+full-title: "Shrek: Disarming Charming"
 description: "Prince Charming gone bad!"
 developer: "Denki"
 brand: "Dreamworks"

@@ -1,5 +1,6 @@
 ---
 title: "Shrek Episode 3"
+full-title: "Shrek: Fairy Godmother's Revenge"
 description: "Help Fiona rescue her beloved Shrek and Donkey!"
 developer: "Denki"
 brand: "Dreamworks"

@@ -1,5 +1,6 @@
 ---
 title: "T&J Episode 3"
+full-title: "Tom and Jerry in "Mansion House Mouse""
 developer: "Denki"
 brand: "Cartoon Network"
 menu: "Cartoon Network/Tom and Jerry/Tom and Jerry Episode 3/ModeSelect.jpg"

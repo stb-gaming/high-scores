@@ -1,5 +1,6 @@
 ---
 title: "Thunderbirds"
+full-title: "Thunderbirds: Flashpoint Earth"
 description: "International Rescue is under high demand!"
 developer: "Denki"
 brand: "Universal Studios"

@@ -1,5 +1,6 @@
 ---
 title: "Robotboy 3"
+full-title: "Robotboy: Repair or Despair"
 description: "Help repair Robotboy's Superactivator!"
 developer: "Denki"
 brand: "Cartoon Network"

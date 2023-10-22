@@ -1,5 +1,6 @@
 ---
 title: "Incredible Hulk"
+full-title: "The Incredible Hulk"
 description: "Hulk returns in a comic-book style action game!"
 developer: "Denki"
 brand: "Marvel"

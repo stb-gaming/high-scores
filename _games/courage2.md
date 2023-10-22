@@ -1,5 +1,6 @@
 ---
 title: "Courage 2"
+full-title: "Courage the Cowardly Dog in "Katz Komeback""
 description: "Katz is back, and wanting more!"
 developer: "Denki"
 brand: "Cartoon Network"

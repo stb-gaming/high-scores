@@ -1,5 +1,6 @@
 ---
 title: "Looney Tunes 3"
+full-title: "Looney Tunes: Back in Action: Rabbit Resuce"
 description: "Oh no! Bugs has been kidnapped by ACME!"
 developer: "Denki"
 brand: "Warner Bros"

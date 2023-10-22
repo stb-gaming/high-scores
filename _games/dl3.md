@@ -1,5 +1,6 @@
 ---
 title: "Dexter's Lab 3"
+full-title: "Dexter's Laboratory: Dorkster's Revenge"
 description: "Take the battle to Mandark's laboratory!"
 developer: "Denki"
 brand: "Cartoon Network"

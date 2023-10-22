@@ -1,5 +1,6 @@
 ---
 title: "SpongeBob 1"
+full-title: "SpongeBob SquarePants in "Bikini Bottom Bother""
 description: "Evade the Thug Tugs and bring justice to longtime rival Plankton!"
 developer: "Denki"
 brand: "Nickelodeon"

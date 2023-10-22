@@ -1,5 +1,6 @@
 ---
 title: "KND: REVENGE"
+full-title: "Codename: Kids Next Door: Operation R.E.V.E.N.G.E"
 description: "Sink the Sweet Revenge III once and for all!"
 developer: "Denki"
 brand: "Cartoon Network"

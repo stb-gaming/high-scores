@@ -1,5 +1,6 @@
 ---
 title: "Jumble Quest"
+full-title: "Jumble Quest: The Lost Pyramids"
 description: "Match gems to uncover the Lost Pyramids!"
 developer: "Denki"
 brand: "SKY Games"

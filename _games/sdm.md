@@ -1,5 +1,6 @@
 ---
 title: "Scooby-Doo: Creepy Cowboy"
+full-title: "Scooby Doo Mysteries: The Curse of the Creepy Cowboy"
 description: "Wild West meets ghostly ghouls..."
 developer: "Denki"
 brand: "Cartoon Network"

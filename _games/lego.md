@@ -1,5 +1,5 @@
 ---
-title: "Lego Castle: The Sword of Virtue"
+title: "Lego Castle"
 description: "Save the West from siege!"
 developer: "Denki"
 brand: "LEGO"

@@ -1,5 +1,5 @@
 ---
-title: "Codename Kids Next Door Episode 2"
+title: "KND: SHIPWRECKED"
 description: "Numbuh Four takes to the pirates head-on!"
 developer: "Denki"
 brand: "Cartoon Network"

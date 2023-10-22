@@ -1,5 +1,5 @@
 ---
-title: "Tom and jerry food fight"
+title: "T&J Food Fight"
 menu: Cartoon Network/Tom and Jerry/Tom and Jerry Food Fight/menu.png
 modes:
  - Easy

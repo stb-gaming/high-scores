@@ -1,5 +1,5 @@
 ---
-title: "Robotboy Episode 2"
+title: "Robotboy 2"
 description: "A gargantuan creation awaits Robotboy!"
 developer: "Denki"
 brand: "Cartoon Network"

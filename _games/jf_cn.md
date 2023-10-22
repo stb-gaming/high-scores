@@ -1,5 +1,5 @@
 ---
-title: "Jumble Fever: Cartoon Network"
+title: "Jumble Fever: CN"
 description: "Fruity addicting fun!"
 developer: "Denki"
 brand: "SKY Games"

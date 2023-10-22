@@ -1,5 +1,5 @@
 ---
-title: "All Grown Up: Confiscated Cards"
+title: "All Grown Up"
 description: "Help the Rugrats collect Chuckie's confiscated Yu-Gotta-Go cards!"
 developer: "Denki"
 brand: "Nickelodeon"

@@ -1,5 +1,5 @@
 ---
-title: "SpongeBob SquarePants 2"
+title: "SpongeBob 2"
 description: "Help Krabs recover the secret formula!"
 developer: "Denki"
 brand: "Nickelodeon"

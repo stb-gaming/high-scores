@@ -1,5 +1,5 @@
 ---
-title: "Courage the Cowardly Dog 3"
+title: "Courage 3"
 description: "Eustace and Muriel have been kidnapped again - but not by who you think!"
 developer: "Denki"
 brand: "Cartoon Network"

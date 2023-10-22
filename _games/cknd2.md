@@ -1,5 +1,5 @@
 ---
-title: "Codename Kids Next Door 2.0"
+title: "KND 2.0"
 description: "Kids versus grown-ups, the ultimate battle of wits!"
 developer: "Denki"
 brand: "Cartoon Network"

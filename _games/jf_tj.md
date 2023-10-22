@@ -1,5 +1,5 @@
 ---
-title: "Jumble Fever: Tom and Jerry"
+title: "Jumble Fever: T&J"
 description: "Fruity addicting fun!"
 developer: "Denki"
 brand: "SKY Games"

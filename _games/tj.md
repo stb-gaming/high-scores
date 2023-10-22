@@ -1,5 +1,5 @@
 ---
-title: "Tom and Jerry: Mouse Party"
+title: "T&J Episode 1"
 description: "Rescue orphan mice while avoiding cats!"
 developer: "Denki"
 brand: "Cartoon Network"

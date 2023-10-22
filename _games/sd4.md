@@ -1,5 +1,5 @@
 ---
-title: "Scooby-Doo: Tomb It May Concern"
+title: "Scooby: Ankhamon"
 description: "Solve the curse of Ankhanamon!"
 developer: "Denki"
 brand: "Cartoon Network"

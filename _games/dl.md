@@ -1,5 +1,5 @@
 ---
-title: "Dexter vs. Mandark"
+title: "Dexter's Lab"
 description: "A battle of wits between two evil geniuses!"
 developer: "Denki"
 brand: "Cartoon Network"

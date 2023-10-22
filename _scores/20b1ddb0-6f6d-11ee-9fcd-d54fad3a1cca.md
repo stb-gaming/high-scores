@@ -2,9 +2,9 @@
 _id: 20b1ddb0-6f6d-11ee-9fcd-d54fad3a1cca
 game: jf_shrek
 author: kingmidas
-score: '141870'
+score: 141870
 mode: Classic
-date: '2023-10-20'
+date: 2023-10-20
 platform: PC
 method: Portal
 media: >-

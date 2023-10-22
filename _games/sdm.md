@@ -1,5 +1,5 @@
 ---
-title: "Scooby-Doo: Creepy Cowboy"
+title: "Scooby Mysteries 1"
 description: "Wild West meets ghostly ghouls..."
 developer: "Denki"
 brand: "Cartoon Network"

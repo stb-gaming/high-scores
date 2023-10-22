@@ -1,5 +1,5 @@
 ---
-title: "Beehive Bedlam (Denki)"
+title: "Beehive Bedlam 2"
 description: "Never released!"
 developer: "Denki"
 brand: "SKY Games"

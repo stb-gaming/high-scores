@@ -1,5 +1,5 @@
 ---
-title: "SpongeBob SquarePants 4"
+title: "SpongeBob 4"
 description: "Plankton has duped Neptune!"
 developer: "Denki"
 brand: "Nickelodeon"

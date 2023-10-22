@@ -1,5 +1,5 @@
 ---
-title: "Courage the Cowardly Dog 1"
+title: "Courage 1"
 description: "Save Eustace and Muriel from the evil Katz!"
 developer: "Denki"
 brand: "Cartoon Network"

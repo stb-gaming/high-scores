@@ -1,5 +1,5 @@
 ---
-title: "Codename Kids Next Door Episode 3"
+title: "KND: REVENGE"
 description: "Sink the Sweet Revenge III once and for all!"
 developer: "Denki"
 brand: "Cartoon Network"

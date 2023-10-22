@@ -1,5 +1,5 @@
 ---
-title: "SpongeBob SquarePants 3"
+title: "SpongeBob 3"
 description: "Where's Gary? He's been kidnapped by the ghostly Flying Dutchman!"
 developer: "Denki"
 brand: "Nickelodeon"

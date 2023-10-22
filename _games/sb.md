@@ -1,5 +1,5 @@
 ---
-title: "SpongeBob SquarePants 1"
+title: "SpongeBob 1"
 description: "Evade the Thug Tugs and bring justice to longtime rival Plankton!"
 developer: "Denki"
 brand: "Nickelodeon"

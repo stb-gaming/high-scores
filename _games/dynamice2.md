@@ -1,5 +1,5 @@
 ---
-title: "Tom and Jerry: Dynamice 2"
+title: "T&J Dynamice 2"
 description: "Bombs away!"
 developer: "Denki"
 brand: "Cartoon Network"

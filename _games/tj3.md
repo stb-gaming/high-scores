@@ -1,5 +1,5 @@
 ---
-title: "Tom and Jerry Episode 3"
+title: "T&J Episode 3"
 developer: "Denki"
 brand: "Cartoon Network"
 menu: "Cartoon Network/Tom and Jerry/Tom and Jerry Episode 3/ModeSelect.jpg"

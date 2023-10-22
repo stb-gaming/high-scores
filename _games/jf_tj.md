@@ -4,10 +4,11 @@ description: "Fruity addicting fun!"
 developer: "Denki"
 brand: "SKY Games"
 archived: "2023-10-14"
-image: null
-menu: null
 category: "Puzzle"
 levels: "none"
+menu: SKY Games/Jumble Fever/Jumble Fever Tom & Jerry/menu.png
+gameplay: SKY Games/Jumble Fever/Jumble Fever Tom & Jerry/T&JPlaySet.jpg
+splash: SKY Games/Jumble Fever/Jumble Fever Tom & Jerry/T&JSplash.jpg
 scores:
   sort: score
   reverse: true

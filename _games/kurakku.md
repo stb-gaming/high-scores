@@ -1,5 +1,6 @@
 ---
 title: "Kurakku"
+menu: PlayJam/Kurakku/menu.png
 scores:
   sort: score
   reverse: true

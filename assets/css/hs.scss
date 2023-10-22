@@ -1,13 +1,13 @@
 ---
 ---
 :root {
-	--sky-games-pink-hue: 344;
-	--sky-games-pink: hsl(var(--sky-games-pink-hue), 90%, 57%);
-	--sky-games-pink-dark: hsl(var(--sky-games-pink-hue), 67%, 46%);
+	--sky-games-pink-hue: 334;
+	--sky-games-pink: hsl(var(--sky-games-pink-hue), 100%, 47%);
+	--sky-games-pink-dark: hsl(var(--sky-games-pink-hue), 77%, 56%);
 
-	--background-color-light: hsl(var(--sky-games-pink-hue), 17%, 92%);
-	--panel-color-light: hsla(var(--sky-games-pink-hue), 20%, 82%, 0.85);
-	--panel-header-color-light: hsla(var(--sky-games-pink-hue), 0%, 12%, 0.1);
+	--background-color-light: hsl(var(--sky-games-pink-hue), 27%, 82%);
+	--panel-color-light: hsla(var(--sky-games-pink-hue), 30%, 72%, 0.85);
+	--panel-header-color-light: hsla(var(--sky-games-pink-hue), 10%, 2%, 0.1);
 	--text-color-light: #212427;
 
 
@@ -92,21 +92,33 @@ h5 {
 header {
 	height: 5rem;
 	background-color: $skyGamesPink;
-
-
-	.container {
-		height: 100%;
-
 	display: flex;
 	flex-flow: row;
 	align-items: center;
-	gap: 2rem;
-	vertical-align: middle;
-
-
-	&,* ,h1,h2,h3,h4,h5,h6 {
-		color: $textColorDark;
+	img {
+		height: 4rem;
+		padding-right: .7rem;
 	}
+
+
+	.container {
+
+		display: flex;
+		flex-flow: row;
+		align-items: center;
+		gap: 2rem;
+		vertical-align: middle;
+		> a {
+				height: 100%;
+				display: flex;
+				flex-flow: row;
+				align-items: center;
+		}
+
+
+		&,* ,h1,h2,h3,h4,h5,h6 {
+			color: $textColorDark;
+		}
 
 	}
 

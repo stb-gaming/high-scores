@@ -10,6 +10,8 @@ archived: "2023-04-22"
 image: null
 menu: "Denki/Duopolis/menu.png"
 category: "Puzzle"
+modes:
+ - normal (play)
 scores:
   sort: score
   reverse: true

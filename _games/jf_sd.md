@@ -11,6 +11,8 @@ image: null
 menu: null
 levels: "none"
 category: "Puzzle"
+modes:
+ - normal (play)
 scores:
   sort: score
   reverse: true

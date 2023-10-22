@@ -1,6 +1,10 @@
 ---
 title: "Tom and jerry food fight"
-manu: Cartoon Network/Tom and Jerry/Tom and Jerry Food Fight/menu.png
+menu: Cartoon Network/Tom and Jerry/Tom and Jerry Food Fight/menu.png
+modes:
+ - Easy
+levels:
+ - 10
 scores:
   sort: score
   reverse: true

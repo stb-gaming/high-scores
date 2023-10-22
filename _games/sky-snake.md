@@ -1,5 +1,6 @@
 ---
 title: "Sky Snake"
+menu: SKY Games/Sky Snake/menu.png
 scores:
   sort: score
   reverse: true

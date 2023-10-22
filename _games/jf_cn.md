@@ -4,8 +4,7 @@ description: "Fruity addicting fun!"
 developer: "Denki"
 brand: "SKY Games"
 archived: "2023-10-14"
-image: null
-menu: null
+menu: SKY Games/Jumble Fever/Jumble Fever Cartoon Network/menu.png
 category: "Puzzle"
 levels: "none"
 modes:

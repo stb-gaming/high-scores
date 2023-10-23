@@ -1,6 +1,6 @@
 ---
 title: "SpongeBob 3"
-full-title: "SpongeBob SquarePants in "The Flying Dutchman""
+full-title: "SpongeBob SquarePants in The Flying Dutchman"
 description: "Where's Gary? He's been kidnapped by the ghostly Flying Dutchman!"
 developer: "Denki"
 brand: "Nickelodeon"

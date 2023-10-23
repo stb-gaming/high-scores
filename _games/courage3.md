@@ -1,6 +1,6 @@
 ---
 title: "Courage 3"
-full-title: "Courage the Cowardly Dog in "Le Quack Attack""
+full-title: "Courage the Cowardly Dog in Le Quack Attack"
 description: "Eustace and Muriel have been kidnapped again - but not by who you think!"
 developer: "Denki"
 brand: "Cartoon Network"

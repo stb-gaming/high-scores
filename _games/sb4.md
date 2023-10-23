@@ -1,6 +1,6 @@
 ---
 title: "SpongeBob 4"
-full-title: "SpongeBob SquarePants in "Save our Sandy""
+full-title: "SpongeBob SquarePants in Save our Sandy"
 description: "Plankton has duped Neptune!"
 developer: "Denki"
 brand: "Nickelodeon"

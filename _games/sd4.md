@@ -1,6 +1,6 @@
 ---
 title: "Scooby: Ankhamon"
-full-title: "Scooby Doo: Where are You? in "Tomb it May Concern""
+full-title: "Scooby Doo: Where are You? in Tomb it May Concern"
 description: "Solve the curse of Ankhanamon!"
 developer: "Denki"
 brand: "Cartoon Network"

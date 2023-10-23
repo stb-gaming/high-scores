@@ -1,6 +1,6 @@
 ---
 title: "SpongeBob 2"
-full-title: "SpongeBob SquarePants in "Krabby Patty Kidnap""
+full-title: "SpongeBob SquarePants in Krabby Patty Kidnap"
 description: "Help Krabs recover the secret formula!"
 developer: "Denki"
 brand: "Nickelodeon"

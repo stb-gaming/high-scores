@@ -1,6 +1,6 @@
 ---
 title: "Scooby: Mummy Madness"
-full-title: "Scooby Doo: Where are You? in "Mummy Madness""
+full-title: "Scooby Doo: Where are You? in Mummy Madness"
 description: "Help Mystery Inc tackle a haunted museum!"
 developer: "Denki"
 brand: "Cartoon Network"

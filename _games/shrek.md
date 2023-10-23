@@ -5,10 +5,9 @@ developer: "Denki"
 brand: "Dreamworks"
 splash: "Dreamworks/Shrek/Shrek/Splash.jpg"
 gameplay: "Dreamworks/Shrek/Shrek/Forest02.jpg"
+menu: Dreamworks/Shrek/Shrek/menu.png
 date: "2005-02-17"
 archived: "2023-04-12"
-image: null
-menu: null
 category: "Adventure"
 levels: "none"
 scores:

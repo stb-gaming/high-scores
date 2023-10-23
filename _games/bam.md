@@ -5,10 +5,9 @@ developer: "Denki"
 brand: "Taito"
 splash: "Taito/Bust-a-Move/Splash.jpg"
 gameplay: "Taito/Bust-a-Move/Play.jpg"
+menu: "Taito/Bust-a-Move/menu.png"
 date: "2002-10-11"
 archived: "2023-05-05"
-image: null
-menu: null
 category: "Arcade"
 levels: "none"
 scores:

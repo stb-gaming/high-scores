@@ -5,10 +5,9 @@ developer: "Denki"
 brand: "Dreamworks"
 splash: "Dreamworks/Shrek/Shrek Episode 2/Splash.jpg"
 gameplay: "Dreamworks/Shrek/Shrek Episode 2/Swamp_night.jpg"
+menu: Dreamworks/Shrek/Shrek Episode 2/menu.png
 date: "2005-07-14"
 archived: "2023-05-13"
-image: null
-menu: null
 category: "Adventure"
 levels: "none"
 scores:

@@ -1,6 +1,8 @@
 ---
 title: "Sky Snake"
 menu: SKY Games/Sky Snake/menu.png
+developer: "Open"
+brand: Sky Games
 scores:
   sort: score
   reverse: true

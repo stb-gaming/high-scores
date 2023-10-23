@@ -12,4 +12,4 @@ scores:
 links:
   - title: Play
     url: "https://denki.co.uk/sky/sdm2/app.html"
-	---
+---

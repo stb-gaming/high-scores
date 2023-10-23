@@ -1,6 +1,6 @@
 ---
-title: "Zombie Kong"
-full-title: "Zombie Kong"
+title: "Zombie Kong Demo"
+full-title: "Zombie Kong Demo"
 menu: 
 developer: PlayJam
 scores:

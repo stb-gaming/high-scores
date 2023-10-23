@@ -1,7 +1,7 @@
 ---
 _id: da8803e0-6f5e-11ee-9fcd-d54fad3a1cca
 game: duo
-author: kingmidas
+author: kingmidas666
 score: 127900
 mode: normal (play)
 level: ''

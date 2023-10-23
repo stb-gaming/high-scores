@@ -1,7 +1,7 @@
 ---
 title: "Zombie Kong Demo"
 full-title: "Zombie Kong Demo"
-menu: 
+menu: https://i.ytimg.com/vi/7IGAY8OzV3k/maxresdefault.jpg
 developer: PlayJam
 scores:
   sort: score

@@ -6,6 +6,7 @@ developer: "Denki"
 brand: "Cartoon Network"
 splash: "Cartoon Network/Courage The Cowardly Dog/Courage The Cowardly Dog Episode 2/Splash.bmp"
 gameplay: "Cartoon Network/Courage The Cowardly Dog/Courage The Cowardly Dog Episode 2/CourageEp2Play.jpg"
+menu: "Cartoon Network/Courage The Cowardly Dog/Courage The Cowardly Dog Episode 2/menu.jpg"
 date: "2004-07-08"
 archived: "2023-07-14"
 image: null

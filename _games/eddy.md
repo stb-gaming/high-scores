@@ -6,10 +6,9 @@ developer: "Denki"
 brand: "Cartoon Network"
 splash: "Cartoon Network/Ed, Edd 'n' Eddy/Ed, Edd 'n' Eddy/Splash.jpg"
 gameplay: "Cartoon Network/Ed, Edd 'n' Eddy/Ed, Edd 'n' Eddy/Play04.jpg"
+menu: Cartoon Network/Ed, Edd 'n' Eddy/Ed, Edd 'n' Eddy/menu.png
 date: "2005-08-11"
 archived: "2023-04-12"
-image: null
-menu: null
 category: "Action"
 levels: "none"
 scores:

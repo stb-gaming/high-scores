@@ -5,6 +5,7 @@ developer: "Denki"
 brand: "SKY Games"
 splash: "SKY Games/LetterBox/Splash.jpg"
 gameplay: "SKY Games/LetterBox/Play.jpg"
+menu: "SKY Games/LetterBox/menu.png"
 date: "2004-03-18"
 archived: "2023-04-23"
 image: null

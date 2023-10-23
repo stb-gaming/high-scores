@@ -8,7 +8,6 @@ splash: "SKY Games/Carol Vorderman's Mind Aerobics/Carol Vorderman's Mind Aerobi
 gameplay: null
 date: "2007-03-15"
 archived: "2023-09-02"
-image: null
 menu: SKY Games/Carol Vorderman's Mind Aerobics/Carol Vorderman's Mind Aerobics/Menu.jpg
 category: "Puzzle"
 levels: "none"

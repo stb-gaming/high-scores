@@ -5,10 +5,9 @@ developer: "Denki"
 brand: "SKY Games"
 splash: "SKY Games/Jumble Fever/Jumble Fever/splash.jpg"
 gameplay: "SKY Games/Jumble Fever/Jumble Fever/PlaySet2.jpg"
+menuu: SKY Games/Jumble Fever/Jumble Fever/menu.png
 date: "2005-06-09"
 archived: "2023-04-26"
-image: null
-menu: null
 category: "Puzzle"
 levels: none
 scores:

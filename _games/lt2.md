@@ -1,5 +1,6 @@
 ---
 title: "Looney Tunes 2"
+full-title: "Looney Tunes: Back in Action Again"
 description: "ACME strikes back!"
 developer: "Denki"
 brand: "Warner Bros"

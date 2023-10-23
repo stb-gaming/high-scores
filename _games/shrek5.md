@@ -1,5 +1,6 @@
 ---
 title: "Shrek Episode 5"
+full-title: "Shrek: Imperial Peril"
 description: "The evil Fairy Godmother has returned!"
 developer: "Denki"
 brand: "Dreamworks"

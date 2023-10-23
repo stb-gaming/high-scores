@@ -1,5 +1,6 @@
 ---
 title: "Grim Adventures"
+full-title: "The Grim Adventures of Billy and Mandy"
 description: "Use magic spells to escape the haunted house!"
 developer: "Denki"
 brand: "Cartoon Network"

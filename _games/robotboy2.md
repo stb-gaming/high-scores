@@ -1,5 +1,6 @@
 ---
 title: "Robotboy 2"
+full-title: "Robotboy: Something in the Darkness Drools"
 description: "A gargantuan creation awaits Robotboy!"
 developer: "Denki"
 brand: "Cartoon Network"

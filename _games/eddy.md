@@ -1,5 +1,6 @@
 ---
 title: "Ed, Edd, n Eddy 1"
+full-title: "Ed, Edd n Eddy: Night of the Living Ed"
 description: "Sibling rivalry with a monstrous twist!"
 developer: "Denki"
 brand: "Cartoon Network"

@@ -1,5 +1,6 @@
 ---
 title: "The Muppet Show"
+full-title: "The Muppet Show: Backstage Rampage"
 description: "Honeydew's chemical experiment has gone hay!"
 developer: "Denki"
 brand: "Disney"

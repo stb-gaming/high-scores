@@ -1,5 +1,6 @@
 ---
 title: "KND: SHIPWRECKED"
+full-title: "Codename: Kids Next Door: Operation S.H.I.P.W.R.E.C.K.E.D"
 description: "Numbuh Four takes to the pirates head-on!"
 developer: "Denki"
 brand: "Cartoon Network"

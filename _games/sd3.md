@@ -1,5 +1,6 @@
 ---
 title: "Scooby: Mystery Mine"
+full-title: "Scooby Doo: Where are You? in "The Curse of Mystery Mine""
 description: "Scooby's gang is tasked with navigating the Mysterious Manor!"
 developer: "Denki"
 brand: "Cartoon Network"

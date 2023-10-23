@@ -1,5 +1,6 @@
 ---
 title: "KND 2.0"
+full-title: "Codename: Kids Next Door: Operation T.E.E.N.A.G.E.R"
 description: "Kids versus grown-ups, the ultimate battle of wits!"
 developer: "Denki"
 brand: "Cartoon Network"

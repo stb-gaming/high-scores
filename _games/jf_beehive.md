@@ -1,5 +1,6 @@
 ---
 title: "Jumble Fever: Beehive"
+full-title: "Beehive Jumble Fever"
 description: "Fruity addicting fun!"
 developer: "Denki"
 brand: "SKY Games"

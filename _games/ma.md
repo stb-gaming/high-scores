@@ -1,5 +1,6 @@
 ---
 title: "Mind Aerobics"
+full-title: "Carol Vorderman's Mind Aerobics"
 description: "Train your brain with ten different exercises!"
 developer: "Denki"
 brand: "SKY Games"

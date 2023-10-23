@@ -1,5 +1,6 @@
 ---
 title: "Jumble Fever: Avatar"
+full-title: "Avatar Jumble Feever"
 description: "Fruity addicting fun!"
 developer: "Denki"
 brand: "SKY Games"

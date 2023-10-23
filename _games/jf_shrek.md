@@ -1,5 +1,6 @@
 ---
 title: "Jumble Fever: Shrek"
+full-title: "Shrek Jumble Rumble"
 description: "Fruity addicting fun!"
 developer: "Denki"
 brand: "SKY Games"

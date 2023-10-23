@@ -1,5 +1,6 @@
 ---
 title: "Courage 1"
+full-title: "Courage the Cowardly Dog in "Katz Kidnap""
 description: "Save Eustace and Muriel from the evil Katz!"
 developer: "Denki"
 brand: "Cartoon Network"

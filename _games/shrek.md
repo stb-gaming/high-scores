@@ -1,5 +1,6 @@
 ---
 title: "Shrek Episode 1"
+full-title: "Shrek: Fiona's Rescue"
 description: "Shrek's pals need help!"
 developer: "Denki"
 brand: "Dreamworks"

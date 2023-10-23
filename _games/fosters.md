@@ -1,5 +1,6 @@
 ---
 title: "Foster's 1"
+full-title: "Foster's Home for Imaginary Friends: Tick Tock Terror"
 description: "Reset clocks to fix the timeline"
 developer: "Denki"
 brand: "Cartoon Network"

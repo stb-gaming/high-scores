@@ -1,5 +1,6 @@
 ---
 title: "Millionaire Gold"
+full-title: "Who Wants to be a Millionaire? Gold"
 description: "Now with extra gold!!"
 developer: "Denki"
 brand: "Celador"

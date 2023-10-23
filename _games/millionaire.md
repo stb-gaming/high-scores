@@ -1,5 +1,6 @@
 ---
 title: "Millionaire"
+full-title: "Who Wants to be a Millionaire?"
 description: "Everyone's favourite game show!"
 developer: "Denki"
 brand: "Celador"

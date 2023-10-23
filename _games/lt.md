@@ -1,5 +1,6 @@
 ---
 title: "Looney Tunes"
+full-title: "Looney Tunes: Back in Action"
 description: "Bugs and Daffy need your help!"
 developer: "Denki"
 brand: "Warner Bros"

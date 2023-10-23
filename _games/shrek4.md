@@ -1,5 +1,6 @@
 ---
 title: "Shrek Episode 4"
+full-title: "Shrek: Double Trouble"
 description: "Help Shrek on his most important mission yet!"
 developer: "Denki"
 brand: "Dreamworks"

@@ -1,5 +1,6 @@
 ---
 title: "Scooby: Eerie Isle"
+full-title: "Scooby Doo: Where are You? in "The Mystery of Eerie Isle""
 description: "Help the Mystery gang track down the ghosts of Eerie Isle!"
 developer: "Denki"
 brand: "Cartoon Network"

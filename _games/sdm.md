@@ -1,8 +1,8 @@
 ---
 title: "Scooby-Doo: Creepy Cowboy"
+full-title: "Scooby Doo Mysteries: The Curse of the Creepy Cowboy"
 developer: Denki
 description: "Wild West meets ghostly ghouls..."
-developer: "Denki"
 brand: "Cartoon Network"
 splash: "Cartoon Network/Scooby-Doo Mysteries/Scooby-Doo Mysteries/Splash.jpg"
 gameplay: "Cartoon Network/Scooby-Doo Mysteries/Scooby-Doo Mysteries/Screen02.jpg"

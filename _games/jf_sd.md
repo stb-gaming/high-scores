@@ -1,5 +1,6 @@
 ---
 title: "Jumble Fever: Scooby"
+full-title: "Scooby-Doo Jumble Fever"
 description: "Fruity addicting fun!"
 developer: "Denki"
 brand: "SKY Games"

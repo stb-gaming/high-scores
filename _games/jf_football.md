@@ -1,5 +1,6 @@
 ---
 title: "Jumble Fever: Football"
+full-title: "Jumble Football Fever"
 description: "Fruity addicting fun!"
 developer: "Denki"
 brand: "SKY Games"

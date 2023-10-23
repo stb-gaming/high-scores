@@ -1,5 +1,6 @@
 ---
 title: "Foster's: Bad Bloo"
+full-title: "Foster's Home for Imaginary Friends: Brotherly Love"
 description: "More timeline chaos!"
 developer: "Denki"
 brand: "Cartoon Network"

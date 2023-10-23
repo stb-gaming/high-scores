@@ -1,5 +1,6 @@
 ---
 title: "Star Trek: STRANDED"
+full-title: "Star Trek: The Next Generation: STRANDED"
 description: "Return to the Enterprise before it's too late!"
 developer: "Denki"
 brand: "Paramount"

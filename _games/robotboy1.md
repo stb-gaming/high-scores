@@ -1,5 +1,6 @@
 ---
 title: "Robotboy 1"
+full-title: "Robotboy: Kamikazi Kidnap"
 description: "Kamikazi has kidnapped Robotboy's friends!"
 developer: "Denki"
 brand: "Cartoon Network"

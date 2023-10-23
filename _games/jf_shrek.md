@@ -7,6 +7,7 @@ archived: "2023-10-14"
 date: "2007-04-05"
 category: "Puzzle"
 levels: "none"
+menu: SKY Games/Jumble Fever/Jumble Fever Shrek/menu.png
 modes:
  - Classic
 scores:

@@ -10,5 +10,5 @@ scores:
 links:
   - title: Play
     url: "https://denki.co.uk/sky/jf_halloween/app.html"
-    developer: "denki"
+    developer: "Denki"
 ---

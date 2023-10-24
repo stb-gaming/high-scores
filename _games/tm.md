@@ -9,5 +9,5 @@ scores:
   filter: "item.game == page.slug"
 links:
   - title: Play
-    url: "https://www.flashgamesplayer.com/free/thievin-monkeys/play.html"
+    url: "https://www.gamesflow.com/jeux.php?id=241997"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Zombie Kong Demo"
 full-title: "Zombie Kong Demo"
-menu: http://news.bbc.co.uk/olmedia/1825000/images/_1829612_gorillaz300.jpg
+menu: https://gorillazland.files.wordpress.com/2019/10/screen-shot-2019-10-17-at-3.34.07-pm.png
 developer: PlayJam
 scores:
   sort: score

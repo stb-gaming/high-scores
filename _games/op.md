@@ -9,5 +9,5 @@ scores:
   filter: "item.game == page.slug"
 links:
   - title: Play
-    url: "https://stb-gaming.github.io/sky/oo/app.html"
+    url: "https://stb-gaming.github.io/sky/op/app.html"
 ---

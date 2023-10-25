@@ -1,7 +1,7 @@
 ---
 title: "Kurakku"
 full-title: "Kurakku Refuelled"
-menu: PlayJam/Kurakku/menu.png
+menu: https://img.youtube.com/vi/WV6mS5by77Q/0.jpg
 developer: PlayJam
 scores:
   sort: score

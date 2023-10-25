@@ -1,5 +1,5 @@
 ---
-title: "Playjam Darts
+title: "Playjam Darts"
 full-title: "Playjam Darts"
 menu: https://www.teknofilo.com/wp-content/uploads/2013/04/Panasonic-Smart-TV-Dardos-150x150.jpg
 developer: PlayJam

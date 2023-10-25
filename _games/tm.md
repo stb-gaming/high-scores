@@ -9,5 +9,5 @@ scores:
   filter: "item.game == page.slug"
 links:
   - title: Play
-    url: "https://www.gamesflow.com/jeux.php?id=241997"
+    url: "https://stb-gaming.github.io/sky/tm/app.html"
 ---

@@ -3,7 +3,7 @@ title: "Bitbot"
 full-title: "Bitbot"
 menu: https://i.ytimg.com/vi/6Cvryn39q-o/sddefault.jpg
 developer: PlayJam
-brand: Playjam
+brand: PlayJam
 scores:
   sort: score
   reverse: true

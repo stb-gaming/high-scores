@@ -1,6 +1,7 @@
 ---
 title: "Scooby-Doo: Frosty Snowman"
 developer: Denki
+brand: Cartoon Network
 splash: Cartoon Network/Scooby-Doo Mysteries/Scooby-Doo Mysteries Episode 2/Front End.jpg
 menu: Cartoon Network/Scooby-Doo Mysteries/Scooby-Doo Mysteries Episode 2/menu.png
 gameplay: Cartoon Network/Scooby-Doo Mysteries/Scooby-Doo Mysteries Episode 2/menu.png

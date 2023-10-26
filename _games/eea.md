@@ -3,6 +3,7 @@ title: "East End Arrows"
 full-title: "East End Arrows"
 menu: https://archive.org/serve/multiplayerdarts/multiplayerdarts_screenshot.jpg
 developer: PlayJam
+brand: PlayJam
 scores:
   sort: score
   reverse: true

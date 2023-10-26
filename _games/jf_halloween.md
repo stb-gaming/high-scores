@@ -3,6 +3,7 @@ title: "Jumble Fever: Halloween"
 gameplay: SKY Games/Jumble Fever/Jumble Fever Halloween/PlaySet2.jpg
 splash: SKY Games/Jumble Fever/Jumble Fever Halloween/Splash.jpg
 menu: SKY Games/Jumble Fever/Jumble Fever Halloween/menu.png
+developer: Denki
 scores:
   sort: score
   reverse: true

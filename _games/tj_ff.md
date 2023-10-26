@@ -3,6 +3,7 @@ title: "T&J Food Fight"
 full-title: "Tom and Jerry in Food Fight"
 menu: Cartoon Network/Tom and Jerry/Tom and Jerry Food Fight/menu.png
 developer: Macrospace
+brand: Cartoon Network
 modes:
  - Easy
  - Hard

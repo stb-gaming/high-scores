@@ -2,6 +2,7 @@
 title: Fame Chains
 menu: SKY Games/Fame Chains/menu.png
 developer: Denki
+brand: SKY Games
 scores:
   sort: score
   reverse: true

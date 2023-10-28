@@ -17,5 +17,5 @@ scores:
   filter: "item.game == page.slug"
 links:
   - title: Play
-    url: "http://www.denki.co.uk/sky/courage/app.html"
+    url: "http://denki.co.uk/sky/courage/app.html"
 ---

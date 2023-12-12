@@ -3,7 +3,8 @@
 {% if user.links %}
 {% assign ghUrl = item.links|where_exp:"item","item.url contains 'github.com'"|first %}
 {% assign ytUrl = item.links|where_exp:"item","item.url contains 'youtube.com'"|first %}
-{% assign wikiUrl = item.links|where_exp:"item","item.url contains 'sky-gamestar.fandom.com'"|first %}
+{% assign oldWikiUrl = item.links|where_exp:"item","item.url contains 'sky-gamestar.fandom.com'"|first %}
+{% assign wikiUrl = item.links|where_exp:"item","item.url contains 'stbwiki.tumble.beanofficial.co'"|first %}
 {% if ghUrl && site.github %}
 {% assign userMod = site.github.contributors | where_exp: "item","item.html_url == ghUrl.url"|first  %}
 {% assign userAdmin = site.github.organization_members | where_exp: "item","item.html_url == ghUrl.url"|first %}
@@ -12,7 +13,7 @@
 {% elsif userMod %}
 <span class="rank-mod" data-balloon="Mod">🛡️</span>
 {% endif %}
-{% elsif wikiUrl %}
+{% elsif wikiUrl or oldWikiUrl %}
 <span class="rank-wiki" data-balloon="Wiki Author">📝</span>
 {% elsif ytUrl %}
 <span class="rank-yt" data-balloon="Famous YouTuber">🎥</span>

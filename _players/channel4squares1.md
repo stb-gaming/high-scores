@@ -6,6 +6,8 @@ scores:
   sort: date
   reverse: true
 links:
-  - title: Wiki User
+  - title: Fandom User
     url: https://sky-gamestar.fandom.com/wiki/User:Channel4squares
+  - title: Wiki User
+    url: https://stbwiki.tumble.beanofficial.co/wiki/User:Cobaltgit
 ---

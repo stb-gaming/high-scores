@@ -21,4 +21,6 @@ scores:
 links:
   - title: Play
     url: "https://denki.co.uk/sky/sb/app.html"
+  - title: Wiki
+    url: "https://stbwiki.tumble.beanofficial.co/wiki/SpongeBob_SquarePants:_Bikini_Bottom_Bother"
 ---

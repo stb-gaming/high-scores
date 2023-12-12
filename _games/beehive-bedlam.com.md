@@ -18,4 +18,6 @@ scores:
 links:
   - title: Play
     url: "https://beehive-bedlam.com/"
+  - title: Wiki
+    url: https://stbwiki.tumble.beanofficial.co/wiki/Beehive_Bedlam
 ---

@@ -18,4 +18,6 @@ scores:
 links:
   - title: Play
     url: "https://denki.co.uk/sky/db/app.html"
+  - title: Wiki
+    url: "https://stbwiki.tumble.beanofficial.co/wiki/Denki_Blocks"
 ---

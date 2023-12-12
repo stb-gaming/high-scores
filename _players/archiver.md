@@ -12,6 +12,6 @@ links:
     url: https://www.youtube.com/@morearchiver
   - title: Internet Archive
     url: https://archive.org/details/@insertvhstape
-  - title: Fandom
+  - title: Fandom User
     url: https://sky-gamestar.fandom.com/wiki/User:VHSArchiverGuy
 ---

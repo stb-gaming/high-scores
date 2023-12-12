@@ -3,7 +3,7 @@ title: "Mind Aerobics"
 full-title: "Carol Vorderman's Mind Aerobics"
 description: "Train your brain with ten different exercises!"
 developer: "Denki"
-brand: "SKY Games"
+brand: "Sky Games"
 splash: "SKY Games/Carol Vorderman's Mind Aerobics/Carol Vorderman's Mind Aerobics/Splash.jpg"
 gameplay: null
 date: "2007-03-15"

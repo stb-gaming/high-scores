@@ -2,7 +2,7 @@
 title: "Kingpin Bowling"
 description: "A bowling alley on your screen?"
 developer: "Denki"
-brand: "SKY Games"
+brand: "Sky Games"
 splash: "SKY Games/Kingpin Bowling/KingpinBowlingSplash.jpg"
 gameplay: "SKY Games/Kingpin Bowling/KingpinBowlingPlay01.jpg"
 date: "2007-02-08"

@@ -3,6 +3,7 @@ title: "Beehive Bedlam"
 description: "Winter is on its way. Help the bees store flowers to make their honey."
 developer: "Open"
 brand: "Open"
+service: [open,sky-gamestar,sky-games]
 splash: "SKY Games/Beehive Bedlam/Beehive_Bedlam_launch_2001.png"
 gameplay: "SKY Games/Beehive Bedlam/gameplay.png"
 date: "1999-07-01"

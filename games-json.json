@@ -11,6 +11,7 @@ layout: null
 	"title": "{{game.title | titlecase}}",
 		"description": "{{game.description}}",
 		"developer": "{{game.developer}}",
+		"service": "{{game.service}}",
 		"url": "{{urlLink.url}}",
 		"portal": "{{urlLink.url |replace:"denki.co.uk","stb-gaming.github.io"}}",
 		"highscores":"{% include url.html url=game.url %}",

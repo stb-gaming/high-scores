@@ -6,6 +6,10 @@ title: Missing Things
 {% assign missing_games = site.emptyarr %}
 {% assign missing_modes = site.emptyarr %}
 {% assign missing_levels = site.emptyarr %}
+{% assign missing_services = site.emptyarr %}
+{% assign missing_developers = site.emptyarr %}
+{% assign missing_brands = site.emptyarr %}
+{% assign missing_categories = site.emptyarr %}
 {% for score in site.scores %}
 {% if score.game %}
 {% assign game = site.games | where:"slug", score.game | first %}
@@ -42,6 +46,33 @@ title: Missing Things
 
 {% endfor %}
 
+{% for game in site.games %}
+{% if game.service %}
+{% assign service = site.services | where_exep:"service","game.service contains service.slug" | first %}
+{% unless service %}
+{% assign missing_services = missing_services | push:game.service | sort|uniq %}
+{% endunless %}
+{% endif %}
+{% if game.brand %}
+{% assign brand = site.brands | where:"slug", game.brand | first %}
+{% unless brand %}
+{% assign missing_brands = missing_brands | push:game.brand | sort|uniq %}
+{% endunless %}
+{% endif %}
+{% if game.developer %}
+{% assign developer = site.developers | where:"slug", game.developer | first %}
+{% unless developer %}
+{% assign missing_developers = missing_developers | push:game.developer | sort|uniq %}
+{% endunless %}
+{% endif %}
+{% if game.category %}
+{% assign category = site.categories | where:"slug", game.category | first %}
+{% unless category %}
+{% assign missing_categories = missing_categories | push:game.category | sort|uniq %}
+{% endunless %}
+{% endif %}
+{% endfor %}
+
 # Games
 
 {% for game in missing_games %}
@@ -66,6 +97,30 @@ title: Missing Things
 
 {% for level in missing_levels %}
 - {{level}}
+{% endfor %}
+
+# Services
+
+{% for service in missing_services %}
+- {{service}}
+{% endfor %}
+
+# Developers
+
+{% for dev in missing_developers %}
+- {{dev}}
+{% endfor %}
+
+# Brands
+
+{% for brand in missing_brands %}
+- {{brand}}
+{% endfor %}
+
+# Category
+
+{% for category in missing_categories %}
+- {{category}}
 {% endfor %}
 
 # Game Data

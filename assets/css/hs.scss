@@ -244,7 +244,11 @@ input:not([type=submit]):not([type=button]):not([type=reset]),select {
 	&:hover,&.active {
 		background-color: $darken;
 	}
+
+	
 }
+
+
 
 //Links
 a:not([href]),a[href=""] {
@@ -407,6 +411,10 @@ main .container {
 
 	#page_info {
 		width: 100%;
+
+		%btn {
+			vertical-align: text-bottom;
+		}
 	}
 
 

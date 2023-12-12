@@ -2,7 +2,7 @@
 title: "Word Crunch Deluxe"
 description: "Put your verbal dexterity to the test!"
 developer: "Denki"
-brand: "SKY Games"
+brand: "Sky Games"
 splash: "SKY Games/Word Crunch/Word Crunch Deluxe/Splash.jpg"
 gameplay: "SKY Games/Word Crunch/Word Crunch Deluxe/WCDPlay002.jpg"
 date: "2005-12-15"

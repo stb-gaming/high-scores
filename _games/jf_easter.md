@@ -2,7 +2,7 @@
 title: "Jumble Fever: Easter"
 description: "Fruity addicting fun!"
 developer: "Denki"
-brand: "SKY Games"
+brand: "Sky Games"
 archived: "2023-10-14"
 date: "2006-04-06"
 splash: "SKY Games/Jumble Fever/Jumble Fever Easter/EasterSplash.jpg"

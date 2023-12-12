@@ -8,6 +8,7 @@ gameplay: "The Tetris Company/Tetris/Play04.jpg"
 menu: The Tetris Company/Tetris/menu.png
 date: "2004-12-16"
 archived: "2023-04-12"
+service: [open,sky-gamestar,sky-games]
 category: "Puzzle"
 modes:
  - High Score

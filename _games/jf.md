@@ -2,7 +2,7 @@
 title: "Jumble Fever"
 description: "Fruity addicting fun!"
 developer: "Denki"
-brand: "SKY Games"
+brand: "Sky Games"
 splash: "SKY Games/Jumble Fever/Jumble Fever/splash.jpg"
 gameplay: "SKY Games/Jumble Fever/Jumble Fever/PlaySet2.jpg"
 menuu: SKY Games/Jumble Fever/Jumble Fever/menu.png

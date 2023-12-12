@@ -2,7 +2,7 @@
 title: "Genie's Cave"
 description: "Solve the genie's cunning puzzles to uncover secrets!"
 developer: "Denki"
-brand: "SKY Games"
+brand: "Sky Games"
 splash: "SKY Games/Genie's Cave/GCSplash.jpg"
 gameplay: "SKY Games/Genie's Cave/GCPlay01.jpg"
 menu: "SKY Games/Genie's Cave/menu.png"

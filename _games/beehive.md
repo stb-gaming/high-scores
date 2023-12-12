@@ -2,7 +2,7 @@
 title: "Beehive Bedlam 2"
 description: "Never released!"
 developer: "Denki"
-brand: "SKY Games"
+brand: "Sky Games"
 splash: "SKY Games/Beehive Bedlam/Beehive_Denki_Splash.jpg"
 gameplay: "SKY Games/Beehive Bedlam/Beehive_Denki_Gameplay.jpg"
 date: "2004-01-01"

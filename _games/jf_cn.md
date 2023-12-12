@@ -3,7 +3,7 @@ title: "Jumble Fever: CN"
 full-title: "Cartoon Network Jumble Fever"
 description: "Fruity addicting fun!"
 developer: "Denki"
-brand: "SKY Games"
+brand: "Sky Games"
 archived: "2023-10-14"
 menu: SKY Games/Jumble Fever/Jumble Fever Cartoon Network/menu.png
 category: "Puzzle"

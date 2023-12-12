@@ -22,6 +22,14 @@ collections:
     output: true
   lists:
     output: true
+  services:
+    output: true
+  brands:
+    output: true
+  developers:
+    output: true
+  categories:
+    output: true
 
 defaults:
   - scope:
@@ -34,6 +42,35 @@ defaults:
       type: lists
     values:
       permalink: /:title/
+      collection_pill: true
+      comments: false
+  - scope:
+      path: ""
+      type: services
+    values:
+      infocard: true
+      collection_pill: true
+      comments: false
+  - scope:
+      path: ""
+      type: developers
+    values:
+      infocard: true
+      collection_pill: true
+      comments: false
+  - scope:
+      path: ""
+      type: brands
+    values:
+      infocard: true
+      collection_pill: true
+      comments: false
+  - scope:
+      path: ""
+      type: categories
+    values:
+      infocard: true
+      collection_pill: true
       comments: false
   - scope:
       path: ""

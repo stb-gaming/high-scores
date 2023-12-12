@@ -2,7 +2,7 @@
 title: "Bugz"
 description: "The fate of the bug world rests on your shell!"
 developer: "Denki"
-brand: "SKY Games"
+brand: "Sky Games"
 splash: null
 gameplay: "SKY Games/Bugz/Play01.jpg"
 date: "2007-06-21"

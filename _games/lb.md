@@ -2,7 +2,7 @@
 title: "Letter Box"
 description: "Create words in a grid of letters to score!"
 developer: "Denki"
-brand: "SKY Games"
+brand: "Sky Games"
 splash: "SKY Games/LetterBox/Splash.jpg"
 gameplay: "SKY Games/LetterBox/Play.jpg"
 menu: "SKY Games/LetterBox/menu.png"

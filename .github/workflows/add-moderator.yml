@@ -17,6 +17,8 @@ jobs:
 
       - name: Edit Front Matter
         run: |
+          sed -i -E 's/score: '\''([0-9]+)'\''/score: \1/g' _scores/*.md
+          sed -i -E 's/date: '\''([0-9]{4}-[0-9]{2}-[0-9]{2})'\''/date: \1/g' _scores/*.md
           AUTHOR=$(gh pr view ${{ github.event.number }} --json mergedBy | jq .mergedBy.login)
           NEW_FILES=$(gh pr view ${{ github.event.number }} --json files | jq -r '.files[].path'| grep '_scores/.*\.md')
 

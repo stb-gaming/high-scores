@@ -12,6 +12,7 @@ service: [open,sky-gamestar,sky-games]
 category: "Puzzle"
 modes:
  - High Score
+ - Single Player 
 levels:
  - 1
  - 2

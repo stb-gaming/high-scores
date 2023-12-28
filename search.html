@@ -64,6 +64,8 @@ const gameIndex = lunr(function () {
   this.field('developer')
   this.field('brand')
   this.field('category')
+  this.field('released')
+  this.field('archived')
   this.field('collection')
 
   documentLists.games.forEach(function (doc) {
@@ -101,11 +103,15 @@ function search(text) {
 	for (const collection in indexes) {
 		results[collection] = []
 		for (const query of querys) {
-			let res = indexes[collection].search(query).map(({ref})=>documentLists[collection][ref] ||ref).filter(i=>{
-				if(results[collection].map(r=>r.index).includes(i.index)) return false
-				return true
-			})
-			results[collection].push(...res)
+			try {
+				let res = indexes[collection].search(query).map(({ref})=>documentLists[collection][ref] ||ref).filter(i=>{
+					if(results[collection].map(r=>r.index).includes(i.index)) return false
+					return true
+				})
+				results[collection].push(...res)
+			} catch (error) {
+				alert(error.message)
+			}
 		}
 	}
 	return results

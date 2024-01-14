@@ -12,6 +12,7 @@ image: null
 menu: null
 levels: "none"
 category: "Adventure"
+list: classics
 scores:
   sort: score
   reverse: true

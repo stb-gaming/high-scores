@@ -10,6 +10,7 @@ splash: Namco/Pac-Man/Splash.jpg
 menu: "Namco/Pac-Man/menu.png"
 category: "Arcade"
 levels: "none"
+list: classics
 scores:
   sort: score
   reverse: true

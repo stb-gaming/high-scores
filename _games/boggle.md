@@ -10,6 +10,7 @@ date: "2005-02-17"
 archived: "2023-04-29"
 category: "Word"
 levels: "none"
+list: family
 scores:
   sort: score
   reverse: true

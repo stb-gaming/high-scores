@@ -11,6 +11,7 @@ archived: "2023-04-12"
 menu: "Cartoon Network/Courage The Cowardly Dog/Courage The Cowardly Dog/menu.png"
 category: "Adventure"
 levels: "none"
+list: classics
 scores:
   sort: score
   reverse: true

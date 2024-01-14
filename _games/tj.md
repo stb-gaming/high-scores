@@ -11,6 +11,7 @@ archived: "2023-04-12"
 image: null
 menu: null
 category: "Action"
+list: classics
 levels: "none"
 scores:
   sort: score

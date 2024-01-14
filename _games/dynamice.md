@@ -12,6 +12,7 @@ image: null
 menu: null
 levels: "none"
 category: "Maze"
+list: family
 scores:
   sort: score
   reverse: true

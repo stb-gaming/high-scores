@@ -12,6 +12,7 @@ image: null
 menu: null
 category: "Puzzle"
 levels: "none"
+list: family
 scores:
   sort: score
   reverse: true

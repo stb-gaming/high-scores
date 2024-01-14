@@ -11,6 +11,7 @@ image: SKY Sports/Darts/darts-icon.jpg
 menu: SKY Sports/Darts/ModeSelect.jpg
 category: "Sports"
 levels: "none"
+list: classics
 scores:
   sort: score
   reverse: true

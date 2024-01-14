@@ -11,6 +11,7 @@ image: null
 menu: null
 category: "Sports"
 levels: "none"
+list: family
 scores:
   sort: score
   reverse: true

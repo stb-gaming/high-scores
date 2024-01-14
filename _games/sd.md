@@ -11,6 +11,7 @@ archived: "2023-04-22"
 image: null
 menu: null
 category: "Adventure"
+list: classics
 scores:
   sort: score
   reverse: true

@@ -10,6 +10,7 @@ date: "2005-06-09"
 archived: "2023-04-26"
 category: "Puzzle"
 levels: none
+list: classics
 scores:
   sort: score
   reverse: true

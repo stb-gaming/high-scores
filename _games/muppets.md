@@ -12,6 +12,7 @@ image: null
 menu: null
 category: "Platformer"
 levels: "none"
+list: family
 scores:
   sort: score
   reverse: true

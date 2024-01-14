@@ -11,6 +11,7 @@ date: "2005-07-14"
 archived: "2023-05-13"
 category: "Adventure"
 levels: "none"
+list: classics
 scores:
   sort: score
   reverse: true

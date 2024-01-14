@@ -10,6 +10,7 @@ date: "2004-12-02"
 archived: "2023-04-29"
 category: "Puzzle"
 levels: "none"
+list: family
 scores:
   sort: score
   reverse: true

@@ -11,6 +11,7 @@ archived: "2019-03-06"
 image: null
 menu: SKY Games/Beehive Bedlam/menu.png
 category: "Puzzle"
+list: classics
 scores:
   sort: score
   reverse: true

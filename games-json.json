@@ -5,27 +5,26 @@ layout: null
 [
 	{% for game in site.games %}
 	{% assign urlLink = game.links | where:"title","Play" | first %}
-	{% assign portalLink = urlLink.url |replace:"denki.co.uk","stb-gaming.github.io" %}
 	{% capture submitUrl %}/submit/score?game={{game.slug}}{% endcapture %}
 	
 	{
-		{% if game.title %}"title": "{{game.title | titlecase}}",
-		{% endif %}{% if game.description %}"description": "{{game.description}}",
-		{% endif %}{% if game.developer %}"developer": "{{game.developer}}",
-		{% endif %}{% if game.service %}"service": "{{game.service}}",
-		{% endif %}{% if urlLink.url %}"url": "{{urlLink.url}}",
-		{% endif %}{% if portalLink %}"portal": "{{portalLink}}",
-		{% endif %}{% if game.url %}"highscores":"{% include url.html url=game.url %}",
-		{% endif %}{% if submitUrl %}"submit":"{% include url.html url=submitUrl %}",
-		{% endif %}{% if game.brand %}"brand": "{{game.brand}}",
-		{% endif %}{% if game.splash %}"splash": "{{game.splash}}",
-		{% endif %}{% if game.gameplay %}"gameplay": "{{game.gameplay}}",
-		{% endif %}{% if game.date %}"date": "{{game.date}}",
-		{% endif %}{% if game.archived %}"archived": "{{game.archived}}",
-		{% endif %}{% if game.image %}"image": "{{game.image}}",
-		{% endif %}{% if game.menu %}"menu": "{{game.menu}}",
-		{% endif %}{% if game.list %}"list": "{{game.list}}",
-		{% endif %}{% if game.category %}"category": "{{game.category}}"{% endif %}
+		"title": "{{game.title | titlecase}}",
+		"description": "{{game.description}}",
+		"developer": "{{game.developer}}",
+		"service": "{{game.service}}",
+		"url": "{{urlLink.url}}",
+		"portal": "{{urlLink.url |replace:"denki.co.uk","stb-gaming.github.io"}}",
+		"highscores":"{% include url.html url=game.url %}",
+		"submit":"{% include url.html url=submitUrl %}",
+		"brand": "{{game.brand}}",
+		"splash": "{{game.splash}}",
+		"gameplay": "{{game.gameplay}}",
+		"date": "{{game.date}}",
+		"archived": "{{game.archived}}",
+		"image": "{{game.image}}",
+		"menu": "{{game.menu}}",
+		"list": "{{game.list}}",
+		"category": "{{game.category}}"
 	}{%unless forloop.last %},{%endunless %}
 	{% endfor %}
 ]

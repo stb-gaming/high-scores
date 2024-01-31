@@ -1,7 +1,7 @@
 ---
 title: "Tomb Raider Apocalypse"
 full-title: "Tomb Raider Apocalypse"
-menu: 
+menu: https://static.wikia.nocookie.net/laracroft/images/a/ae/Eye_of_Osiris_01.jpg
 developer: Minds Eye Productions
 brand: 
 service: Sky Games

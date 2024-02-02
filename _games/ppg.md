@@ -11,5 +11,5 @@ scores:
   filter: "item.game == page.slug"
 links:
   - title: Play
-    url: "https://stb-gaming.github.io/PPGTV-WebGL/app.html"
+    url: https://stb-gaming.github.io/sky/ppg/app.html
 ---

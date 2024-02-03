@@ -1,7 +1,7 @@
 ---
 title: "Jumble Fever - Christmas"
 full-title: "Jumble Fever - Christmas"
-menu: 
+menu: https://ibb.co/PZ6Wz4L
 developer: Denki
 brand: Sky Games
 scores:

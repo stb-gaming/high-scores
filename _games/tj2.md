@@ -1,7 +1,7 @@
 ---
 title: "Tom and Jerry - Merry Christmouse"
 full-title: "Tom and Jerry - Merry Christmouse"
-menu: 
+menu: https://static.wikia.nocookie.net/tomandjerry/images/c/c0/Tom_and_Jerry_in_Merry_Christmouse.png
 developer: Denki
 brand: Sky Games
 scores:

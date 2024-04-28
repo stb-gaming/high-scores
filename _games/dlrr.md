@@ -1,9 +1,9 @@
 ---
-title: "Dexter's Lab"
+title: "Dexter's Laboratory: Robot Rampage"
 full-title: "Dexter's Laboratory: Robot Rampage"
 developer: "Denki"
 brand: "Cartoon Network"
-menu: https://static.wikia.nocookie.net/sky-gamestar/images/d/dc/Dexters_Lab_Robot_Rampage.png/revision/latest/scale-to-width-down/1000?cb=20230615135343
+menu: https://i.ytimg.com/vi/3DjFZEKm8lg/sddefault.jpg
 date: "2005-03-24"
 archived: "2024-04-27"
 levels: "none"

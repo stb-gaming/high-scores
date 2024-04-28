@@ -4,7 +4,6 @@ full-title: "Dexter's Laboratory: Robot Rampage"
 developer: "Denki"
 brand: "Cartoon Network"
 menu: https://i.ytimg.com/vi/3DjFZEKm8lg/sddefault.jpg
-date: "2005-03-24"
 archived: "2024-04-27"
 levels: "none"
 category: "Action"

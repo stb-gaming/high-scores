@@ -12,4 +12,7 @@ scores:
 links:
   - title: Play
     url: "https://stb-gaming.github.io/sky/pjd/app.html"
+files:
+ - "https://stb-gaming.github.io/sky/pjd/app.js"
+ - "https://stb-gaming.github.io/sky/pjd/app.swf"
 ---

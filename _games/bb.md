@@ -12,4 +12,7 @@ scores:
 links:
   - title: Play
     url: "https://stb-gaming.github.io/sky/bb/app.html"
+files:
+ - "https://stb-gaming.github.io/sky/bb/app.js"
+ - "https://stb-gaming.github.io/sky/bb/app.swf"
 ---

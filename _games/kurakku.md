@@ -12,4 +12,7 @@ scores:
 links:
   - title: Play
     url: "https://stb-gaming.github.io/sky/kurakku/app.html"
+files:
+ - "https://stb-gaming.github.io/sky/karakku/app.js"
+ - "https://stb-gaming.github.io/sky/karakku/app.swf"
 ---

@@ -10,4 +10,6 @@ scores:
 links:
   - title: Play
     url: "https://stb-gaming.github.io/sky/sky-snake/app.html"
+files:
+ - "https://stb-gaming.github.io/sky/sky-snake/app.js"
 ---

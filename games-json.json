@@ -6,7 +6,14 @@ layout: null
 	{% for game in site.games %}
 	{% assign urlLink = game.links | where:"title","Play" | first %}
 	{% capture submitUrl %}/submit/score?game={{game.slug}}{% endcapture %}
-	
+
+	{% assign files = game.files  %}
+	{% if urlLink.url contains "denki.co.uk" %}
+	{% capture denkiFiles %}{{urlLink.url}},{{urlLink.url |replace:".html",".js"}},{{urlLink.url |replace:".html",".wasm"}},{{urlLink.url |replace:".html",".data"}}{% endcapture %}
+	{% assign denkiFiles = denkiFiles | split: "," %}
+	{% assign files = files | concat: denkiFiles %}
+	{% endif %}
+		
 	{
 		"title": "{{game.title | titlecase}}",
 		"description": "{{game.description}}",
@@ -24,7 +31,8 @@ layout: null
 		"image": "{{game.image}}",
 		"menu": "{{game.menu}}",
 		"list": "{{game.list}}",
-		"category": "{{game.category}}"
+		"category": "{{game.category}}",
+		"files": {{ files |jsonify }}
 	}{%unless forloop.last %},{%endunless %}
 	{% endfor %}
 ]

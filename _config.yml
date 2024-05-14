@@ -44,6 +44,11 @@ defaults:
       comments: false
   - scope:
       path: ""
+      type: games
+    values:
+      files: []
+  - scope:
+      path: ""
       type: services
     values:
       infocard: true

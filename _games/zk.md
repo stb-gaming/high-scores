@@ -1,5 +1,5 @@
 ---
-title: "Zombie Kong Demo"
+title: "Zombie Kong Demo (Broken)"
 full-title: "Zombie Kong Demo"
 menu: https://gorillazland.files.wordpress.com/2019/10/screen-shot-2019-10-17-at-3.34.07-pm.png
 developer: Static 2358 

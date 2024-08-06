@@ -12,4 +12,3 @@ scores:
 links:
   - title: Play
     url: "https://archive.org/details/kurakkuv32Th"
-

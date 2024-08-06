@@ -11,7 +11,7 @@ scores:
   filter: "item.game == page.slug"
 links:
   - title: Play
-    url: "https://web.archive.org/web/20031204042409/http://www.playjam.com:80/static2358/games/multiplayerarrows03.html"
+    url: "https://flashmuseum.org/thievin-monkeys/"
 files:
  - "https://stb-gaming.github.io/sky/tm/app.js"
  - "https://stb-gaming.github.io/sky/tm/app.swf"

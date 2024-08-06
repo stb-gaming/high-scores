@@ -11,7 +11,7 @@ scores:
   filter: "item.game == page.slug"
 links:
   - title: Play
-    url: "https://stb-gaming.github.io/sky/kurakku/app.html"
+    url: "https://archive.org/details/kurakkuv32Th"
 files:
  - "https://stb-gaming.github.io/sky/karakku/app.js"
  - "https://stb-gaming.github.io/sky/karakku/app.swf"

@@ -1,5 +1,5 @@
 ---
-title: "Outpatients (Broken)"
+title: "Outpatients"
 full-title: "Outpatients"
 menu: https://is2-ssl.mzstatic.com/image/thumb/Purple/v4/41/f2/cd/41f2cdab-01f1-8ebc-1acb-e998e2bd0431/source/512x512bb.jpg
 developer: PlayJam
@@ -11,7 +11,7 @@ scores:
   filter: "item.game == page.slug"
 links:
   - title: Play
-    url: "https://stb-gaming.github.io/sky/op/app.html"
+    url: "https://archive.org/details/outpatientsAS2"
 files:
  - "https://stb-gaming.github.io/sky/op/app.js"
  - "https://stb-gaming.github.io/sky/op/app.swf"

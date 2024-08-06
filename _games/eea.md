@@ -11,7 +11,7 @@ scores:
   filter: "item.game == page.slug"
 links:
   - title: Play
-    url: "https://web.archive.org/web/20031204042409/http://www.playjam.com:80/static2358/games/multiplayerarrows03.html"
+    url: "https://web.archive.org/web/20021204225303/http://www.playjam.com/games/monkey07.html"
 files:
  - "https://stb-gaming.github.io/sky/eea/app.js"
  - "https://stb-gaming.github.io/sky/eea/app.swf"

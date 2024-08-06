@@ -1,5 +1,5 @@
 ---
-title: "Thievin’ Monkeys (Broken)"
+title: "Thievin’ Monkeys"
 full-title: "Thievin’ Monkeys"
 menu: https://1.bp.blogspot.com/_Lsl3ZOXvc0s/RmaYeu8fpSI/AAAAAAAAAU0/cUDcRZ78888/s400/Game_ThieveMonkey.JPG
 developer: PlayJam
@@ -11,7 +11,7 @@ scores:
   filter: "item.game == page.slug"
 links:
   - title: Play
-    url: "https://stb-gaming.github.io/sky/tm/app.html"
+    url: "https://web.archive.org/web/20030502120003/http://playjam.com:80/games/monkey07.swf"
 files:
  - "https://stb-gaming.github.io/sky/tm/app.js"
  - "https://stb-gaming.github.io/sky/tm/app.swf"

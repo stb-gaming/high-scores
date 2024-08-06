@@ -1,4 +1,3 @@
----
 title: "Kurakku (Broken)"
 full-title: "Kurakku"
 menu: https://img.youtube.com/vi/WV6mS5by77Q/0.jpg

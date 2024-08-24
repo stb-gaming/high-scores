@@ -114,7 +114,7 @@ plugins:
   - jekyll-github-metadata
 
 staticman:
-  host: https://staticman.tumble.beanofficial.co
+  host: https://staticman.tumble.ficial.net
   git: github
   user: stb-gaming
   repo: high-scores

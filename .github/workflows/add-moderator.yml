@@ -28,11 +28,12 @@ jobs:
 
       - name: Push Changes
         run: |
+          git checkout main
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add .
           git commit -m "Add moderator"
-          git pull
+          git pull origin nain
           git push origin main
 
     env:

@@ -2,10 +2,10 @@
 title: "Scooby Doo in Freaky Fairground"
 full-title: "Scooby Doo in Freaky Fairground"
 description: ""
-developer: "
+developer: ""
 brand: "Cartoon Network"
 splash: ""
-gameplay: "https://static.wikia.nocookie.net/sky-gamestar/images/a/a1/Scooby_Doo_Freaky_Fairground.png"
+gameplay: ""
 date: ""
 archived: "2024-10-05"
 image: null

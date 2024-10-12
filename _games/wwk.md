@@ -11,7 +11,7 @@ scores:
   filter: "item.game == page.slug"
 links:
   - title: Play
-    url: "https://archive.org/details/wwk_20240806"
+    url: "https://stb-gaming.github.io/sky/wwk/app.html"
 files:
  - "https://stb-gaming.github.io/sky/wwk/app.js"
  - "https://stb-gaming.github.io/sky/wwk/app.swf"

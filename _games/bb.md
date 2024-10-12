@@ -1,6 +1,6 @@
 ---
-title: "Bitbot"
-full-title: "Bitbot"
+title: "Bitbot (Broken)"
+full-title: "Bitbot (Broken)"
 menu: https://i.ytimg.com/vi/6Cvryn39q-o/sddefault.jpg
 developer: PlayJam
 brand: PlayJam
@@ -11,7 +11,7 @@ scores:
   filter: "item.game == page.slug"
 links:
   - title: Play
-    url: "https://archive.org/details/bitbot"
+    url: "https://stb-gaming.github.io/sky/bb/app.html"
 files:
  - "https://stb-gaming.github.io/sky/bb/app.js"
  - "https://stb-gaming.github.io/sky/bb/app.swf"

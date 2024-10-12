@@ -1,6 +1,6 @@
 ---
-title: "PlayJam Darts"
-full-title: "PlayJam Darts"
+title: "PlayJam Darts (Broken)"
+full-title: "PlayJam Darts (Broken)"
 menu: https://www.teknofilo.com/wp-content/uploads/2013/04/Panasonic-Smart-TV-Dardos-150x150.jpg
 developer: PlayJam
 brand: PlayJam
@@ -11,7 +11,7 @@ scores:
   filter: "item.game == page.slug"
 links:
   - title: Play
-    url: "https://archive.org/details/darts_202408"
+    url: "https://stb-gaming.github.io/sky/pjd/app.html"
 files:
  - "https://stb-gaming.github.io/sky/pjd/app.js"
  - "https://stb-gaming.github.io/sky/pjd/app.swf"

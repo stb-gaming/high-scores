@@ -1,6 +1,6 @@
 ---
-title: "Wee Wee Kitty"
-full-title: "Wee Wee Kitty"
+title: "Wee Wee Kitty (Broken)"
+full-title: "Wee Wee Kitty (Broken)"
 menu: https://cdn.soft112.com/wee-wee-kitty-ios/00/00/0G/QS/00000GQSE9/pad_screenshot.jpg
 developer: PlayJam
 brand: PlayJam

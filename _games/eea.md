@@ -1,7 +1,7 @@
 ---
 title: "East End Arrows"
 full-title: "East End Arrows"
-menu: https://archive.org/serve/multiplayerdarts/multiplayerdarts_screenshot.jpg
+menu: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Fhrfod_xmy9FCwuN8sICKKHvaZwQBOfY1w&s
 developer: PlayJam
 brand: PlayJam
 service: playjam

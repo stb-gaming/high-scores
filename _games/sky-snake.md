@@ -1,5 +1,5 @@
 ---
-title: "Sky Snake (Broken)"
+title: "Sky Snake"
 menu: SKY Games/Sky Snake/menu.png
 developer: "Open"
 brand: Sky Games

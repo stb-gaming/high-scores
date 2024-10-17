@@ -1,6 +1,6 @@
 ---
-title: "PlayJam Darts (Broken)"
-full-title: "PlayJam Darts (Broken)"
+title: "PlayJam Darts"
+full-title: "PlayJam Darts"
 menu: https://www.teknofilo.com/wp-content/uploads/2013/04/Panasonic-Smart-TV-Dardos-150x150.jpg
 developer: PlayJam
 brand: PlayJam

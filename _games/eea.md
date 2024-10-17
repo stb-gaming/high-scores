@@ -11,7 +11,7 @@ scores:
   filter: "item.game == page.slug"
 links:
   - title: Play
-    url: "https://flashmuseum.org/east-end-arrows/"
+    url: "https://stb-gaming.github.io/sky/eea/app.html"
 files:
  - "https://stb-gaming.github.io/sky/eea/app.js"
  - "https://stb-gaming.github.io/sky/eea/app.swf"

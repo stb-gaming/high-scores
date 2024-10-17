@@ -1,6 +1,6 @@
 ---
-title: "Kurakku (Broken)"
-full-title: "Kurakku (Broken)"
+title: "Kurakku"
+full-title: "Kurakku"
 menu: https://img.youtube.com/vi/WV6mS5by77Q/0.jpg
 developer: PlayJam
 brand: PlayJam
@@ -11,8 +11,8 @@ scores:
   filter: "item.game == page.slug"
 links:
   - title: Play
-    url: "https://stb-gaming.github.io/sky/karakku/app.html"
+    url: "https://stb-gaming.github.io/sky/kurakku/app.html"
 files:
- - "https://stb-gaming.github.io/sky/karakku/app.js"
- - "https://stb-gaming.github.io/sky/karakku/app.swf"
+ - "https://stb-gaming.github.io/sky/kurakku/app.js"
+ - "https://stb-gaming.github.io/sky/kurakku/app.swf"
 ---

@@ -15,7 +15,7 @@ scores:
   filter: "item.game == page.slug"
 links:
   - title: Play
-    url: "https://www.numuki.com/game/tom-and-jerry-food-fight/"
+    url: "https://stb-gaming.github.io/sky/tj_ff/app.html"
 files:
  - "https://stb-gaming.github.io/sky/tj_ff/app.js"
  - "https://stb-gaming.github.io/sky/tj_ff/app.swf"

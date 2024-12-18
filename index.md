@@ -8,4 +8,4 @@ list:
   collection: games
   sort: title
 ---
-A site where players can submit high scores obtained on archived games made for the Sky Gamestar and later Sky Games
+A site where players can submit high scores obtained on archived games made for the Sky TV platform

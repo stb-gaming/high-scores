@@ -36,7 +36,7 @@ jobs:
           destination: ./_site
           token: ${{ secrets.GH_TOKEN }}
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
 
   # Deployment job
   deploy:
